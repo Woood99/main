@@ -1,0 +1,88 @@
+// header
+
+
+.header {
+	padding-top: 79px;
+	&__inner{
+		display: flex;
+		align-items: center;
+		min-height: 36px;
+	}
+	&__content{
+		width: 100%;
+		justify-content: space-between;
+		margin-left: 44px;
+		display: flex;
+		min-height: 36px;
+		align-items: center;
+	}
+	&__menu{
+	}
+	&__logo{
+	width: 36px;
+	height: 36px;
+	}
+	&__logo-img{
+		max-width: none;
+	}
+	&__list{
+		display: flex;
+		color: #B5B5B5;
+		text-transform: uppercase;
+		font-family: Gilroy-SemiBold;
+	}
+	&__item{
+		font-size: 12px;
+		line-height: 18px;
+		letter-spacing: 2px;
+	}
+	&__item.header__item{
+		margin-right: 20px;
+	}
+	&__item:last-child{
+		margin-right: 0;
+	}
+	&__btn{
+		align-items: center;
+		display: flex;
+		
+	}
+	&__btn-signin{
+		@extend %btn-nobg;
+		margin-right: 19px;
+		height: 36px;
+		width: 112px;
+		padding: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	&__btn-signup{
+		@extend %btn-bg;
+		height: 36px;
+		width: 112px;
+		padding: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	&__burger{
+		border: none;
+		background-color: transparent;
+		display: none;
+	}
+	&__burger-btn{
+		width: 30px;
+		height: 3px;
+		margin-bottom: 5px;
+		background-color: #fff;
+	}
+	&__burger-btn:last-child{
+		margin-bottom: 0;
+	}
+
+
+
+}
+
+

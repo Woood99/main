@@ -1,0 +1,131 @@
+.footer-top {
+    background: #252B42;
+    padding: 50px 0;
+}
+
+.footer-top__list {
+    display: grid;
+    grid-template-columns: 148px 152px 148px 152px 321px;
+    grid-gap: 0px 30px;
+}
+
+.footer-top__item {}
+
+.footer-top__title {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    margin-bottom: 20px;
+}
+
+.footer-top__elements {}
+
+.footer-top__element {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+}
+
+.footer-top__element+.footer-top__element {
+    margin-top: 10px;
+}
+
+.footer-top__link {
+    transition: color 0.3s linear;
+
+    &:hover {
+        color: darken(#fff, 15%)
+    }
+}
+
+.footer-top__data {
+    li+li {
+        margin-top: 10px;
+    }
+
+    li {
+        padding-left: 34px;
+        position: relative;
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+            width: 24px;
+        }
+
+        a {
+            transition: color 0.3s linear;
+
+            &:hover {
+                text-decoration: underline;
+                color: darken(#fff, 15%)
+            }
+        }
+    }
+}
+
+.footer-top__number {
+    &:before {
+        background-image: url('../images/svg/phone.svg');
+        height: 24px;
+    }
+}
+
+.footer-top__addres {
+    &:before {
+        background-image: url('../images/svg/map.svg');
+        height: 30px;
+    }
+}
+
+.footer-top__email {
+    &:before {
+        background-image: url('../images/svg/email.svg');
+        height: 20px;
+    }
+}
+
+
+.footer-bottom {
+    background: #FAFAFA;
+}
+
+.footer-bottom__inner {
+    padding: 25px 0;
+    display: flex;
+    align-items: center;
+}
+
+.footer-bottom__social {
+    img {
+        max-width: none;
+    }
+}
+
+.footer-bottom__social--yt {
+    display: none;
+}
+
+.footer-bottom__text {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #737373;
+}
+
+.footer-bottom__socials {
+    display: flex;
+    padding-right: 62px;
+    padding-left: 62px;
+    margin-left: 213px;
+}
+
+.footer-bottom__social+.footer-bottom__social {
+    margin-left: 20px;
+}
