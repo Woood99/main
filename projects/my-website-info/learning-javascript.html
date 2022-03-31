@@ -5,7 +5,7 @@
 	<title>Обучение JavaScript</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" href="css/style.min.css?_v=20220331225938">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220401015325">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -42,6 +42,9 @@
 									<li class="dropdown__item">
 										<a href="learning-terminal.html" class="dropdown__link">Terminal</a>
 									</li>
+									<li class="dropdown__item">
+										<a href="learning-english.html" class="dropdown__link">English</a>
+									</li>
 								</ul>
 							</div>
 						</li>
@@ -51,12 +54,12 @@
 			</div>
 		</header>
 		<main class="page">
-			<section class="learn-js">
-				<div class="learn-js__container">
-					<h2 class="learn-js__title title">
+			<section class="learn">
+				<div class="learn__container">
+					<h2 class="learn__title title">
 						Обучение JavaScript
 					</h2>
-					<div data-tabs class="tabs learn-js__tabs learn-js-tabs">
+					<div data-tabs class="tabs learn__tabs learn-tabs">
 						<nav data-tabs-titles class="tabs__navigation">
 							<button type="submit" class="tabs__title _tab-active">Модуль 1</button>
 							<button type="submit" class="tabs__title">Модуль 2</button>
@@ -75,8 +78,8 @@
 							<div class="tabs__body js-module-1">
 
 
-								<ul data-spollers data-one-spoller class="learn-js-tabs__list accordion-secondary__list list-reset">
-									<li class="learn-js-tabs__item accordion-secondary__item">
+								<ul data-spollers data-one-spoller class="learn-tabs__list accordion-secondary__list list-reset">
+									<li class="learn-tabs__item accordion-secondary__item">
 										<button tabindex="-1" type="button" data-spoller class="accordion-secondary__title btn btn-reset">Предыстория
 											программирования</button>
 										<div class="accordion-secondary__content">
@@ -176,8 +179,8 @@
 
 							</div>
 							<div class="tabs__body js-module-2">
-								<ul data-spollers data-one-spoller class="learn-js-tabs__list accordion-secondary__list list-reset">
-									<li class="learn-js-tabs__item accordion-secondary__item">
+								<ul data-spollers data-one-spoller class="learn-tabs__list accordion-secondary__list list-reset">
+									<li class="learn-tabs__item accordion-secondary__item">
 										<button tabindex="-1" type="button" data-spoller class="accordion-secondary__title btn btn-reset">Переменные</button>
 										<div class="accordion-secondary__content">
 											<div>
@@ -230,7 +233,7 @@
 											</div>
 										</div>
 									</li>
-									<li class="learn-js-tabs__item accordion-secondary__item">
+									<li class="learn-tabs__item accordion-secondary__item">
 										<button tabindex="-1" type="button" data-spoller class="accordion-secondary__title btn btn-reset">Числа</button>
 										<div class="accordion-secondary__content">
 											<div>
@@ -318,18 +321,18 @@
 											</div>
 										</div>
 									</li>
-									<li class="learn-js-tabs__item accordion-secondary__item">
+									<li class="learn-tabs__item accordion-secondary__item">
 										<button tabindex="-1" type="button" data-spoller class="accordion-secondary__title btn btn-reset">Математические
 											операции</button>
 										<div class="accordion-secondary__content">
 
 											<p>
 												Для вычисления остатка используется знак "%"
-												<br><picture><source srcset="img/js/module-2/image-1.webp" type="image/webp"><img src="img/js/module-2/image-1.png?_v=1648756778895" alt=""></picture>
+												<br><picture><source srcset="img/js/module-2/image-1.webp" type="image/webp"><img src="img/js/module-2/image-1.png?_v=1648767205451" alt=""></picture>
 											</p>
 											<p>
 												Сложные вычисления:
-												<br><picture><source srcset="img/js/module-2/image-4.webp" type="image/webp"><img src="img/js/module-2/image-4.png?_v=1648756778895" alt=""></picture>
+												<br><picture><source srcset="img/js/module-2/image-4.webp" type="image/webp"><img src="img/js/module-2/image-4.png?_v=1648767205451" alt=""></picture>
 												<br> Сначало выполнится умножение, потом деление, затем сумма и
 												вычитание
 											</p>
@@ -349,7 +352,7 @@
 													<span class="fw700">Декремент</span> уменьшает переменную на 1 (--)
 												</p>
 												<p>
-													<picture><source srcset="img/js/module-2/image-5.webp" type="image/webp"><img src="img/js/module-2/image-5.png?_v=1648756778895" alt=""></picture>
+													<picture><source srcset="img/js/module-2/image-5.webp" type="image/webp"><img src="img/js/module-2/image-5.png?_v=1648767205451" alt=""></picture>
 												</p>
 											</div>
 											<div>
@@ -368,7 +371,7 @@
 													<span class="fw700">Присваивание с операцией</span>
 												</p>
 												<p>
-													<picture><source srcset="img/js/module-2/image-6.webp" type="image/webp"><img src="img/js/module-2/image-6.png?_v=1648756778895" alt=""></picture>
+													<picture><source srcset="img/js/module-2/image-6.webp" type="image/webp"><img src="img/js/module-2/image-6.png?_v=1648767205451" alt=""></picture>
 												</p>
 												<p>
 													Так-же работает с другими операторами: -=, *=, /=, %=
@@ -376,51 +379,51 @@
 											</div>
 										</div>
 									</li>
-									<li class="learn-js-tabs__item accordion-secondary__item">
+									<li class="learn-tabs__item accordion-secondary__item">
 										<button tabindex="-1" type="button" data-spoller class="accordion-secondary__title btn btn-reset">
 											Сложные операции над числами с помощью функций</button>
 										<div class="accordion-secondary__content">
 											<p>
 												Получение абсолютного (положительного) значения числа
-												<br><picture><source srcset="img/js/module-2/image-7.webp" type="image/webp"><img src="img/js/module-2/image-7.png?_v=1648756778895" alt=""></picture>
+												<br><picture><source srcset="img/js/module-2/image-7.webp" type="image/webp"><img src="img/js/module-2/image-7.png?_v=1648767205451" alt=""></picture>
 											</p>
 											<p>
 												Округление
-												<br><picture><source srcset="img/js/module-2/image-8.webp" type="image/webp"><img src="img/js/module-2/image-8.png?_v=1648756778895" alt=""></picture>
+												<br><picture><source srcset="img/js/module-2/image-8.webp" type="image/webp"><img src="img/js/module-2/image-8.png?_v=1648767205451" alt=""></picture>
 											</p>
 											<p>
 												Наибольшее и наименьшее число
-												<br><picture><source srcset="img/js/module-2/image-9.webp" type="image/webp"><img src="img/js/module-2/image-9.png?_v=1648756778895" alt=""></picture>
+												<br><picture><source srcset="img/js/module-2/image-9.webp" type="image/webp"><img src="img/js/module-2/image-9.png?_v=1648767205451" alt=""></picture>
 											</p>
 											<p>
 												Возведение в степерь
-												<br><picture><source srcset="img/js/module-2/image-10.webp" type="image/webp"><img src="img/js/module-2/image-10.png?_v=1648756778895" alt=""></picture>
+												<br><picture><source srcset="img/js/module-2/image-10.webp" type="image/webp"><img src="img/js/module-2/image-10.png?_v=1648767205451" alt=""></picture>
 											</p>
 											<p>
 												Случайные числа
-												<br><picture><source srcset="img/js/module-2/image-11.webp" type="image/webp"><img src="img/js/module-2/image-11.png?_v=1648756778895" alt=""></picture>
+												<br><picture><source srcset="img/js/module-2/image-11.webp" type="image/webp"><img src="img/js/module-2/image-11.png?_v=1648767205451" alt=""></picture>
 											</p>
 										</div>
 									</li>
-									<li class="learn-js-tabs__item accordion-secondary__item">
+									<li class="learn-tabs__item accordion-secondary__item">
 										<button tabindex="-1" type="button" data-spoller class="accordion-secondary__title btn btn-reset">
 											Сравнение разных чисел</button>
 										<div class="accordion-secondary__content">
-											<picture><source srcset="img/js/module-2/image-2.webp" type="image/webp"><img src="img/js/module-2/image-2.png?_v=1648756778895" alt=""></picture>
+											<picture><source srcset="img/js/module-2/image-2.webp" type="image/webp"><img src="img/js/module-2/image-2.png?_v=1648767205451" alt=""></picture>
 										</div>
 									</li>
-									<li class="learn-js-tabs__item accordion-secondary__item">
+									<li class="learn-tabs__item accordion-secondary__item">
 										<button tabindex="-1" type="button" data-spoller class="accordion-secondary__title btn btn-reset">
 											Infinity (бесконечность)</button>
 										<div class="accordion-secondary__content">
 											<p>
-												<picture><source srcset="img/js/module-2/Infinity-1.webp" type="image/webp"><img src="img/js/module-2/Infinity-1.png?_v=1648756778895" alt=""></picture>
+												<picture><source srcset="img/js/module-2/Infinity-1.webp" type="image/webp"><img src="img/js/module-2/Infinity-1.png?_v=1648767205451" alt=""></picture>
 											</p>
 											<p>
-												<picture><source srcset="img/js/module-2/Infinity-2.webp" type="image/webp"><img src="img/js/module-2/Infinity-2.png?_v=1648756778895" alt=""></picture>
+												<picture><source srcset="img/js/module-2/Infinity-2.webp" type="image/webp"><img src="img/js/module-2/Infinity-2.png?_v=1648767205451" alt=""></picture>
 											</p>
 											<p>
-												<picture><source srcset="img/js/module-2/Infinity-3.webp" type="image/webp"><img src="img/js/module-2/Infinity-3.png?_v=1648756778895" alt=""></picture>
+												<picture><source srcset="img/js/module-2/Infinity-3.webp" type="image/webp"><img src="img/js/module-2/Infinity-3.png?_v=1648767205451" alt=""></picture>
 											</p>
 											<div>
 												<span class="fw700">Правила Infinity</span>
@@ -498,15 +501,15 @@
 
 
 
-	<script src="js/app.min.js?_v=20220331225938"></script>
+	<script src="js/app.min.js?_v=20220401015325"></script>
 </body>
 
 </html>
 
 
 
-<!-- <ul data-spollers data-one-spoller class="learn-js-tabs__list accordion-secondary__list list-reset">
-	<li class="learn-js-tabs__item accordion-secondary__item">
+<!-- <ul data-spollers data-one-spoller class="learn-tabs__list accordion-secondary__list list-reset">
+	<li class="learn-tabs__item accordion-secondary__item">
 		<button tabindex="-1" type="button" data-spoller
 			class="accordion-secondary__title btn btn-reset">title</button>
 		<div class="accordion-secondary__content">

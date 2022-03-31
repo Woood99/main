@@ -2,7 +2,7 @@
 <html lang="ru">
 
 <head>
-	<title>Главная</title>
+	<title>Обучение JavaScript</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<link rel="stylesheet" href="css/style.min.css?_v=20220401015325">
@@ -54,49 +54,35 @@
 			</div>
 		</header>
 		<main class="page">
-			<section class="chapter">
-				<div class="chapter__container">
-					<h1 class="chapter__title title">Разделы</h1>
-					<ul class="chapter__list">
-						<li class="chapter__item">
-							Цели:
-							<ul class="chapter__item-elements">
-								<li class="chapter__item-element">
-									<a href="goals-2022.html">
-										2022
-									</a>
-								</li>
-								<li class="chapter__item-element">
-									<a href="despite-everything.html">
-										#НеСмотряНиНаЧто
-									</a>
-								</li>
-							</ul>
+			<section class="learn">
+				<div class="learn__container">
+					<h2 class="learn__title title">
+						Обучение английского
+					</h2>
+					<ul data-spollers data-one-spoller class="learn-tabs__list accordion-secondary__list list-reset">
+						<li class="learn-tabs__item accordion-secondary__item">
+							<button tabindex="-1" type="button" data-spoller class="accordion-secondary__title btn btn-reset">Апрель 2022г</button>
+							<div class="accordion-secondary__content">
+								<div class="learn-english-wrapper">
+									<ul class="grid-column-1">
+										<li class="learn-english-wrapper__title">
+											<span>Слово/Словосочетание</span>
+											<span>Перевод</span>
+										</li>
+										<li>
+											<span>we can</span>
+											<span>Мы можем</span>
+										</li>
+									</ul>
+								</div>
+							</div>
 						</li>
 
-						<li class="chapter__item">
-							Обучение
-							<ul class="chapter__item-elements">
-								<li class="chapter__item-element">
-									<a href="learning-javascript.html">
-										JavaScript
-									</a>
-								</li>
-								<li class="chapter__item-element">
-									<a href="learning-terminal.html">
-										Terminal
-									</a>
-								</li>
-								<li class="chapter__item-element">
-									<a href="learning-english.html">
-										English
-									</a>
-								</li>
-							</ul>
-						</li>
 					</ul>
+
 				</div>
 			</section>
+
 		</main>
 		<footer class="footer">
 			<div class="footer__container">
@@ -120,3 +106,15 @@
 </body>
 
 </html>
+
+
+
+<!-- <ul data-spollers data-one-spoller class="learn-tabs__list accordion-secondary__list list-reset">
+	<li class="learn-tabs__item accordion-secondary__item">
+		<button tabindex="-1" type="button" data-spoller
+			class="accordion-secondary__title btn btn-reset">title</button>
+		<div class="accordion-secondary__content">
+			content
+		</div>
+	</li>
+</ul> -->

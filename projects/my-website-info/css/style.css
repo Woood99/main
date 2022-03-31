@@ -243,6 +243,16 @@ body.popup-show::after {
   border-bottom-left-radius: 0.3125rem;
   border-bottom-right-radius: 0.3125rem;
 }
+@media (max-width: 61.99875em) {
+  .accordion-secondary__content {
+    padding: 0.625rem 0.75rem;
+  }
+}
+@media (max-width: 47.99875em) {
+  .accordion-secondary__content {
+    padding: 0.5rem 0.5rem;
+  }
+}
 
 .tabs__navigation {
   display: flex;
@@ -275,14 +285,14 @@ body.popup-show::after {
   object-fit: contain;
 }
 
-.learn-js .accordion-secondary__content ol {
+.learn .accordion-secondary__content ol {
   list-style-type: none;
   counter-reset: item;
 }
-.learn-js .accordion-secondary__content ol li {
+.learn .accordion-secondary__content ol li {
   position: relative;
 }
-.learn-js .accordion-secondary__content ol li:before {
+.learn .accordion-secondary__content ol li:before {
   counter-increment: item;
   content: counter(item);
   position: absolute;
@@ -320,6 +330,34 @@ body.popup-show::after {
   padding: 0.0625rem 0.3125rem;
   margin-right: 0.3125rem;
   font-weight: 700;
+}
+
+.learn-english-wrapper ul {
+  grid-gap: 0;
+  border: 0.0625rem solid #c2cad6;
+}
+.learn-english-wrapper ul li {
+  display: flex;
+}
+.learn-english-wrapper ul li span {
+  padding: 0.4375rem;
+}
+.learn-english-wrapper ul li span:nth-child(1) {
+  width: 50%;
+  font-style: italic;
+}
+.learn-english-wrapper ul li span:nth-child(2) {
+  width: 50%;
+  border-left: 0.0625rem solid #c2cad6;
+}
+.learn-english-wrapper ul li:not(:last-child) {
+  border-bottom: 0.0625rem solid #c2cad6;
+}
+.learn-english-wrapper ul li.learn-english-wrapper__title span {
+  background-color: #17696A;
+  color: #fff;
+  text-align: center;
+  font-style: normal;
 }
 
 br ~ img {
@@ -562,21 +600,21 @@ br ~ img {
   background-color: #df4848;
 }
 
-.learn-js__tabs {
+.learn__tabs {
   display: flex;
 }
-.learn-js__tabs .tabs__navigation {
+.learn__tabs .tabs__navigation {
   flex-direction: column;
   flex: 1 1 25%;
   background-color: #222;
 }
 @media (max-width: 47.99875em) {
-  .learn-js__tabs .tabs__navigation {
+  .learn__tabs .tabs__navigation {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
 }
-.learn-js__tabs .tabs__title {
+.learn__tabs .tabs__title {
   background-color: inherit;
   color: #fff;
   border-radius: 0;
@@ -584,12 +622,12 @@ br ~ img {
   padding: 0.9375rem 1.875rem;
   transition: background-color 0.3s ease-in-out 0s;
 }
-.learn-js__tabs .tabs__title._tab-active {
+.learn__tabs .tabs__title._tab-active {
   background-color: #383838;
   border: none;
   outline: none;
 }
-.learn-js__tabs .tabs__content {
+.learn__tabs .tabs__content {
   background-color: transparent;
   flex: 1 1 100%;
   padding: 0.625rem;
@@ -598,23 +636,23 @@ br ~ img {
   border-bottom-right-radius: 0.3125rem;
 }
 @media (max-width: 47.99875em) {
-  .learn-js__tabs {
+  .learn__tabs {
     flex-direction: column;
   }
 }
-.learn-js .accordion-secondary__content img {
+.learn .accordion-secondary__content img {
   max-width: 100%;
 }
-.learn-js .accordion-secondary__content > p {
+.learn .accordion-secondary__content > p {
   font-size: 0.875rem;
   line-height: 1.5;
 }
-.learn-js .accordion-secondary__content > p:not(:last-child) {
+.learn .accordion-secondary__content > p:not(:last-child) {
   margin-bottom: 0.9375rem;
   padding-bottom: 0.9375rem;
   position: relative;
 }
-.learn-js .accordion-secondary__content > p:not(:last-child)::before {
+.learn .accordion-secondary__content > p:not(:last-child)::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -624,16 +662,16 @@ br ~ img {
   transform: translateX(-50%);
   background-color: #c2cad6;
 }
-.learn-js .accordion-secondary__content > div {
+.learn .accordion-secondary__content > div {
   font-size: 0.875rem;
   line-height: 1.5;
 }
-.learn-js .accordion-secondary__content > div:not(:last-child) {
+.learn .accordion-secondary__content > div:not(:last-child) {
   margin-bottom: 0.9375rem;
   padding-bottom: 0.9375rem;
   position: relative;
 }
-.learn-js .accordion-secondary__content > div:not(:last-child)::before {
+.learn .accordion-secondary__content > div:not(:last-child)::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -643,18 +681,18 @@ br ~ img {
   transform: translateX(-50%);
   background-color: #c2cad6;
 }
-.learn-js .accordion-secondary__content div > p:not(:last-child) {
+.learn .accordion-secondary__content div > p:not(:last-child) {
   margin-bottom: 0.625rem;
 }
-.learn-js .accordion-secondary__content ol {
+.learn .accordion-secondary__content ol {
   padding-left: 1.25rem;
 }
-.learn-js .accordion-secondary__content ol li {
+.learn .accordion-secondary__content ol li {
   padding-left: 1.25rem;
 }
-.learn-js .accordion-secondary__content ol li::before {
+.learn .accordion-secondary__content ol li::before {
   content: counter(item) ".";
 }
-.learn-js .accordion-secondary__content ol li:not(:last-child) {
+.learn .accordion-secondary__content ol li:not(:last-child) {
   margin-bottom: 0.3125rem;
 }
