@@ -319,6 +319,7 @@ body.popup-show::after {
   border: 0.0625rem solid currentColor;
   padding: 0.0625rem 0.3125rem;
   margin-right: 0.3125rem;
+  font-weight: 700;
 }
 
 br ~ img {
@@ -331,6 +332,10 @@ br ~ img {
   font-size: 1.25rem;
   line-height: 1.5;
   font-weight: 700;
+}
+
+.tdu {
+  text-decoration: underline;
 }
 
 .grid-column-1 {

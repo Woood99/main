@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Обучение JavaScript</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220331225938">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<a href="index.html" class="header__logo">
+					sergeys-st
+				</a>
+				<nav class="nav">
+					<ul data-spollers data-one-spoller class="nav__list accordion-first__list">
+						<li class="nav__item accordion-first__item">
+							<button tabindex="-1" type="button" data-spoller class="accordion-first__title">Цели</button>
+							<div class="accordion-first__content">
+								<ul class="dropdown__list">
+									<li class="dropdown__item">
+										<a href="goals-2022.html" class="dropdown__link">2022 г.</a>
+									</li>
+									<li class="dropdown__item">
+										<a href="despite-everything.html" class="dropdown__link">#НеСмотряНиНаЧто</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="nav__item accordion-first__item">
+							<button tabindex="-1" type="button" data-spoller class="accordion-first__title">Обучение</button>
+							<div class="accordion-first__content">
+								<ul class="dropdown__list">
+									<li class="dropdown__item">
+										<a href="learning-javascript.html" class="dropdown__link">JavaScript</a>
+									</li>
+									<li class="dropdown__item">
+										<a href="learning-terminal.html" class="dropdown__link">Terminal</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<main class="page">
+			<section class="learn-js">
+				<div class="learn-js__container">
+					<h2 class="learn-js__title title">
+						Обучение Terminal
+					</h2>
+					<ul data-spollers data-one-spoller class="learn-js-tabs__list accordion-secondary__list list-reset">
+						<li class="learn-js-tabs__item accordion-secondary__item">
+							<button tabindex="-1" type="button" data-spoller class="accordion-secondary__title btn btn-reset">Структура консольных команд</button>
+							<div class="accordion-secondary__content">
+								<div>
+									<p>
+										После имени команды можно перечислять её
+										входные аргументы, разделяя их пробелами
+										<span class="tdu">(это похоже на передачу аргументов в функцию).</span>
+									</p>
+									<p>
+										Например, команда <span class="fw700">echo</span> выводит на экран строку,
+										которую ей передали в качестве
+										аргумента:
+										<br><picture><source srcset="img/terminal/image-1.webp" type="image/webp"><img src="img/terminal/image-1.png?_v=1648756778895" alt=""></picture>
+									</p>
+								</div>
+								<div>
+									<p>
+										Также для команд можно указывать дополнительные параметры (их называют ключами
+										или флагами).
+									</p>
+									<p>
+										Так, для команды <span class="fw700">echo</span> можно указать параметр
+										<span class="fw700">-n</span>, означающий, что после вывода
+										символов на экран курсор неперейдет на следующую строку:
+										<br><picture><source srcset="img/terminal/image-2.webp" type="image/webp"><img src="img/terminal/image-2.png?_v=1648756778895" alt=""></picture>
+									</p>
+								</div>
+								<div>
+									<p>
+										Итак, команды в терминале имеют следующую структуру:
+										<br><picture><source srcset="img/terminal/image-3.webp" type="image/webp"><img src="img/terminal/image-3.png?_v=1648756778895" alt=""></picture>
+									</p>
+									<p>
+										Квадратные скобки в этой записи означают, что ключи (или флаги) и входные
+										аргументы – необязательные
+										компоненты, некоторые команды могут их не поддерживать или игнорировать.
+									</p>
+								</div>
+							</div>
+						</li>
+						<li class="learn-js-tabs__item accordion-secondary__item">
+							<button tabindex="-1" type="button" data-spoller class="accordion-secondary__title btn btn-reset">Навигация по файловой системе</button>
+							<div class="accordion-secondary__content">
+								<div>
+									<h4 class="font-h4">Переход в другие папки</h4>
+									<p>
+										<span class="remember">
+											Запомнить!
+										</span>
+										<span class="fw700">cd</span> - Change Directory
+									</p>
+									<p>
+										Для перехода используется команда <span class="fw700">cd</span>, после которой
+										указывается путь к нужной папке.
+										<br>
+										Если целевая папка находится внутри текущей, то в качестве пути
+										достаточно указать ее имя:
+										<br><picture><source srcset="img/terminal/image-4.webp" type="image/webp"><img src="img/terminal/image-4.png?_v=1648756778895" alt=""></picture>
+									</p>
+									<p>
+										<span class="remember">
+											Запомнить!
+										</span>
+										При вводе названий папок не обязательно писать полные имена, можно пользоваться
+										автодополнением – достаточно набрать несколько первых символов и нажать клавишу
+										<span class="fw700">Tab</span>.
+									</p>
+									<p>
+										<span class="remember">
+											Запомнить!
+										</span>
+										<span class="fw700">ls</span> - List Directories
+									</p>
+									<p>
+										Для просмотра содержимого папки нужно ввести команду <span class="fw700">ls</span>
+									</p>
+								</div>
+								<div>
+									<h4 class="font-h4">Переход в родительский каталог</h4>
+									<p>
+										Что-бы перейти в родительскую папку, существует команда:
+										<span class="fw700">cd ..</span>
+									</p>
+									<p>
+										Можно подниматься сразу на несколько каталогов вверх по файловой системе:
+										<span class="fw700">cd ../../../</span>
+									</p>
+									<p>
+										<span class="fw700">Знак ~ (тильда)</span> – это
+										псевдоним, указывающий на домашний каталог пользователя.
+									</p>
+									<p>
+										<span class="remember">Запомнить!</span>
+										С помощью команды
+										<span class="fw700">
+											cd ~
+										</span>
+										- можно с любой директории перейти в домашний каталог пользователя.
+										<br><picture><source srcset="img/terminal/image-5.webp" type="image/webp"><img src="img/terminal/image-5.png?_v=1648756778895" alt=""></picture>
+									</p>
+								</div>
+							</div>
+						</li>
+						<li class="learn-js-tabs__item accordion-secondary__item">
+							<button tabindex="-1" type="button" data-spoller class="accordion-secondary__title btn btn-reset">Текущая директория</button>
+							<div class="accordion-secondary__content">
+								<div>
+									<p>
+										Находясь в любой папке, можно узнать полный путь к ней от корневого каталога.
+									</p>
+									<p>
+										Для этого используется команда
+										<span class="fw700">
+											pwd
+										</span>
+										(аббревиатура от Print Working Directory)
+										<br><picture><source srcset="img/terminal/image-6.webp" type="image/webp"><img src="img/terminal/image-6.png?_v=1648756778895" alt=""></picture>
+									</p>
+								</div>
+							</div>
+						</li>
+						<li class="learn-js-tabs__item accordion-secondary__item">
+							<button tabindex="-1" type="button" data-spoller class="accordion-secondary__title btn btn-reset">Создание папок</button>
+							<div class="accordion-secondary__content">
+								<p>
+									Создавать папки в консоли можно с помощью команды
+									<span class="fw700">mkdir</span> (Make Directory).
+									<br>
+									В качестве аргумента этой
+									команде передается имя папки, которую нужно создать:
+									<br><picture><source srcset="img/terminal/image-7.webp" type="image/webp"><img src="img/terminal/image-7.png?_v=1648756778895" alt=""></picture>
+								</p>
+								<p>
+									Можно создать сразу несколько папок, перечислив их имена друг за другом:
+									<br><picture><source srcset="img/terminal/image-8.webp" type="image/webp"><img src="img/terminal/image-8.png?_v=1648756778895" alt=""></picture>
+								</p>
+								<p>
+									Что-бы создать вложенную папку нужно сначало убедится что родительская папка
+									существует:
+									<br><picture><source srcset="img/terminal/image-9.webp" type="image/webp"><img src="img/terminal/image-9.png?_v=1648756778895" alt=""></picture>
+								</p>
+								<p>
+									У команды <span class="fw700">mkdir</span> есть ключ
+									<span class="fw700">-p</span>, позволяющий создавать сразу все нужные папки.
+									<br>
+									Например, следующая команда, создаст папку img, в img папку cover, а в cover
+									папку test:
+									<br><picture><source srcset="img/terminal/image-10.webp" type="image/webp"><img src="img/terminal/image-10.png?_v=1648756778895" alt=""></picture>
+								</p>
+								<p>
+									Одной командой <span class="fw700">mkdir</span>
+									можно создавать сразу несколько разных вложенных папок,
+									<br>
+									для этого их имена нужно перечислить через запятую в фигурных скобках (пробелов
+									между запятыми и названиями папок быть не должно). Например:
+									<br><picture><source srcset="img/terminal/image-11.webp" type="image/webp"><img src="img/terminal/image-11.png?_v=1648756778895" alt=""></picture>
+								</p>
+							</div>
+						</li>
+						<li class="learn-js-tabs__item accordion-secondary__item">
+							<button tabindex="-1" type="button" data-spoller class="accordion-secondary__title btn btn-reset">title</button>
+							<div class="accordion-secondary__content">
+
+							</div>
+						</li>
+						<li class="learn-js-tabs__item accordion-secondary__item">
+							<button tabindex="-1" type="button" data-spoller class="accordion-secondary__title btn btn-reset">title</button>
+							<div class="accordion-secondary__content">
+
+							</div>
+						</li>
+						<li class="learn-js-tabs__item accordion-secondary__item">
+							<button tabindex="-1" type="button" data-spoller class="accordion-secondary__title btn btn-reset">title</button>
+							<div class="accordion-secondary__content">
+
+							</div>
+						</li>
+						<li class="learn-js-tabs__item accordion-secondary__item">
+							<button tabindex="-1" type="button" data-spoller class="accordion-secondary__title btn btn-reset">title</button>
+							<div class="accordion-secondary__content">
+
+							</div>
+						</li>
+						<li class="learn-js-tabs__item accordion-secondary__item">
+							<button tabindex="-1" type="button" data-spoller class="accordion-secondary__title btn btn-reset">title</button>
+							<div class="accordion-secondary__content">
+
+							</div>
+						</li>
+						<li class="learn-js-tabs__item accordion-secondary__item">
+							<button tabindex="-1" type="button" data-spoller class="accordion-secondary__title btn btn-reset">title</button>
+							<div class="accordion-secondary__content">
+
+							</div>
+						</li>
+					</ul>
+
+				</div>
+			</section>
+
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+			</div>
+		</footer>
+	</div>
+	<div id="" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">Закрыть</button>
+				<div class="popup__text">
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<script src="js/app.min.js?_v=20220331225938"></script>
+</body>
+
+</html>
+
+
+
+<!-- <ul data-spollers data-one-spoller class="learn-js-tabs__list accordion-secondary__list list-reset">
+	<li class="learn-js-tabs__item accordion-secondary__item">
+		<button tabindex="-1" type="button" data-spoller
+			class="accordion-secondary__title btn btn-reset">title</button>
+		<div class="accordion-secondary__content">
+			content
+		</div>
+	</li>
+</ul> -->
