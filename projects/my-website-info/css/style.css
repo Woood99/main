@@ -684,8 +684,12 @@ br ~ img {
 .learn .accordion-secondary__content div > p:not(:last-child) {
   margin-bottom: 0.625rem;
 }
+.learn .accordion-secondary__content div > div:not(:last-child) {
+  margin-bottom: 0.625rem;
+}
 .learn .accordion-secondary__content ol {
   padding-left: 1.25rem;
+  margin-bottom: 0.625rem;
 }
 .learn .accordion-secondary__content ol li {
   padding-left: 1.25rem;
