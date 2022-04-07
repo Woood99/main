@@ -426,6 +426,18 @@ br ~ img {
   clip: rect(0 0 0 0);
 }
 
+.df {
+  display: flex;
+}
+
+.jcsb {
+  justify-content: space-between;
+}
+
+.g20 {
+  gap: 1.25rem;
+}
+
 .header {
   background-color: #222;
   color: #fff;
