@@ -200,6 +200,7 @@ body.popup-show::after {
   color: #fff;
   border-bottom-left-radius: 0.3125rem;
   border-bottom-right-radius: 0.3125rem;
+  z-index: 99;
 }
 
 .accordion-secondary__item {
@@ -391,12 +392,11 @@ body.popup-show::after {
   background-color: #17696A;
   color: #fff;
   text-align: center;
-  font-style: normal;
+  font-style: italic;
   padding: 0.4375rem;
 }
 .table-secondary li.table-secondary__title span:nth-child(1) {
   width: 50%;
-  font-style: italic;
 }
 .table-secondary li.table-secondary__title span:nth-child(2) {
   width: 50%;

@@ -5,7 +5,7 @@
 	<title>Обучение Git</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" href="css/style.min.css?_v=20220419232538">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220420225236">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -62,148 +62,113 @@
 					<h2 class="learn__title title">
 						Обучение Git
 					</h2>
-					<div data-tabs class="tabs learn__tabs learn-tabs">
-						<nav data-tabs-titles class="tabs__navigation">
-							<button type="submit" class="tabs__title _tab-active">Модуль 1</button>
-							<button type="submit" class="tabs__title">Модуль 2</button>
-							<button type="submit" class="tabs__title">Модуль 3</button>
-							<button type="submit" class="tabs__title">Модуль 4</button>
-							<button type="submit" class="tabs__title">Модуль 5</button>
-							<button type="submit" class="tabs__title">Модуль 6</button>
-							<button type="submit" class="tabs__title">Модуль 7</button>
-							<button type="submit" class="tabs__title">Модуль 8</button>
-							<button type="submit" class="tabs__title">Модуль 9</button>
-							<button type="submit" class="tabs__title">Модуль 10</button>
-						</nav>
-						<div data-tabs-body class="tabs__content">
-							<div class="tabs__body github-module-1">
-
-								<ul data-spollers data-one-spoller class="learn-tabs__list accordion-secondary__list list-reset">
-									<li class="learn-tabs__item accordion-secondary__item">
-										<button tabindex="-1" type="button" data-spoller class="accordion-secondary__title btn btn-reset">Что такое git?</button>
-										<div class="accordion-secondary__content">
-											<div>
-												<p>
-													<span class="fw700">git</span>
-													- это система контроля версий.
-												</p>
-												<span class="fw700">Более развёрнуто:</span>
-												<p>
-													<span class="fw700">git</span>
-													- хранилище, базы данных для истории разработки проекта, который
-													содержит все версии его файлов (текущих, и старых которые возможно
-													уже не актуальны).
-												</p>
-											</div>
-										</div>
-									</li>
-									<li class="learn-tabs__item accordion-secondary__item">
-										<button tabindex="-1" type="button" data-spoller class="accordion-secondary__title btn btn-reset">title</button>
-										<div class="accordion-secondary__content">
-											content
-										</div>
-									</li>
-									<li class="learn-tabs__item accordion-secondary__item">
-										<button tabindex="-1" type="button" data-spoller class="accordion-secondary__title btn btn-reset">title</button>
-										<div class="accordion-secondary__content">
-											content
-										</div>
-									</li>
-								</ul>
-
+					<ul data-spollers data-one-spoller class="learn-tabs__list accordion-secondary__list list-reset">
+						<li class="learn-tabs__item accordion-secondary__item">
+							<button tabindex="-1" type="button" data-spoller class="accordion-secondary__title btn btn-reset">Введение</button>
+							<div class="accordion-secondary__content">
+								<div>
+									<p>
+										<span class="fw700">Git</span>
+										– популярная система для хранения программного кода, относящаяся
+										к категории систем контроля
+										версий
+									</p>
+								</div>
+								<div>
+									<p>
+										<span class="remember">Запомнить!</span>
+										<span class="fw700">CVS (Control Version System)</span>
+										- Система контроля версий, позволняет
+										вернуться к определённой версии файла
+										или определить, кем и когда были сделаны изменения в файле.
+									</p>
+									<p>
+										<span class="remember">Запомнить!</span>
+										<span class="fw700">Репозиторий Git</span>
+										– хранилище для истории разработки проекта, которое
+										содержит все версии
+										используемых файлов.
+									</p>
+									<p>
+										<span class="remember">Запомнить!</span>
+										<span class="fw700">Коммит (commit)</span>
+										- фиксация состояния проекта в репозитории Git
+									</p>
+									<p>
+										<span class="remember">Запомнить!</span>
+										<span class="fw700">Индекс Git</span>
+										– список файлов, изменения в которых система Git
+										отслеживает. В индексе также
+										предварительно сохраняются все изменённые файлы, которые будут
+										зафиксированы в репозитории
+										при следующем коммите
+									</p>
+									<p>
+										<span class="remember">Запомнить!</span>
+										<span class="fw700">Ветка Git</span>
+										– изолированный независимый поток разработки, в котором
+										можно делать коммиты,
+										недоступные для других веток
+									</p>
+								</div>
+								<div>
+									<p>
+										Система контроля версий позволяет:
+									</p>
+									<ol>
+										<li>
+											Добавлять новый функционал.
+										</li>
+										<li>
+											Исправлять ошибки.
+										</li>
+										<li>
+											Работать в команде.
+										</li>
+									</ol>
+								</div>
 							</div>
-							<div class="tabs__body github-module-2">
-
-								<ul data-spollers data-one-spoller class="learn-tabs__list accordion-secondary__list list-reset">
-									<li class="learn-tabs__item accordion-secondary__item">
-										<button tabindex="-1" type="button" data-spoller class="accordion-secondary__title btn btn-reset">title</button>
-										<div class="accordion-secondary__content">
-											content
-										</div>
-									</li>
-									<li class="learn-tabs__item accordion-secondary__item">
-										<button tabindex="-1" type="button" data-spoller class="accordion-secondary__title btn btn-reset">title</button>
-										<div class="accordion-secondary__content">
-											content
-										</div>
-									</li>
-									<li class="learn-tabs__item accordion-secondary__item">
-										<button tabindex="-1" type="button" data-spoller class="accordion-secondary__title btn btn-reset">title</button>
-										<div class="accordion-secondary__content">
-											content
-										</div>
-									</li>
-								</ul>
-
+						</li>
+						<li class="learn-tabs__item accordion-secondary__item">
+							<button tabindex="-1" type="button" data-spoller class="accordion-secondary__title btn btn-reset">Установка Git</button>
+							<div class="accordion-secondary__content">
+								<div>
+									<p>
+										Первое, что нужно сделать после установки Git – указать свое имя и
+										адрес электронной почты.
+									</p>
+									<p>
+										Эту
+										информацию Git будет включать во все создаваемые вами коммиты и
+										именно по этим реквизитам
+										устанавливается авторство изменений в общем репозитории. Имя и адрес
+										электронной почты удобнее
+										сохранить в глобальные переменные с помощью следующих команд:
+									</p>
+									<p>
+										<picture><source srcset="img/git/image-1.webp" type="image/webp"><img src="img/git/image-1.png?_v=1650484356957" alt=""></picture>
+									</p>
+									<p>
+										<picture><source srcset="img/git/image-2.webp" type="image/webp"><img src="img/git/image-2.png?_v=1650484356957" alt=""></picture>
+									</p>
+								</div>
+								<div>
+									<p>
+										Посмотреть все установленные параметры Git можно с помощью ключа --list:
+									</p>
+									<p>
+										<picture><source srcset="img/git/image-3.webp" type="image/webp"><img src="img/git/image-3.png?_v=1650484356957" alt=""></picture>
+									</p>
+								</div>
 							</div>
-							<div class="tabs__body github-module-3">
-
-								<ul data-spollers data-one-spoller class="learn-tabs__list accordion-secondary__list list-reset">
-									<li class="learn-tabs__item accordion-secondary__item">
-										<button tabindex="-1" type="button" data-spoller class="accordion-secondary__title btn btn-reset">title</button>
-										<div class="accordion-secondary__content">
-											content
-										</div>
-									</li>
-									<li class="learn-tabs__item accordion-secondary__item">
-										<button tabindex="-1" type="button" data-spoller class="accordion-secondary__title btn btn-reset">title</button>
-										<div class="accordion-secondary__content">
-											content
-										</div>
-									</li>
-									<li class="learn-tabs__item accordion-secondary__item">
-										<button tabindex="-1" type="button" data-spoller class="accordion-secondary__title btn btn-reset">title</button>
-										<div class="accordion-secondary__content">
-											content
-										</div>
-									</li>
-								</ul>
-
+						</li>
+						<li class="learn-tabs__item accordion-secondary__item">
+							<button tabindex="-1" type="button" data-spoller class="accordion-secondary__title btn btn-reset">title</button>
+							<div class="accordion-secondary__content">
+								content
 							</div>
-							<div class="tabs__body github-module-4">
-
-								<ul data-spollers data-one-spoller class="learn-tabs__list accordion-secondary__list list-reset">
-									<li class="learn-tabs__item accordion-secondary__item">
-										<button tabindex="-1" type="button" data-spoller class="accordion-secondary__title btn btn-reset">title</button>
-										<div class="accordion-secondary__content">
-											content
-										</div>
-									</li>
-									<li class="learn-tabs__item accordion-secondary__item">
-										<button tabindex="-1" type="button" data-spoller class="accordion-secondary__title btn btn-reset">title</button>
-										<div class="accordion-secondary__content">
-											content
-										</div>
-									</li>
-									<li class="learn-tabs__item accordion-secondary__item">
-										<button tabindex="-1" type="button" data-spoller class="accordion-secondary__title btn btn-reset">title</button>
-										<div class="accordion-secondary__content">
-											content
-										</div>
-									</li>
-								</ul>
-
-							</div>
-							<div class="tabs__body github-module-5">
-
-							</div>
-							<div class="tabs__body github-module-6">
-
-							</div>
-							<div class="tabs__body github-module-7">
-
-							</div>
-							<div class="tabs__body github-module-8">
-
-							</div>
-							<div class="tabs__body github-module-9">
-
-							</div>
-							<div class="tabs__body github-module-10">
-
-							</div>
-						</div>
-					</div>
+						</li>
+					</ul>
 
 				</div>
 			</section>
@@ -227,7 +192,7 @@
 
 
 
-	<script src="js/app.min.js?_v=20220419232538"></script>
+	<script src="js/app.min.js?_v=20220420225236"></script>
 </body>
 
 </html>
