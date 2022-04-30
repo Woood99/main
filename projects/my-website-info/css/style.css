@@ -422,8 +422,20 @@ br ~ img {
   font-weight: 700;
 }
 
+.blue {
+  color: #367de7;
+}
+
+.gray {
+  color: #747474;
+}
+
 .tdu {
-  text-decoration: underline;
+  text-decoration: underline !important;
+}
+
+.fsi {
+  font-style: italic;
 }
 
 .grid-column-1 {
@@ -486,6 +498,19 @@ br ~ img {
 
 .g20 {
   gap: 1.25rem;
+}
+
+.input--primary {
+  background-color: #fff;
+  border: 0.0625rem solid #747474;
+  border-radius: 0.3125rem;
+  width: 12.5rem;
+  height: 1.875rem;
+  padding: 0 0.75rem;
+  outline: #222;
+}
+.input--primary::placeholder {
+  color: inherit;
 }
 
 .header {
