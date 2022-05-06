@@ -5,7 +5,7 @@
 	<title>Обучение Git</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" href="css/style.min.css?_v=20220430222943">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220506210702">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -146,10 +146,10 @@
 										сохранить в глобальные переменные с помощью следующих команд:
 									</p>
 									<p>
-										<picture><source srcset="img/git/image-1.webp" type="image/webp"><img src="img/git/image-1.png?_v=1651346983346" alt=""></picture>
+										<picture><source srcset="img/git/image-1.webp" type="image/webp"><img src="img/git/image-1.png?_v=1651860422925" alt=""></picture>
 									</p>
 									<p>
-										<picture><source srcset="img/git/image-2.webp" type="image/webp"><img src="img/git/image-2.png?_v=1651346983346" alt=""></picture>
+										<picture><source srcset="img/git/image-2.webp" type="image/webp"><img src="img/git/image-2.png?_v=1651860422925" alt=""></picture>
 									</p>
 								</div>
 								<div>
@@ -157,7 +157,7 @@
 										Посмотреть все установленные параметры Git можно с помощью git config --list:
 									</p>
 									<p>
-										<picture><source srcset="img/git/image-3.webp" type="image/webp"><img src="img/git/image-3.png?_v=1651346983346" alt=""></picture>
+										<picture><source srcset="img/git/image-3.webp" type="image/webp"><img src="img/git/image-3.png?_v=1651860422925" alt=""></picture>
 									</p>
 								</div>
 							</div>
@@ -173,12 +173,233 @@
 										репозиторий.
 									</p>
 									<p>
-										<picture><source srcset="img/git/image-4.webp" type="image/webp"><img src="img/git/image-4.png?_v=1651346983346" alt=""></picture>
+										<picture><source srcset="img/git/image-4.webp" type="image/webp"><img src="img/git/image-4.png?_v=1651860422925" alt=""></picture>
 									</p>
 									<p>
 										В результате в текущей папке будет создан каталог .git, в котором будут
 										находиться все необходимые для Git
 										файлы.
+									</p>
+								</div>
+							</div>
+						</li>
+						<li class="learn-tabs__item accordion-secondary__item">
+							<button tabindex="-1" type="button" data-spoller class="accordion-secondary__title btn btn-reset">Добавление файлов в индекс</button>
+							<div class="accordion-secondary__content">
+								<div>
+									<p>
+										<span class="fw700">git status</span>
+										- посмотреть статус файлов (которые были добавлены, изменены, удалены и т.д).
+									</p>
+									<p>
+										<picture><source srcset="img/git/image-5.webp" type="image/webp"><img src="img/git/image-5.png?_v=1651860422925" alt=""></picture>
+									</p>
+									<p>
+										<picture><source srcset="img/git/image-6.webp" type="image/webp"><img src="img/git/image-6.png?_v=1651860422925" alt=""></picture>
+									</p>
+									<p>
+										<span class="fw700">No commits yet</span>
+										- изменений в папке нет
+									</p>
+									<p>
+										<span class="fw700">Untracked files</span>
+										- Неотслеживаемые файлы (файлы за
+										которыми git ещё не следит)
+									</p>
+								</div>
+								<div>
+									<p>
+										Что-бы git начал наблюдать (следить), используется команда
+										<span class="fw700">git add</span>
+									</p>
+									<p>
+										<picture><source srcset="img/git/image-7.webp" type="image/webp"><img src="img/git/image-7.png?_v=1651860422925" alt=""></picture>
+									</p>
+									<p>
+										<picture><source srcset="img/git/image-8.webp" type="image/webp"><img src="img/git/image-8.png?_v=1651860422925" alt=""></picture>
+									</p>
+									<p>
+										Теперь git следит за файлом index.html
+									</p>
+								</div>
+								<div>
+									<p>
+										Создадим ещё файл style.css
+									</p>
+									<p>
+										<picture><source srcset="img/git/image-9.webp" type="image/webp"><img src="img/git/image-9.png?_v=1651860422925" alt=""></picture>
+									</p>
+									<p>
+										Теперь в папке 2 файла:
+										<br>За index.html - следим с помощью git
+										<br>За style.css - ещё не следим
+									</p>
+								</div>
+								<div>
+									<p>
+										Создадим ещё файл, и добавим все файлы что-бы git начал следить за ними.
+									</p>
+									<p>
+										<span class="fw700">git add .</span> - следить за всеми файлами внутри текущей
+										директории.
+									</p>
+									<p>
+										<picture><source srcset="img/git/image-10.webp" type="image/webp"><img src="img/git/image-10.png?_v=1651860422925" alt=""></picture>
+									</p>
+									<p>
+										Изменим в файле index.html текст, и введём git status
+									</p>
+									<p>
+										<picture><source srcset="img/git/image-11.webp" type="image/webp"><img src="img/git/image-11.png?_v=1651860422925" alt=""></picture>
+									</p>
+									<p>
+										Произошли изменения в файле index.html
+									</p>
+								</div>
+								<div>
+									<p>
+										Добавим ещё файл fourth.html
+									</p>
+									<p>
+										<picture><source srcset="img/git/image-12.webp" type="image/webp"><img src="img/git/image-12.png?_v=1651860422925" alt=""></picture>
+									</p>
+									<div>
+										<p>
+											Здесь мы видим три типа записей о файлах и изменениях в них:
+										</p>
+										<ol class="grid-column-1">
+											<li>
+												Файлы, находящиеся в индексе Git и готовые к включению в коммит (имена
+												файлов выделены зеленым цветом).
+											</li>
+											<li>
+												Файлы, за которыми Git следит, но информация об их изменениях не будет
+												добавлена в коммит, так
+												как последние версии этих файлов еще не добавлены в индекс (файлы не
+												проиндексированы).
+											</li>
+											<li>
+												Файлы, за изменениями которых Git не следит.
+											</li>
+										</ol>
+									</div>
+									<p>
+										Добавлять новые файлы, и добавлять изменения в файлах, можно командой
+										<span class="fw700">git add .</span>
+									</p>
+									<p>
+										<picture><source srcset="img/git/image-13.webp" type="image/webp"><img src="img/git/image-13.png?_v=1651860422925" alt=""></picture>
+									</p>
+								</div>
+							</div>
+						</li>
+						<li class="learn-tabs__item accordion-secondary__item">
+							<button tabindex="-1" type="button" data-spoller class="accordion-secondary__title btn btn-reset">Создание коммита</button>
+							<div class="accordion-secondary__content">
+								<div>
+									<p>
+										git add - как-бы создаёт снимок состояния системы, но не сохраняет его (в
+										репозиторий).
+									</p>
+									<p>
+										Что-бы этот снимок сохранить, и что-бы можно было отслеживать изменения в
+										проекте, или откатыватся к ним, нужно эти изменения закоммитить (сделать коммит
+										текущего слепка).
+									</p>
+								</div>
+								<div>
+									<p>
+										Создадим наш первый коммит командной git commit
+									</p>
+									<p>
+										Пишем сообщение для истории коммитов
+										(на скриншоте 'Первый тестовый коммит'):
+									</p>
+									<p>
+										<picture><source srcset="img/git/image-14.webp" type="image/webp"><img src="img/git/image-14.png?_v=1651860422925" alt=""></picture>
+									</p>
+									<p>
+										Сохраним командой :wq
+									</p>
+									<p>
+										<picture><source srcset="img/git/image-15.webp" type="image/webp"><img src="img/git/image-15.png?_v=1651860422925" alt=""></picture>
+									</p>
+								</div>
+								<div>
+									<p>
+										Теперь если написать git status, то выведется что изменений небыло
+									</p>
+									<p>
+										<picture><source srcset="img/git/image-16.webp" type="image/webp"><img src="img/git/image-16.png?_v=1651860422925" alt=""></picture>
+									</p>
+								</div>
+								<div>
+									<p>
+										Что-бы посмотреть историю коммитов существует команда git log
+									</p>
+									<p>
+										<picture><source srcset="img/git/image-17.webp" type="image/webp"><img src="img/git/image-17.png?_v=1651860422925" alt=""></picture>
+									</p>
+									<ol class="grid-column-1">
+										<li>
+											<span class="color-red fw700">commit 3dd34dfd80b...</span>
+											- хеш коммита (уникальный идентификатор коммита)
+										</li>
+										<li>
+											<span class="color-red fw700">(HEAD -> master)</span>
+											- в какой ветке был совершён коммит
+										</li>
+										<li>
+											<span class="color-red fw700">Author: Sergey Stryuchkov...</span>
+											- кем был совершён коммит
+										</li>
+										<li>
+											<span class="color-red fw700">Date: Fri May 6...</span>
+											- когда был совершён коммит
+										</li>
+										<li>
+											<span class="color-red fw700">Первый тестовый коммит:</span>
+											- сообщение коммита
+										</li>
+									</ol>
+								</div>
+								<div>
+									<p>
+										Изменим файл fourth.html и напишем команду git status (видно что был изменён
+										файл)
+									</p>
+									<p>
+										<picture><source srcset="img/git/image-18.webp" type="image/webp"><img src="img/git/image-18.png?_v=1651860422925" alt=""></picture>
+									</p>
+									<p>
+										Добавим эти изменения в коммит (git add .)
+									</p>
+									<p>
+										<picture><source srcset="img/git/image-19.webp" type="image/webp"><img src="img/git/image-19.png?_v=1651860422925" alt=""></picture>
+									</p>
+									<p>
+										Сделаем ещё 1 коммит с помощью команды git commit -m
+										(флаг -m укажет что передадим сообщения сразу)ю
+									</p>
+									<p>
+										<picture><source srcset="img/git/image-20.webp" type="image/webp"><img src="img/git/image-20.png?_v=1651860422925" alt=""></picture>
+									</p>
+									<p>
+										В git log теперь 2 коммита
+									</p>
+									<p>
+										<picture><source srcset="img/git/image-21.webp" type="image/webp"><img src="img/git/image-21.png?_v=1651860422925" alt=""></picture>
+									</p>
+								</div>
+								<div>
+									<p>
+										Что-бы посмотреть что изменилось в коммите существует команда git diff 'id commit'
+									</p>
+									<p>
+										<picture><source srcset="img/git/image-22.webp" type="image/webp"><img src="img/git/image-22.png?_v=1651860422925" alt=""></picture>
+									</p>
+									<p>
+										git diff без идентификатора - показывает что было изменено в текущем коммите
 									</p>
 								</div>
 							</div>
@@ -213,7 +434,7 @@
 
 
 
-	<script src="js/app.min.js?_v=20220430222943"></script>
+	<script src="js/app.min.js?_v=20220506210702"></script>
 </body>
 
 </html>
