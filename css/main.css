@@ -1,5 +1,16 @@
-.content__link{
+.content__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.content__item {
+    width: 100%;
+}
+
+.content__link {
     padding: 10px;
-    background-color: green;
+    background-color: orangered;
     color: #fff;
+    text-align: center;
 }
