@@ -572,6 +572,85 @@ br ~ img {
   color: inherit;
 }
 
+.h5-title {
+  margin-bottom: 1.25rem;
+  font-size: 1.125rem;
+  line-height: 1.4444444444;
+  font-weight: 600;
+  display: inline-block;
+  position: relative;
+}
+.h5-title::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 120%;
+  height: 2px;
+  background-color: #17696A;
+}
+
+.max-w-300 {
+  max-width: 300px;
+}
+
+.ul-arrows-right {
+  padding-left: 1.25rem;
+  margin-bottom: 1.25rem;
+  display: grid;
+}
+.ul-arrows-right li {
+  padding-left: 0.9375rem;
+  position: relative;
+}
+.ul-arrows-right li::before {
+  content: "";
+  background-image: url("../img/icons/arrow.svg");
+  background-size: cover;
+  width: 1rem;
+  height: 0.5625rem;
+  position: absolute;
+  top: 0.375rem;
+  transform: rotate(90deg);
+  left: 0;
+}
+
+pre {
+  background-color: #D1D7E0;
+  color: #313130;
+  font-size: 1rem;
+  line-height: 1.375;
+  font-weight: 400;
+  padding: 15px 25px;
+  margin-bottom: 20px;
+  overflow: auto;
+}
+pre .blue {
+  color: #07a;
+}
+pre .green {
+  color: #690;
+}
+@media (max-width: 47.99875em) {
+  pre {
+    font-size: 0.875rem;
+  }
+}
+
+.code-bg_light-blue {
+  background-color: #D1D7E0;
+  color: #313130;
+  padding: 5px 10px;
+  font-size: 1rem;
+  line-height: 1.375;
+  display: inline-block;
+}
+@media (max-width: 47.99875em) {
+  .code-bg_light-blue {
+    font-size: 0.875rem;
+  }
+}
+
 .header {
   background-color: #222;
   color: #fff;
