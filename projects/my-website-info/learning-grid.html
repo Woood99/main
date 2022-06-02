@@ -5,7 +5,7 @@
 	<title>Обучение Grid</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" href="css/style.min.css?_v=20220601214657">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220602160913">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -88,7 +88,7 @@
 								<div>
 									<h5 class="h5-title">Колонка и строка</h5>
 									<p class="max-w-300">
-										<picture><source srcset="img/grid/image-1.webp" type="image/webp"><img src="img/grid/image-1.jpg?_v=1654109217170" alt="img-1"></picture>
+										<picture><source srcset="img/grid/image-1.webp" type="image/webp"><img src="img/grid/image-1.jpg?_v=1654175353565" alt="img-1"></picture>
 									</p>
 								</div>
 								<div>
@@ -102,7 +102,7 @@
 										</li>
 									</ul>
 									<p class="max-w-300">
-										<picture><source srcset="img/grid/image-2.webp" type="image/webp"><img src="img/grid/image-2.jpg?_v=1654109217170" alt="img-2"></picture>
+										<picture><source srcset="img/grid/image-2.webp" type="image/webp"><img src="img/grid/image-2.jpg?_v=1654175353565" alt="img-2"></picture>
 									</p>
 								</div>
 								<div>
@@ -116,7 +116,7 @@
 										</li>
 									</ul>
 									<p class="max-w-300">
-										<picture><source srcset="img/grid/image-3.webp" type="image/webp"><img src="img/grid/image-3.jpg?_v=1654109217170" alt="img-3"></picture>
+										<picture><source srcset="img/grid/image-3.webp" type="image/webp"><img src="img/grid/image-3.jpg?_v=1654175353565" alt="img-3"></picture>
 									</p>
 								</div>
 								<div>
@@ -130,7 +130,7 @@
 										</li>
 									</ul>
 									<p class="max-w-300">
-										<picture><source srcset="img/grid/image-4.webp" type="image/webp"><img src="img/grid/image-4.jpg?_v=1654109217170" alt="img-4"></picture>
+										<picture><source srcset="img/grid/image-4.webp" type="image/webp"><img src="img/grid/image-4.jpg?_v=1654175353565" alt="img-4"></picture>
 									</p>
 								</div>
 								<div>
@@ -147,7 +147,7 @@
 										</li>
 									</ul>
 									<p class="max-w-300">
-										<picture><source srcset="img/grid/image-5.webp" type="image/webp"><img src="img/grid/image-5.jpg?_v=1654109217170" alt="img-5"></picture>
+										<picture><source srcset="img/grid/image-5.webp" type="image/webp"><img src="img/grid/image-5.jpg?_v=1654175353565" alt="img-5"></picture>
 									</p>
 								</div>
 								<div>
@@ -156,7 +156,7 @@
 										<li>Расстояние между ячейками</li>
 									</ul>
 									<p class="max-w-300">
-										<picture><source srcset="img/grid/image-6.webp" type="image/webp"><img src="img/grid/image-6.jpg?_v=1654109217170" alt="img-6"></picture>
+										<picture><source srcset="img/grid/image-6.webp" type="image/webp"><img src="img/grid/image-6.jpg?_v=1654175353565" alt="img-6"></picture>
 									</p>
 								</div>
 							</div>
@@ -356,6 +356,11 @@
 										ниже в коде
 										- более приоритетнее (z-index).
 									</p>
+									<p>
+										<span class="remember">Запомнить!</span>
+										Ячейку можно расстянуть на весь ряд, для этого нужно в качестве параметра end
+										указать -1.
+									</p>
 								</div>
 								<div>
 									<p>
@@ -375,6 +380,22 @@
 										то элемент всё равно становится на эти линии и создаёт столько grid-track,
 										сколько ему необходимо
 									</p>
+								</div>
+								<div>
+									<h4 class="font-h4">span</h4>
+									<p>
+										<span class="fw700">span</span>
+										- растянуть.
+										Текущий элемент будет растягиваться на указанное число рядов/колонок
+									</p>
+									<pre><code><span class="green">.item-5</span> {                                                                                
+    grid-column: <span class="blue">1 / 2 span</span>;   откуда колонка будет начинатся / на сколько будет увеличиваться
+    grid-row: <span class="blue">1 / span 2</span>;      откуда строка будет начинатся / на сколько будет увеличиваться
+}</code></pre>
+									<pre><code><span class="green">.item-5</span> {                                                                                
+    grid-column: <span class="blue">span 3</span>;   будет увеличина на 3, с места где он сейчас находится
+    grid-row: <span class="blue">span 2</span>;      будет увеличина на 2, с места где он сейчас находится
+}</code></pre>
 								</div>
 							</div>
 						</li>
@@ -912,10 +933,98 @@
 						</li>
 						<li class="learn-tabs__item accordion-secondary__item">
 							<button tabindex="-1" type="button" data-spoller class="accordion-secondary__title btn btn-reset">
-								title
+								Grid - Автоперенос контента: auto-fill и auto-fit
 							</button>
 							<div class="accordion-secondary__content">
-								content
+								<div>
+									<p>
+										Избежать горизонтальный скролл и сделать, чтобы элементы переносились на новую
+										строку с нужной шириной колонок помогут функции minmax() и repeat() и свойства
+										auto-fill и auto-fit
+									</p>
+									<p>
+										<span class="code-bg_light-blue">
+											auto-fill
+										</span>
+										стремится поместить в строку как можно больше ячеек.
+										Это свойство предпочитает использовать минимальную ширину для ячейки, даже если
+										есть свободное место.
+									</p>
+									<p>
+										<span class="code-bg_light-blue">
+											auto-fit
+										</span>
+										стремится занять всё доступное пространство в строке и подстраивает ширину ячеек
+										под это пространство.
+									</p>
+									<p>
+										В обоих случаях происходит перенос ячеек на новую строчку, количество колонок
+										подстраивается под размер сетки.
+										<br>
+										Но при наличии свободного пространства auto-fill использует минимальную ширину
+										колонки.
+										<br>
+										А auto-fit подстраивает ширину под свободное место.
+										<br>
+										Такое поведение мы
+										наблюдаем, когда свободного пространства много и очевидна разница в работе этих
+										свойств. В том случае, если пространства недостаточно и происходит перенос на
+										новую строку, разница в работе свойств становится незаметной.
+									</p>
+									<a href="learning-grid_example.html" style="color: #367de7; text-decoration: underline;" onmouseover="this.style.color='#df4848';" onmouseout="this.style.color='#367de7';">Страница с auto-fill и auto-fit</a>
+								</div>
+								<div>
+									<h4 class="font-h4">
+										auto-fill
+									</h4>
+									<div class="ligth-blue-bg action-buttons" data-action-buttons-type="container" data-action-buttons="gridTemplateColumns">
+										<pre><code><span class="green">.box</span> {
+    display: <span class="blue">grid</span>;
+    grid-gap: <span class="blue">25px</span>;
+}</code></pre>
+										<div class="action-buttons__btns">
+											<button class="action-buttons__btn" data-action-buttons="default">repeat(auto-fill, 200px)</button>
+											<button class="action-buttons__btn">repeat(auto-fill,
+												minmax(70px,1fr))</button>
+										</div>
+										<div class="action-buttons__result" style="display: grid; grid-gap: 25px;">
+											<div style="background: #1abc9c">item-1</div>
+											<div style="background: #2ecc71">item-2</div>
+											<div style="background: #3498db">item-3</div>
+											<div style="background: #9b59b6">item-4</div>
+											<div style="background: #34495e">item-5</div>
+											<div style="background: #f1c40f">item-6</div>
+											<div style="background: #e67e22">item-7</div>
+											<div style="background: #e74c3c">item-8</div>
+										</div>
+									</div>
+								</div>
+								<div>
+									<h4 class="font-h4">
+										auto-fit
+									</h4>
+									<div class="ligth-blue-bg action-buttons" data-action-buttons-type="container" data-action-buttons="gridTemplateColumns">
+										<pre><code><span class="green">.box</span> {
+    display: <span class="blue">grid</span>;
+    grid-gap: <span class="blue">25px</span>;
+}</code></pre>
+										<div class="action-buttons__btns">
+											<button class="action-buttons__btn" data-action-buttons="default">repeat(auto-fit, 200px)</button>
+											<button class="action-buttons__btn">repeat(auto-fit,
+												minmax(70px,1fr))</button>
+										</div>
+										<div class="action-buttons__result" style="display: grid; grid-gap: 25px;">
+											<div style="background: #1abc9c">item-1</div>
+											<div style="background: #2ecc71">item-2</div>
+											<div style="background: #3498db">item-3</div>
+											<div style="background: #9b59b6">item-4</div>
+											<div style="background: #34495e">item-5</div>
+											<div style="background: #f1c40f">item-6</div>
+											<div style="background: #e67e22">item-7</div>
+											<div style="background: #e74c3c">item-8</div>
+										</div>
+									</div>
+								</div>
 							</div>
 						</li>
 					</ul>
@@ -942,7 +1051,7 @@
 
 
 
-	<script src="js/app.min.js?_v=20220601214657"></script>
+	<script src="js/app.min.js?_v=20220602160913"></script>
 </body>
 
 </html>

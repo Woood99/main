@@ -772,7 +772,7 @@ pre .green {
 }
 @media (max-width: 47.99875em) {
   .action-buttons__result {
-    grid-column-gap: 10px !important;
+    grid-gap: 10px !important;
   }
 }
 .action-buttons__result > div {
