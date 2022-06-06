@@ -13,6 +13,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_download_app__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_components_download_app__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _components_questionnaire_form__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/questionnaire-form */ "./src/js/components/questionnaire-form.js");
 /* harmony import */ var _components_questionnaire_form__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_components_questionnaire_form__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _components_become_partner__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/become-partner */ "./src/js/components/become-partner.js");
+/* harmony import */ var _components_become_partner__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_components_become_partner__WEBPACK_IMPORTED_MODULE_2__);
+
 
 
 
@@ -154,7 +157,62 @@ var questionnaireRules = [{
     errorMessage: 'Email указан некорректно!'
   }]
 }];
-(0,_functions_validate_forms__WEBPACK_IMPORTED_MODULE_5__.validateForms)('.questionnaire-form', questionnaireRules); // ========================================================================================
+(0,_functions_validate_forms__WEBPACK_IMPORTED_MODULE_5__.validateForms)('.questionnaire-form', questionnaireRules, 'afterSend');
+var backCallRules = [{
+  ruleSelector: '#back-call-form__name',
+  rules: [{
+    rule: 'minLength',
+    value: 3,
+    errorMessage: 'Введите 3 и более символов'
+  }, {
+    rule: 'required',
+    value: true,
+    errorMessage: 'Введите своё имя!'
+  }]
+}, {
+  ruleSelector: '#back-call-form__tel',
+  tel: true,
+  telError: 'Введите корректный телефон',
+  rules: [{
+    rule: 'required',
+    value: true,
+    errorMessage: 'Заполните телефон!'
+  }]
+}];
+(0,_functions_validate_forms__WEBPACK_IMPORTED_MODULE_5__.validateForms)('.back-call-form', backCallRules, 'afterSend');
+var writeToUsRules = [{
+  ruleSelector: '#write-to-us-form__name',
+  rules: [{
+    rule: 'minLength',
+    value: 3,
+    errorMessage: 'Введите 3 и более символов'
+  }, {
+    rule: 'required',
+    value: true,
+    errorMessage: 'Введите своё имя!'
+  }]
+}, {
+  ruleSelector: '#write-to-us-form__email',
+  rules: [{
+    rule: 'required',
+    errorMessage: 'Введите свой email'
+  }, {
+    rule: 'email',
+    errorMessage: 'Email указан некорректно!'
+  }]
+}, {
+  ruleSelector: '#write-to-us-form__text',
+  rules: [{
+    rule: 'minLength',
+    value: 10,
+    errorMessage: 'Введите минимум 10 '
+  }, {
+    rule: 'required',
+    value: true,
+    errorMessage: 'Напишите сообщение!'
+  }]
+}];
+(0,_functions_validate_forms__WEBPACK_IMPORTED_MODULE_5__.validateForms)('.write-to-us-form', writeToUsRules, 'afterSend'); // ========================================================================================
 // Подключение spollers
 // import * as spollersFunc from "./functions/spollers";
 // spollersFunc.spollers();
@@ -206,6 +264,25 @@ __webpack_require__.r(__webpack_exports__);
   htmlEl: document.documentElement,
   bodyEl: document.body
 });
+
+/***/ }),
+
+/***/ "./src/js/components/become-partner.js":
+/*!*********************************************!*\
+  !*** ./src/js/components/become-partner.js ***!
+  \*********************************************/
+/***/ (() => {
+
+if (document.querySelector('.become-partner-plans')) {
+  var becomePartnerPlansList = document.querySelectorAll('.become-partner-plans__list');
+  becomePartnerPlansList.forEach(function (el) {
+    var becomePartnerPlansNumber = el.querySelectorAll('.become-partner-plans__number');
+
+    for (var number = 0; number < becomePartnerPlansNumber.length; number++) {
+      becomePartnerPlansNumber[number].textContent = number + 1;
+    }
+  });
+}
 
 /***/ }),
 
@@ -518,7 +595,13 @@ var validateForms = function validateForms(selector, rules, afterSend) {
     }
   }
 
-  var validation = new just_validate__WEBPACK_IMPORTED_MODULE_0__["default"](selector);
+  var validation = new just_validate__WEBPACK_IMPORTED_MODULE_0__["default"](selector, {
+    errorLabelStyle: {
+      fontSize: '14px',
+      lineHeight: '20px',
+      color: '#325f93'
+    }
+  });
 
   var _iterator2 = _createForOfIteratorHelper(rules),
       _step2;
