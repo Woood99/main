@@ -783,6 +783,65 @@ pre .green {
   text-align: center;
 }
 
+.learn-transition--test1 {
+  background-color: #19a051;
+  color: #fff;
+  padding: 15px 60px;
+  border-radius: 10px;
+  font-size: 1rem;
+  line-height: 1;
+}
+.learn-transition--test1-one {
+  transition: background-color 0.5s ease-in-out;
+}
+.learn-transition--test1-one:hover {
+  background-color: #367de7;
+}
+.learn-transition--test1-two:hover {
+  transition: background-color 0.5s ease-in-out;
+  background-color: #367de7;
+}
+.learn-transition--test1-three {
+  transition: background-color 3s ease-in-out;
+}
+.learn-transition--test1-three:hover {
+  background-color: #367de7;
+  transition: background-color 0.3s ease-in-out;
+}
+.learn-transition--test1-four {
+  transition: background-color 0.3s ease-in-out;
+}
+.learn-transition--test1-four:hover {
+  background-color: #367de7;
+  transition: background-color 3s ease-in-out;
+}
+
+.map-wrapper {
+  width: 500px;
+  height: 500px;
+  background-color: green;
+}
+
+#map-wrapper2 [class*=copyrights-pane] {
+  display: none !important;
+}
+
+#map-wrapper3 [class*=ground-pane] {
+  filter: grayscale(1);
+}
+
+#map-wrapper7 .balloon__addres {
+  color: red;
+}
+#map-wrapper7 .balloon__contacts {
+  color: blue;
+  font-size: 24px;
+}
+#map-wrapper7 [class*=balloon__close-button] {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
 .header {
   background-color: #222;
   color: #fff;

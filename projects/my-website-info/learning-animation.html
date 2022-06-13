@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Обучение Animation</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220613163819">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<a href="index.html" class="header__logo">
+					sergeys-st
+				</a>
+				<nav class="nav">
+					<ul data-spollers data-one-spoller class="nav__list accordion-first__list">
+						<li class="nav__item accordion-first__item">
+							<button tabindex="-1" type="button" data-spoller class="accordion-first__title">Цели</button>
+							<div class="accordion-first__content">
+								<ul class="dropdown__list">
+									<li class="dropdown__item">
+										<a href="goals-2022.html" class="dropdown__link">2022 г.</a>
+									</li>
+									<li class="dropdown__item">
+										<a href="despite-everything.html" class="dropdown__link">#НеСмотряНиНаЧто</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="nav__item accordion-first__item">
+							<button tabindex="-1" type="button" data-spoller class="accordion-first__title">Обучение</button>
+							<div class="accordion-first__content">
+								<ul class="dropdown__list">
+									<li class="dropdown__item">
+										<a href="learning-javascript.html" class="dropdown__link">JavaScript</a>
+									</li>
+									<li class="dropdown__item">
+										<a href="learning-git.html" class="dropdown__link">Git</a>
+									</li>
+									<li class="dropdown__item">
+										<a href="learning-terminal.html" class="dropdown__link">Terminal</a>
+									</li>
+									<li class="dropdown__item">
+										<a href="learning-grid.html" class="dropdown__link">CSS Grid</a>
+									</li>
+									<li class="dropdown__item">
+										<a href="learning-animation.html" class="dropdown__link">Animation</a>
+									</li>
+									<li class="dropdown__item">
+										<a href="learning-other.html" class="dropdown__link">HTML/CSS/JS</a>
+									</li>
+									<li class="dropdown__item">
+										<a href="learning-english.html" class="dropdown__link">English</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<main class="page">
+			<section class="learn">
+				<div class="learn__container">
+					<h2 class="learn__title title">
+						Обучение Animation
+					</h2>
+					<ul data-spollers data-one-spoller class="learn-tabs__list accordion-secondary__list list-reset">
+						<li class="learn-tabs__item accordion-secondary__item">
+							<button tabindex="-1" type="button" data-spoller class="accordion-secondary__title btn btn-reset">
+								CSS transition
+							</button>
+							<div class="accordion-secondary__content">
+								<div>
+									<p>
+										<a href="https://fls.guru/csstransition.html" style="color: #367de7; text-decoration: underline; font-size: 20px;" onmouseover="this.style.color='#df4848';" onmouseout="this.style.color='#367de7';">
+											CSS переходы (CSS transition) // «Фрилансер по жизни»
+										</a>
+									</p>
+									<p>
+										<span class="remember">Запомнить!</span>
+										Использование transition только на hover - при наведении работает, но если
+										убрать
+										оно работать не будет.
+									</p>
+									<ul class="table-secondary">
+										<li class="table-secondary__title">
+											<span>transition на button</span>
+											<span>transition на hover</span>
+										</li>
+										<li>
+											<div>
+												<button type="submit" class="learn-transition--test1 learn-transition--test1-one">
+													Кнопка
+												</button>
+												<pre style="text-align: left; margin-top: 15px; font-style: normal;"><code><span class="green">button</span> {
+    background-color: <span class="blue">green</span>;
+    color: <span class="blue">white</span>;
+    padding: <span class="blue">15px 60px</span>;
+    border-radius: <span class="blue">10px</span>;
+    font-size: <span class="blue">16px</span>;
+    line-height: <span class="blue">100%</span>;
+    transition: <span class="blue">background-color 0.5s ease-in-out</span>;
+}
+
+<span class="green">button:hover</span>{
+    background-color: <span class="blue">blue</span>;
+}</code></pre>
+											</div>
+											<div>
+												<button type="submit" class="learn-transition--test1 learn-transition--test1-two">
+													Кнопка
+												</button>
+												<pre style="text-align: left; margin-top: 15px; font-style: normal;"><code><span class="green">button</span> {
+    background-color: <span class="blue">green</span>;
+    color: <span class="blue">white</span>;
+    padding: <span class="blue">15px 60px</span>;
+    border-radius: <span class="blue">10px</span>;
+    font-size: <span class="blue">16px</span>;
+    line-height: <span class="blue">100%</span>;
+}
+
+<span class="green">button:hover</span>{
+    transition: <span class="blue">background-color 0.5s ease-in-out</span>;
+    background-color: <span class="blue">blue</span>;
+}</code></pre>
+											</div>
+										</li>
+									</ul>
+									<ul class="table-secondary">
+										<li class="table-secondary__title">
+											<span>button:3s // hover:0.3s</span>
+											<span>button:0.3s // hover:3s</span>
+										</li>
+										<li>
+											<div>
+												<button type="submit" class="learn-transition--test1 learn-transition--test1-three">
+													Кнопка
+												</button>
+												<pre style="text-align: left; margin-top: 15px; font-style: normal;"><code><span class="green">button</span> {
+    background-color: <span class="blue">green</span>;
+    color: <span class="blue">white</span>;
+    padding: <span class="blue">15px 60px</span>;
+    border-radius: <span class="blue">10px</span>;
+    font-size: <span class="blue">16px</span>;
+    line-height: <span class="blue">100%</span>;
+    transition: <span class="blue">background-color 3s ease-in-out</span>;
+}
+
+<span class="green">button:hover</span>{
+    transition: <span class="blue">background-color 0.3s ease-in-out</span>;
+    background-color: <span class="blue">blue</span>;
+}</code></pre>
+											</div>
+											<div>
+												<button type="submit" class="learn-transition--test1 learn-transition--test1-four">
+													Кнопка
+												</button>
+												<pre style="text-align: left; margin-top: 15px; font-style: normal;"><code><span class="green">button</span> {
+    background-color: <span class="blue">green</span>;
+    color: <span class="blue">white</span>;
+    padding: <span class="blue">15px 60px</span>;
+    border-radius: <span class="blue">10px</span>;
+    font-size: <span class="blue">16px</span>;
+    line-height: <span class="blue">100%</span>;
+    transition: <span class="blue">background-color 0.3s ease-in-out</span>;
+}
+
+<span class="green">button:hover</span>{
+    transition: <span class="blue">background-color 3s ease-in-out</span>;
+    background-color: <span class="blue">blue</span>;
+}</code></pre>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="learn-tabs__item accordion-secondary__item">
+							<button tabindex="-1" type="button" data-spoller class="accordion-secondary__title btn btn-reset">
+								CSS animation
+							</button>
+							<div class="accordion-secondary__content">
+								<div>
+									<a href="https://fls.guru/cssanimation.html" style="color: #367de7; text-decoration: underline; font-size: 20px;" onmouseover="this.style.color='#df4848';" onmouseout="this.style.color='#367de7';">
+										CSS анимация (CSS animation & @keyframes) // «Фрилансер по жизни»
+									</a>
+								</div>
+							</div>
+						</li>
+					</ul>
+
+				</div>
+			</section>
+
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+			</div>
+		</footer>
+	</div>
+	<div id="" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">Закрыть</button>
+				<div class="popup__text">
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<script src="js/app.min.js?_v=20220613163819"></script>
+</body>
+
+</html>
+
+
+
+<!-- <ul data-spollers data-one-spoller class="learn-tabs__list accordion-secondary__list list-reset">
+	<li class="learn-tabs__item accordion-secondary__item">
+		<button tabindex="-1" type="button" data-spoller
+			class="accordion-secondary__title btn btn-reset">title</button>
+		<div class="accordion-secondary__content">
+			content
+		</div>
+	</li>
+</ul> -->
