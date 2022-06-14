@@ -7,9 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="theme-color" content="#111111">
     <title>Главная</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="fonts/robotoRegular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/robotoBold.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/main.css">
     <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"></script>
@@ -1393,35 +1392,22 @@
             <h2 class="answers-questions__title title-2">
                 Вопрос-ответ
             </h2>
-            <div data-spollers class="spollers">
-                <div class="spollers__item">
-                    <button type="button" data-spoller class="spollers__title">Сколько по времени занимает изготовление пластиковых окон?</button>
-                    <div class="spollers__body">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam, cum perspiciatis perferendis omnis cumque unde voluptate totam sint dolore quae amet aliquid earum beatae labore, consectetur modi ipsa dolorum, id necessitatibus ipsum dignissimos quia corrupti? Tempore, expedita. Impedit incidunt a, ratione molestias at delectus eaque temporibus necessitatibus sapiente cum asperiores placeat, sed inventore reiciendis quas fugit cumque illo, voluptas voluptatem architecto eius non? Magni necessitatibus culpa dolorum ipsam doloribus, possimus praesentium excepturi facilis error minima provident nihil corporis eaque ad hic laborum ex asperiores voluptas est deserunt, fugiat non dolores eligendi illo. Veritatis fuga nemo maxime harum quibusdam, beatae blanditiis.
-                    </div>
-                </div>
-                <div class="spollers__item">
-                    <button type="button" data-spoller class="spollers__title">Заголовок спойлера</button>
-                    <div class="spollers__body">Контент спойлера</div>
-                </div>
-                <div class="spollers__item">
-                    <button type="button" data-spoller class="spollers__title">Заголовок спойлера</button>
-                    <div class="spollers__body">Контент спойлера</div>
-                </div>
-            </div>
-            <!-- <ul data-spollers data-one-spoller class="spollers__list list-reset answers-questions__spollers">
+
+            <ul data-spollers data-one-spoller class="spollers__list list-reset answers-questions__spollers">
                 <li class="spollers__item">
                     <button tabindex="-1" type="button" data-spoller class="spollers__title">
                         <span>
-                            Сколько по времени занимает изготовление пластиковых окон?
+                            Сколько по времени занимает изготовление пластиковых окон?
                         </span>
                         <svg>
                             <use xlink:href="img/sprite.svg#arrow-down"></use>
                         </svg>
                     </button>
                     <div class="spollers__content">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit a voluptate laboriosam cum
-                        possimus quo similique debitis consequatur qui porro?
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit a voluptate laboriosam cum
+                            possimus quo similique debitis consequatur qui porro?
+                        </p>
                     </div>
                 </li>
                 <li class="spollers__item">
@@ -1434,54 +1420,63 @@
                         </svg>
                     </button>
                     <div class="spollers__content">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit velit, rem omnis magnam, minus
-                        sapiente, beatae ullam blanditiis quas recusandae ex ad temporibus explicabo enim! Maiores
-                        eveniet magnam nostrum quibusdam.
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit velit, rem omnis magnam, minus
+                            sapiente, beatae ullam blanditiis quas recusandae ex ad temporibus explicabo enim! Maiores
+                            eveniet magnam nostrum quibusdam.
+                        </p>
                     </div>
                 </li>
                 <li class="spollers__item">
                     <button tabindex="-1" type="button" data-spoller class="spollers__title">
                         <span>
-                            Где я могу посмотреть образцы?
+                            Где я могу посмотреть образцы?
                         </span>
                         <svg>
                             <use xlink:href="img/sprite.svg#arrow-down"></use>
                         </svg>
                     </button>
                     <div class="spollers__content">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et sit odit nemo, consequatur ipsa
-                        eius ex. Obcaecati sed quisquam cumque architecto officia rem odit totam hic eaque nam
-                        laboriosam harum asperiores eum quas ducimus doloribus rerum corrupti, aliquam quibusdam impedit
-                        provident ipsam deleniti fugiat. Provident ducimus accusamus rem perferendis! Dolor.
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et sit odit nemo, consequatur ipsa
+                            eius ex. Obcaecati sed quisquam cumque architecto officia rem odit totam hic eaque nam
+                            laboriosam harum asperiores eum quas ducimus doloribus rerum corrupti, aliquam quibusdam
+                            impedit
+                            provident ipsam deleniti fugiat. Provident ducimus accusamus rem perferendis! Dolor.
+                        </p>
                     </div>
                 </li>
                 <li class="spollers__item">
                     <button tabindex="-1" type="button" data-spoller class="spollers__title">
                         <span>
-                            Зачем вызывать замерщика? Я могу дать размеры
+                            Зачем вызывать замерщика? Я могу дать размеры
                         </span>
                         <svg>
                             <use xlink:href="img/sprite.svg#arrow-down"></use>
                         </svg>
                     </button>
                     <div class="spollers__content">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit a voluptate laboriosam cum
-                        possimus quo similique debitis consequatur qui porro?
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit a voluptate laboriosam cum
+                            possimus quo similique debitis consequatur qui porro?
+                        </p>
                     </div>
                 </li>
                 <li class="spollers__item">
                     <button tabindex="-1" type="button" data-spoller class="spollers__title">
                         <span>
-                            Хотелось бы отделать балкон. Поможете?
+                            Хотелось бы отделать балкон. Поможете?
                         </span>
                         <svg>
                             <use xlink:href="img/sprite.svg#arrow-down"></use>
                         </svg>
                     </button>
                     <div class="spollers__content">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit velit, rem omnis magnam, minus
-                        sapiente, beatae ullam blanditiis quas recusandae ex ad temporibus explicabo enim! Maiores
-                        eveniet magnam nostrum quibusdam.
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit velit, rem omnis magnam, minus
+                            sapiente, beatae ullam blanditiis quas recusandae ex ad temporibus explicabo enim! Maiores
+                            eveniet magnam nostrum quibusdam.
+                        </p>
                     </div>
                 </li>
                 <li class="spollers__item">
@@ -1494,10 +1489,12 @@
                         </svg>
                     </button>
                     <div class="spollers__content">
-                        Нет, команда мастеров все сами аккуратно доставят и внесут.
+                        <p>
+                            Нет, команда мастеров все сами аккуратно доставят и внесут.
+                        </p>
                     </div>
                 </li>
-            </ul> -->
+            </ul>
         </div>
     </div>
 </section>
