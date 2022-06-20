@@ -842,6 +842,27 @@ pre .green {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
+.tabs-video-section {
+  height: 500px;
+  position: relative;
+}
+.tabs-video-section__title {
+  position: relative;
+  z-index: 10;
+  color: #fff;
+  margin: 0;
+  text-align: center;
+  font-size: 2.5rem;
+}
+.tabs-video-section__video {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .header {
   background-color: #222;
   color: #fff;
