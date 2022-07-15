@@ -1428,9 +1428,9 @@
                 </ul>
                 <div class="about-tabs__inner">
                     <div class="tabs__content">
-                        <div class="tabs__panel about-video">
+                        <div class="tabs__panel about-video about-tabs--decor">
                             <div class="about-tabs__container">
-                                <div class="video-modal">
+                                <div class="video-modal" data-video-modal>
                                     <button type="button" class="video-modal__poster btn btn-reset">
                                         <img class="video-modal__img" src="img/about/about-photo/about-photo-2.jpg"
                                             alt="">
@@ -1439,9 +1439,6 @@
                                         </span>
                                     </button>
                                     <div class="video-modal__start">
-                                        <button class="video-modal__back btn btn-reset">
-                                            Назад
-                                        </button>
                                         <video controls class="video-js video-modal__video"
                                             poster="img/about/about-photo/about-photo-2.jpg">
                                             <source src="./video.mp4" type="video/mp4">
@@ -1449,13 +1446,12 @@
                                     </div>
                                 </div>
                             </div>
-
                         </div>
-                        <div class="tabs__panel about-photo">
+                        <div class="tabs__panel about-photo about-tabs--decor">
                             <div class="about-tabs__container">
                                 <div class="about-photo__inner">
                                     <div class="swiper about-photo__slider">
-                                        <div class="swiper-wrapper about-photo__gellery">
+                                        <div class="swiper-wrapper about-photo__gallery">
                                             <a href="img/about/about-photo/about-photo-1.jpg"
                                                 class="swiper-slide about-photo__slide about-photo-slide">
                                                 <img src="img/about/about-photo/about-photo-1.jpg" alt="">
@@ -1480,7 +1476,25 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tabs__panel about-3d">3</div>
+                        <div class="tabs__panel about-video about-tabs--decor">
+                            <div class="about-tabs__container">
+                                <div class="video-modal" data-video-modal>
+                                    <button type="button" class="video-modal__poster btn btn-reset">
+                                        <img class="video-modal__img" src="img/about/about-photo/about-photo-2.jpg"
+                                            alt="">
+                                        <span class="video-modal__play play--triagle">
+                                            Запустить видео
+                                        </span>
+                                    </button>
+                                    <div class="video-modal__start">
+                                        <video controls class="video-js video-modal__video"
+                                            poster="img/about/about-photo/about-photo-2.jpg">
+                                            <source src="./video.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="about__content about-content">
                         <div class="about-content__text">
@@ -1500,6 +1514,497 @@
                         </div>
                         <button type="submit"
                             class="btn btn-reset btn--secondary about-content__btn icon-arrow-right">Подробнее</button>
+                    </div>
+                </div>
+            </div>
+            <ul class="about__list about-list list-reset">
+                <li class="about-list__item">
+                    <svg class="about-list__icon">
+                        <use xlink:href="img/sprite.svg#about-list-1"></use>
+                    </svg>
+                    <h3 class="about-list__title">
+                        Подбор Ночных линз — это наша специализация
+                    </h3>
+                    <p class="about-list__descr">
+                        У нас более 15 лет успешного опыта работы с ночными линзами. Все врачи прошли углубленную
+                        специализацию по ортокератологии и детской офтальмологии
+                    </p>
+                </li>
+                <li class="about-list__item">
+                    <svg class="about-list__icon">
+                        <use xlink:href="img/sprite.svg#about-list-2"></use>
+                    </svg>
+                    <h3 class="about-list__title">
+                        Современное оборудование для диагностики и аппаратного лечения
+                    </h3>
+                    <p class="about-list__descr">
+                        Благодаря новейшему оборудованию и опыту наших врачей мы оказываем офтальмологическую помощь
+                        детям с рождения.
+                    </p>
+                </li>
+                <li class="about-list__item">
+                    <svg class="about-list__icon">
+                        <use xlink:href="img/sprite.svg#about-list-3"></use>
+                    </svg>
+                    <h3 class="about-list__title">
+                        3 из 4 клиентов нашей клиники приходят по рекомендации
+                    </h3>
+                    <p class="about-list__descr">
+                        Более 13 000 счастливых клиентов рекомендуют клинику своим друзьям и знакомым, а так же нас
+                        рекомендуют врачи и окулисты из оптик в Новосибирске
+                    </p>
+                </li>
+                <li class="about-list__item">
+                    <svg class="about-list__icon">
+                        <use xlink:href="img/sprite.svg#about-list-4"></use>
+                    </svg>
+                    <h3 class="about-list__title">
+                        Колоссальный
+                        опыт высококлассных врачей высшей категории.
+                    </h3>
+                    <p class="about-list__descr">
+                        Занимаемся клиническими исследованиями, выступаем на научных конференциях и публикуем статьи в
+                        науч.журналах.
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+            <section class="license">
+    <div class="container license__inner">
+        <div class="license__content">
+            <div class="license__top">
+                <h3 class="license__title">
+                    Лицензия
+                </h3>
+                <h4 class="license__subtitle">
+                    Деятельность нашей клиники регулируется ФЗ № 0000
+                </h4>
+            </div>
+            <ul class="license__list license-list list-reset">
+                <li class="license-list__item">
+                    <svg class="license-list__icon">
+                        <use xlink:href="img/sprite.svg#checked"></use>
+                    </svg>
+                    <p class="license-list__descr">
+                        Наши врачи имеют медицинское образование и подтверждённую квалификацию
+                    </p>
+                </li>
+                <li class="license-list__item">
+                    <svg class="license-list__icon">
+                        <use xlink:href="img/sprite.svg#checked"></use>
+                    </svg>
+                    <p class="license-list__descr">
+                        Всё оборудование зарегистрировано и разрешено в России
+                    </p>
+                </li>
+                <li class="license-list__item">
+                    <svg class="license-list__icon">
+                        <use xlink:href="img/sprite.svg#checked"></use>
+                    </svg>
+                    <p class="license-list__descr">
+                        Соблюдены все СанПиН
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <div class="license__gallery license-gallery">
+            <a href="img/licence.jpg" class="license-gallery__link">
+                <img src="img/licence.jpg" class="license-gallery__img" alt="Лицензия">
+            </a>
+        </div>
+    </div>
+</section>
+
+            <section class="our-rating">
+    <div class="container">
+        <h2 class="our-rating__title">
+            Мы в рейтингах
+        </h2>
+        <div class="our-rating__inner">
+            <div class="swiper our-rating__wrapper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide our-rating__item">
+                        <div class="our-rating-item__circle progress-circle" data-progress="number"
+                            data-progress-full="5.0" data-progress-value="4.5">
+                            <svg viewBox="-10 -10 320 320">
+                                <circle class="progress-circle__progress--bg" r="138" cx="138" cy="138" fill="none"
+                                    stroke-width="40">
+                                </circle>
+                                <circle class="progress-circle__progress" r="138" cx="138" cy="138" fill="none"
+                                    stroke-width="40">
+                                </circle>
+                            </svg>
+                            <div class="our-rating-item__value progress-circle__value"></div>
+                        </div>
+                        <div class="our-rating-item__info">
+                            <img loading="lazy" src="img/yandex.svg" class="image" width="80" height="23" alt="Yandex">
+                            <a href="#">Смотреть отзывы</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide our-rating__item">
+                        <div class="our-rating-item__circle progress-circle" data-progress="number"
+                            data-progress-full="5.0" data-progress-value="5.0">
+                            <svg viewBox="-10 -10 320 320">
+                                <circle class="progress-circle__progress--bg" r="138" cx="138" cy="138" fill="none"
+                                    stroke-width="40">
+                                </circle>
+                                <circle class="progress-circle__progress" r="138" cx="138" cy="138" fill="none"
+                                    stroke-width="40">
+                                </circle>
+                            </svg>
+                            <div class="our-rating-item__value progress-circle__value"></div>
+                        </div>
+                        <div class="our-rating-item__info">
+                            <img loading="lazy" src="img/gis.svg" class="image" width="59" height="25" alt="GIS">
+                            <a href="#">Смотреть отзывы</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide our-rating__item">
+                        <div class="our-rating-item__circle progress-circle" data-progress="percent"
+                            data-progress-value="78">
+                            <svg viewBox="-10 -10 320 320">
+                                <circle class="progress-circle__progress--bg" r="138" cx="138" cy="138" fill="none"
+                                    stroke-width="40">
+                                </circle>
+                                <circle class="progress-circle__progress" r="138" cx="138" cy="138" fill="none"
+                                    stroke-width="40">
+                                </circle>
+                            </svg>
+                            <div class="our-rating-item__value progress-circle__value"></div>
+                        </div>
+                        <div class="our-rating-item__info">
+                            <img loading="lazy" src="img/prodoctorov.svg" class="image" width="100" height="9"
+                                alt="ПроДокторов">
+                            <a href="#">Смотреть отзывы</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide our-rating__item">
+                        <div class="our-rating-item__circle progress-circle" data-progress="number"
+                            data-progress-full="5.0" data-progress-value="5.0">
+                            <svg viewBox="-10 -10 320 320">
+                                <circle class="progress-circle__progress--bg" r="138" cx="138" cy="138" fill="none"
+                                    stroke-width="40">
+                                </circle>
+                                <circle class="progress-circle__progress" r="138" cx="138" cy="138" fill="none"
+                                    stroke-width="40">
+                                </circle>
+                            </svg>
+                            <div class="progress-circle__value"></div>
+                        </div>
+                        <div class="our-rating-item__info">
+                            <img loading="lazy" src="img/flamp.svg" class="image" width="80" height="23" alt="Flamp">
+                            <a href="#">Смотреть отзывы</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="our-rating__pagination about-photo-pagination"></div>
+        </div>
+    </div>
+</section>
+
+            <section class="reviews">
+    <div class="container">
+        <h2 class="reviews__title title-h2">
+            Отзывы
+        </h2>
+        <div class="reviews__inner">
+            <div class="reviews__tabs tabs reviews-tabs" data-tabs="reviews-tabs">
+                <ul class="tabs__nav list-reset">
+                    <li class="tabs__nav-item"><button class="tabs__nav-btn btn-reset" type="button">Видео</button></li>
+                    <li class="tabs__nav-item"><button class="tabs__nav-btn btn-reset" type="button">Текстовые</button>
+                    </li>
+                </ul>
+                <div class="tabs__content reviews-tabs__content">
+                    <div class="tabs__panel reviews-tab reviews-tabs--video reviews-video">
+                        <div class="swiper reviews-slider reviews-slider--video">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide reviews-video__slide reviews-video-slide">
+                                    <div class="reviews-video-slide__top">
+                                        <div class="reviews-video-slide__left">
+                                            <span class="reviews-video-slide__name">Анна Васильева</span>
+                                            <span class="reviews-video-slide__age-pos">10 лет, художественная гимнастика</span>
+                                            <span class="reviews-video-slide__descr">Носит ночные линзы 3 года</span>
+                                        </div>
+                                        <time class="reviews-video-slide__date" datetime="2021-05-02">
+                                            02/05/21
+                                        </time>
+                                    </div>
+                                    <div class="video-modal" data-video-modal>
+                                        <button class="video-modal__poster btn btn-reset">
+                                            <img class="video-modal__img" src="img/about/about-photo/about-photo-2.jpg"
+                                                alt="">
+                                            <span class="video-modal__play play--triagle">
+                                                Запустить видео
+                                            </span>
+                                        </button>
+                                        <div class="video-modal__start">
+                                            <video controls class="video-js video-modal__video"
+                                                poster="img/about/about-photo/about-photo-2.jpg">
+                                                <source src="./video.mp4" type="video/mp4">
+                                            </video>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide reviews-video__slide reviews-video-slide">
+                                        <button class="" data-graph-path="test55">open</button>
+                                     </div>
+                                    <button type="submit"
+                                        class="btn btn-reset reviews-video-slide__more icon-arrow-right">
+                                        История успеха
+                                    </button>
+                                </div>
+                                <div class="swiper-slide reviews-video__slide reviews-video-slide">
+                                    <div class="reviews-video-slide__top">
+                                        <div class="reviews-video-slide__left">
+                                            <span class="reviews-video-slide__name">Анна Васильева</span>
+                                            <span class="reviews-video-slide__age-pos">10 лет, художественная гимнастика</span>
+                                            <span class="reviews-video-slide__descr">Носит ночные линзы 3 года</span>
+                                        </div>
+                                        <time class="reviews-video-slide__date" datetime="2021-05-02">
+                                            02/05/21
+                                        </time>
+                                    </div>
+                                    <div class="video-modal" data-video-modal>
+                                        <button type="button" class="video-modal__poster btn btn-reset">
+                                            <img class="video-modal__img" src="img/about/about-photo/about-photo-2.jpg"
+                                                alt="">
+                                            <span class="video-modal__play play--triagle">
+                                                Запустить видео
+                                            </span>
+                                        </button>
+                                        <div class="video-modal__start">
+                                            <video controls class="video-js video-modal__video"
+                                                poster="img/about/about-photo/about-photo-2.jpg">
+                                                <source src="./video.mp4" type="video/mp4">
+                                            </video>
+                                        </div>
+                                    </div>
+                                    <button type="submit"
+                                        class="btn btn-reset reviews-video-slide__more icon-arrow-right">
+                                        История успеха
+                                    </button>
+                                </div>
+                                <div class="swiper-slide reviews-video__slide reviews-video-slide">
+                                    <div class="reviews-video-slide__top">
+                                        <div class="reviews-video-slide__left">
+                                            <span class="reviews-video-slide__name">Анна Васильева</span>
+                                            <span class="reviews-video-slide__age-pos">10 лет, художественная гимнастика</span>
+                                            <span class="reviews-video-slide__descr">Носит ночные линзы 3 года</span>
+                                        </div>
+                                        <time class="reviews-video-slide__date" datetime="2021-05-02">
+                                            02/05/21
+                                        </time>
+                                    </div>
+                                    <div class="video-modal" data-video-modal>
+                                        <button type="button" class="video-modal__poster btn btn-reset">
+                                            <img class="video-modal__img" src="img/about/about-photo/about-photo-2.jpg"
+                                                alt="">
+                                            <span class="video-modal__play play--triagle">
+                                                Запустить видео
+                                            </span>
+                                        </button>
+                                        <div class="video-modal__start">
+                                            <video controls class="video-js video-modal__video"
+                                                poster="img/about/about-photo/about-photo-2.jpg">
+                                                <source src="./video.mp4" type="video/mp4">
+                                            </video>
+                                        </div>
+                                    </div>
+                                    <button type="submit"
+                                        class="btn btn-reset reviews-video-slide__more icon-arrow-right">
+                                        История успеха
+                                    </button>
+                                </div>
+                                <div class="swiper-slide reviews-video__slide reviews-video-slide">
+                                    <div class="reviews-video-slide__top">
+                                        <div class="reviews-video-slide__left">
+                                            <span class="reviews-video-slide__name">Анна Васильева</span>
+                                            <span class="reviews-video-slide__age-pos">10 лет, художественная гимнастика</span>
+                                            <span class="reviews-video-slide__descr">Носит ночные линзы 3 года</span>
+                                        </div>
+                                        <time class="reviews-video-slide__date" datetime="2021-05-02">
+                                            02/05/21
+                                        </time>
+                                    </div>
+                                    <div class="video-modal" data-video-modal>
+                                        <button type="button" class="video-modal__poster btn btn-reset">
+                                            <img class="video-modal__img" src="img/about/about-photo/about-photo-2.jpg"
+                                                alt="">
+                                            <span class="video-modal__play play--triagle">
+                                                Запустить видео
+                                            </span>
+                                        </button>
+                                        <div class="video-modal__start">
+                                            <video controls class="video-js video-modal__video"
+                                                poster="img/about/about-photo/about-photo-2.jpg">
+                                                <source src="./video.mp4" type="video/mp4">
+                                            </video>
+                                        </div>
+                                    </div>
+                                    <button type="submit"
+                                        class="btn btn-reset reviews-video-slide__more icon-arrow-right">
+                                        История успеха
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews__pagination"></div>
+                        <div class="reviews__nav reviews__nav--prev icon-arrow-right"></div>
+                        <div class="reviews__nav reviews__nav--next icon-arrow-right"></div>
+                    </div>
+                    <div class="tabs__panel reviews-tab reviews-tabs--text reviews-text">
+                        <div class="swiper reviews-slider reviews-slider--text">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide reviews-text__slide reviews-text-slide">
+                                    <div class="reviews-text-slide__top">
+                                        <div class="reviews-text-slide__left">
+                                            <img loading="lazy" src="img/reviews/avatar-1.jpg" class="image" width="77"
+                                                height="77" alt="Игорь Фёдоров">
+                                            <div class="reviews-text-slide__info">
+                                                <span class="reviews-text-slide__name">Игорь Фёдоров</span>
+                                                <span class="reviews-text-slide__age-pos">40 лет, юрист</span>
+                                                <span class="reviews-text-slide__descr">Носит ночные линзы 10 лет</span>
+                                            </div>
+                                        </div>
+                                        <time class="reviews-text-slide__date" datetime="2021-05-02">
+                                            02/05/21
+                                        </time>
+                                    </div>
+                                    <div class="reviews-text-slide__text block-scroll">
+                                        Немного о себе: Живу в Краснодаре. По образованию врач. Миопия средней степени
+                                        обоих глаз с 7-летнего возраста. В детстве очки носил только на уроках и дома. В
+                                        подростковом возрасте очков стесняться престал и носил постоянно, но масса
+                                        неудобств, таких как запотевание стекол в холодное время года, постоянное
+                                        давление на переносицу, разбалтывание оправы, не доставляла особого
+                                        удовольствия. Пробовал носить мягкие контактные линзы, но видимо из-за не
+                                        регулярного ухода за ними возник кератит, после чего линзы вообще носить не
+                                        смог. Да и честно говоря, в студенческие годы, когда все «на бегу», «на скоку»
+                                        Немного о себе: Живу в Краснодаре. По образованию врач. Миопия средней степени
+                                        обоих глаз с 7-летнего возраста. В детстве очки носил только на уроках и дома. В
+                                        подростковом возрасте очков стесняться престал и носил постоянно, но масса
+                                        неудобств, таких как запотевание стекол в холодное время года, постоянное
+                                        давление на переносицу, разбалтывание оправы, не доставляла особого
+                                        удовольствия. Пробовал носить мягкие контактные линзы, но видимо из-за не
+                                        регулярного ухода за ними возник кератит, после чего линзы вообще носить не
+                                        смог. Да и честно говоря, в студенческие годы, когда все «на бегу», «на скоку»
+                                    </div>
+                                    <button type="submit"
+                                        class="btn btn-reset reviews-text-slide__more icon-arrow-right">Смотреть
+                                        оригинал отзыва</button>
+                                </div>
+                                <div class="swiper-slide reviews-text__slide reviews-text-slide">
+                                    <div class="reviews-text-slide__top">
+                                        <div class="reviews-text-slide__left">
+                                            <img loading="lazy" src="img/reviews/avatar-1.jpg" class="image" width="77"
+                                                height="77" alt="Игорь Фёдоров">
+                                            <div class="reviews-text-slide__info">
+                                                <span class="reviews-text-slide__name">Игорь Фёдоров</span>
+                                                <span class="reviews-text-slide__age-pos">40 лет, юрист</span>
+                                                <span class="reviews-text-slide__descr">Носит ночные линзы 10 лет</span>
+                                            </div>
+                                        </div>
+                                        <time class="reviews-text-slide__date" datetime="2021-05-02">02/05/21</time>
+                                    </div>
+                                    <div class="reviews-text-slide__text block-scroll">
+                                        Немного о себе: Живу в Краснодаре. По образованию врач. Миопия средней степени
+                                        обоих глаз с 7-летнего возраста. В детстве очки носил только на уроках и дома. В
+                                        подростковом возрасте очков стесняться престал и носил постоянно, но масса
+                                        неудобств, таких как запотевание стекол в холодное время года, постоянное
+                                        давление на переносицу, разбалтывание оправы, не доставляла особого
+                                        удовольствия. Пробовал носить мягкие контактные линзы, но видимо из-за не
+                                        регулярного ухода за ними возник кератит, после чего линзы вообще носить не
+                                        смог. Да и честно говоря, в студенческие годы, когда все «на бегу», «на скоку»
+                                        Немного о себе: Живу в Краснодаре. По образованию врач. Миопия средней степени
+                                        обоих глаз с 7-летнего возраста. В детстве очки носил только на уроках и дома. В
+                                        подростковом возрасте очков стесняться престал и носил постоянно, но масса
+                                        неудобств, таких как запотевание стекол в холодное время года, постоянное
+                                        давление на переносицу, разбалтывание оправы, не доставляла особого
+                                        удовольствия. Пробовал носить мягкие контактные линзы, но видимо из-за не
+                                        регулярного ухода за ними возник кератит, после чего линзы вообще носить не
+                                        смог. Да и честно говоря, в студенческие годы, когда все «на бегу», «на скоку»
+                                    </div>
+                                    <button type="submit"
+                                        class="btn btn-reset reviews-text-slide__more icon-arrow-right">Смотреть
+                                        оригинал отзыва</button>
+                                </div>
+                                <div class="swiper-slide reviews-text__slide reviews-text-slide">
+                                    <div class="reviews-text-slide__top">
+                                        <div class="reviews-text-slide__left">
+                                            <img loading="lazy" src="img/reviews/avatar-1.jpg" class="image" width="77"
+                                                height="77" alt="Игорь Фёдоров">
+                                            <div class="reviews-text-slide__info">
+                                                <span class="reviews-text-slide__name">Игорь Фёдоров</span>
+                                                <span class="reviews-text-slide__age-pos">40 лет, юрист</span>
+                                                <span class="reviews-text-slide__descr">Носит ночные линзы 10 лет</span>
+                                            </div>
+                                        </div>
+                                        <time class="reviews-text-slide__date" datetime="2021-05-02">02/05/21</time>
+                                    </div>
+                                    <div class="reviews-text-slide__text block-scroll">
+                                        Немного о себе: Живу в Краснодаре. По образованию врач. Миопия средней степени
+                                        обоих глаз с 7-летнего возраста. В детстве очки носил только на уроках и дома. В
+                                        подростковом возрасте очков стесняться престал и носил постоянно, но масса
+                                        неудобств, таких как запотевание стекол в холодное время года, постоянное
+                                        давление на переносицу, разбалтывание оправы, не доставляла особого
+                                        удовольствия. Пробовал носить мягкие контактные линзы, но видимо из-за не
+                                        регулярного ухода за ними возник кератит, после чего линзы вообще носить не
+                                        смог. Да и честно говоря, в студенческие годы, когда все «на бегу», «на скоку»
+                                        Немного о себе: Живу в Краснодаре. По образованию врач. Миопия средней степени
+                                        обоих глаз с 7-летнего возраста. В детстве очки носил только на уроках и дома. В
+                                        подростковом возрасте очков стесняться престал и носил постоянно, но масса
+                                        неудобств, таких как запотевание стекол в холодное время года, постоянное
+                                        давление на переносицу, разбалтывание оправы, не доставляла особого
+                                        удовольствия. Пробовал носить мягкие контактные линзы, но видимо из-за не
+                                        регулярного ухода за ними возник кератит, после чего линзы вообще носить не
+                                        смог. Да и честно говоря, в студенческие годы, когда все «на бегу», «на скоку»
+                                    </div>
+                                    <button type="submit"
+                                        class="btn btn-reset reviews-text-slide__more icon-arrow-right">Смотреть
+                                        оригинал отзыва</button>
+                                </div>
+                                <div class="swiper-slide reviews-text__slide reviews-text-slide">
+                                    <div class="reviews-text-slide__top">
+                                        <div class="reviews-text-slide__left">
+                                            <img loading="lazy" src="img/reviews/avatar-1.jpg" class="image" width="77"
+                                                height="77" alt="Игорь Фёдоров">
+                                            <div class="reviews-text-slide__info">
+                                                <span class="reviews-text-slide__name">Игорь Фёдоров</span>
+                                                <span class="reviews-text-slide__age-pos">40 лет, юрист</span>
+                                                <span class="reviews-text-slide__descr">Носит ночные линзы 10 лет</span>
+                                            </div>
+                                        </div>
+                                        <time class="reviews-text-slide__date" datetime="2021-05-02">02/05/21</time>
+                                    </div>
+                                    <div class="reviews-text-slide__text block-scroll">
+                                        Немного о себе: Живу в Краснодаре. По образованию врач. Миопия средней степени
+                                        обоих глаз с 7-летнего возраста. В детстве очки носил только на уроках и дома. В
+                                        подростковом возрасте очков стесняться престал и носил постоянно, но масса
+                                        неудобств, таких как запотевание стекол в холодное время года, постоянное
+                                        давление на переносицу, разбалтывание оправы, не доставляла особого
+                                        удовольствия. Пробовал носить мягкие контактные линзы, но видимо из-за не
+                                        регулярного ухода за ними возник кератит, после чего линзы вообще носить не
+                                        смог. Да и честно говоря, в студенческие годы, когда все «на бегу», «на скоку»
+                                        Немного о себе: Живу в Краснодаре. По образованию врач. Миопия средней степени
+                                        обоих глаз с 7-летнего возраста. В детстве очки носил только на уроках и дома. В
+                                        подростковом возрасте очков стесняться престал и носил постоянно, но масса
+                                        неудобств, таких как запотевание стекол в холодное время года, постоянное
+                                        давление на переносицу, разбалтывание оправы, не доставляла особого
+                                        удовольствия. Пробовал носить мягкие контактные линзы, но видимо из-за не
+                                        регулярного ухода за ними возник кератит, после чего линзы вообще носить не
+                                        смог. Да и честно говоря, в студенческие годы, когда все «на бегу», «на скоку»
+                                    </div>
+                                    <button type="submit"
+                                        class="btn btn-reset reviews-text-slide__more icon-arrow-right">Смотреть
+                                        оригинал отзыва</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews__pagination"></div>
+                        <div class="reviews__nav reviews__nav--prev icon-arrow-right"></div>
+                        <div class="reviews__nav reviews__nav--next icon-arrow-right"></div>
                     </div>
                 </div>
             </div>
@@ -1671,12 +2176,14 @@
                     Заказать звонок
                 </h3>
                 <label class="form-primary__label">
-                    <input type="text" name="Имя" class="input-reset back-call-form__input back-call-form__input--name form-primary__input"
-                    placeholder="Имя">
+                    <input type="text" name="Имя"
+                        class="input-reset back-call-form__input back-call-form__input--name form-primary__input"
+                        placeholder="Имя">
                 </label>
-          <label class="form-primary__label">
+                <label class="form-primary__label">
                     <input type="tel" name="Телефон"
-                    class="input-reset back-call-form__input form-primary__input back-call-form__input--tel" placeholder="Телефон">
+                        class="input-reset back-call-form__input form-primary__input back-call-form__input--tel"
+                        placeholder="Телефон">
                 </label>
                 <button class="btn btn-reset btn--secondary form-primary__btn">Записаться</button>
                 <a href="#" class="form-primary__agreement">
@@ -1686,6 +2193,20 @@
             </form>
         </div>
     </div>
+    <div class="graph-modal__container modal-primary__container" role="dialog" aria-modal="true"
+        data-graph-target="test55">
+        <button class="js-modal-close graph-modal__close modal-primary__close icon-modal-close"
+            aria-label="Закрыть модальное окно"></button>
+        <div class="graph-modal__content modal-primary__content">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum aperiam enim minima quod voluptatem ipsum officiis voluptate ad temporibus reprehenderit facere libero at quos repudiandae architecto, molestias nisi veniam, sunt odio. Odio aspernatur reprehenderit necessitatibus. Quos beatae recusandae laboriosam, veniam maiores aliquam alias accusamus earum culpa mollitia esse quibusdam perspiciatis iure ullam et ipsum odit veritatis? Minima, ipsam. Similique fuga ad dolorum quo reiciendis sed quae, sapiente minima libero odit labore ea qui voluptate et quasi architecto ab impedit. Maxime excepturi saepe a facere vero, soluta odio consectetur, similique eligendi possimus assumenda nobis officia placeat nostrum numquam aliquid illum inventore.
+        </div>
+    </div>
+</div>
+
+<div class="video-modals">
+    <button type="button" class="video-modals__close btn btn-reset">
+        Назад
+    </button>
 </div>
 
 </body>
