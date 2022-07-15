@@ -95,7 +95,11 @@
     <div class="header__body header-body">
         <div class="header-body__inner container">
             <a href="#" class="header-body__logo logo">
-                <img src="img/logo.png" class="logo__img" alt="Доктор Линз">
+                <picture>
+                  <source srcset="img/logo.avif" type="image/avif">
+                  <source srcset="img/logo.webp" type="image/webp">
+                  <img loading="lazy" src="img/logo.png" class="logo__img" width="" height="" alt="Доктор Линз">
+                </picture>
             </a>
             <button type="submit" class="btn btn-reset btn--secondary header-body__btn" data-da=".nav-mobile-container__top,768,last">Записаться онлайн</button>
             <div class="header-body__schedule" data-da=".nav-mobile-container__bottom,1050,first">
@@ -349,8 +353,14 @@
         <div class="hero__content">
             <div class="swiper hero__slider">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide hero__slide hero-slide hero__slide--1" style="background-image: url(img/hero/hero-slider-1.png);">
-                        <img class="hero-slide__mobile-img" src="img/hero/hero-slider-1.png" alt="">
+                    <div class="swiper-slide hero__slide hero-slide hero__slide--1"
+                        style="background-image: url(img/hero/hero-slider-1.webp);">
+                        <picture>
+                            <source srcset="img/hero/hero-slider-1.avif" type="image/avif">
+                            <source srcset="img/hero/hero-slider-1.webp" type="image/webp">
+                            <img loading="lazy" src="img/hero/hero-slider-1.png" class="hero-slide__mobile-img"
+                                alt="Мужчина врач">
+                        </picture>
                         <div class="hero-slide__inner container">
                             <div class="hero-slide__left">
                                 <h2 class="hero-slide__title">
@@ -358,12 +368,15 @@
                                     <br> <span>ДОКТОР ЛИНЗ</span>
                                 </h2>
                                 <p class="hero-slide__descr">
-                                    Большой опыт упешной и безоперационной коррекции зрения. Наши клиенты остаются довольны
-                                    клиникой на протяжение многих лет — это говорит о том, мы ориентированы на долгосрочное
+                                    Большой опыт упешной и безоперационной коррекции зрения. Наши клиенты остаются
+                                    довольны
+                                    клиникой на протяжение многих лет — это говорит о том, мы ориентированы на
+                                    долгосрочное
                                     сотрудничество.
                                 </p>
                                 <button type="submit"
-                                    class="btn btn-reset btn--primary btn--primary-icon hero-slide__btn icon-arrow-right" data-da=".hero-slide__inner,768,heroLast">Подробнее</button>
+                                    class="btn btn-reset btn--primary btn--primary-icon hero-slide__btn icon-arrow-right"
+                                    data-da=".hero-slide__inner,768,heroLast">Подробнее</button>
                             </div>
                             <ul class="hero-slide__list list-reset">
                                 <li class="hero-slide__item">
@@ -391,8 +404,14 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="swiper-slide hero__slide hero-slide hero__slide--2" style="background-image: url(img/hero/hero-slider-2.png);">
-                        <img class="hero-slide__mobile-img" src="img/hero/hero-slider-2.png" alt="">
+                    <div class="swiper-slide hero__slide hero-slide hero__slide--2"
+                        style="background-image: url(img/hero/hero-slider-2.webp);">
+                        <picture>
+                            <source srcset="img/hero/hero-slider-2.avif" type="image/avif">
+                            <source srcset="img/hero/hero-slider-2.webp" type="image/webp">
+                            <img loading="lazy" src="img/hero/hero-slider-2.png" class="hero-slide__mobile-img"
+                                alt="Девочка">
+                        </picture>
                         <div class="hero-slide__inner container">
                             <div class="hero-slide__left">
                                 <h2 class="hero-slide__title">
@@ -400,11 +419,13 @@
                                     восстанавливают зрение пока вы спите
                                 </h2>
                                 <p class="hero-slide__descr">
-                                    Специальные контактные линзы временно изменяют форму роговицы во сне и весь последующий
+                                    Специальные контактные линзы временно изменяют форму роговицы во сне и весь
+                                    последующий
                                     день вы прекрасно видите без очков и без линз
                                 </p>
                                 <button type="submit"
-                                    class="btn btn-reset btn--primary btn--primary-icon hero-slide__btn icon-arrow-right" data-da=".hero-slide__inner,768,heroLast">Подробнее</button>
+                                    class="btn btn-reset btn--primary btn--primary-icon hero-slide__btn icon-arrow-right"
+                                    data-da=".hero-slide__inner,768,heroLast">Подробнее</button>
                             </div>
                             <ul class="hero-slide__list list-reset">
                                 <li class="hero-slide__item">
@@ -428,18 +449,26 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="swiper-slide hero__slide hero-slide hero__slide--3" style="background-image: url(img/hero/hero-slider-3.png);">
-                        <img class="hero-slide__mobile-img" src="img/hero/hero-slider-3.png" alt="">
+                    <div class="swiper-slide hero__slide hero-slide hero__slide--3"
+                        style="background-image: url(img/hero/hero-slider-3.webp);">
+                        <picture>
+                            <source srcset="img/hero/hero-slider-3.avif" type="image/avif">
+                            <source srcset="img/hero/hero-slider-3.webp" type="image/webp">
+                            <img loading="lazy" src="img/hero/hero-slider-3.png" class="hero-slide__mobile-img"
+                                alt="Мальчик в очках">
+                        </picture>
                         <div class="hero-slide__inner container">
                             <div class="hero-slide__left">
                                 <h2 class="hero-slide__title">
                                     <span>ДИАГНОСТИКА ЗРЕНИЯ</span>
                                 </h2>
                                 <p class="hero-slide__descr">
-                                    Компьютерная диагностика зрения у детей (0+) и взрослых: профессионально, быстро, безболезненно, информативно.
+                                    Компьютерная диагностика зрения у детей (0+) и взрослых: профессионально, быстро,
+                                    безболезненно, информативно.
                                 </p>
                                 <button type="submit"
-                                class="btn btn-reset btn--primary btn--primary-icon hero-slide__btn icon-arrow-right" data-da=".hero-slide__inner,768,heroLast">Подробнее</button>
+                                    class="btn btn-reset btn--primary btn--primary-icon hero-slide__btn icon-arrow-right"
+                                    data-da=".hero-slide__inner,768,heroLast">Подробнее</button>
                             </div>
                             <ul class="hero-slide__list list-reset">
                                 <li class="hero-slide__item">
@@ -456,7 +485,7 @@
                                 </li>
                                 <li class="hero-slide__item">
                                     <span class="hero-slide__item--subtitle">
-                                      от
+                                        от
                                     </span>
                                     <span class="hero-slide__item--title">
                                         2 500₽
@@ -466,8 +495,14 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="swiper-slide hero__slide hero-slide hero__slide--4" style="background-image: url(img/hero/hero-slider-4.png);">
-                        <img class="hero-slide__mobile-img" src="img/hero/hero-slider-4.png" alt="">
+                    <div class="swiper-slide hero__slide hero-slide hero__slide--4"
+                        style="background-image: url(img/hero/hero-slider-4.webp);">
+                        <picture>
+                            <source srcset="img/hero/hero-slider-4.avif" type="image/avif">
+                            <source srcset="img/hero/hero-slider-4.webp" type="image/webp">
+                            <img loading="lazy" src="img/hero/hero-slider-4.png" class="hero-slide__mobile-img"
+                                alt="Девушка">
+                        </picture>
                         <div class="hero-slide__inner container">
                             <div class="hero-slide__left">
                                 <h2 class="hero-slide__title">
@@ -477,7 +512,8 @@
                                     Лечение зрения детей и взрослых на современных компьютерных аппаратах-тренажерах
                                 </p>
                                 <button type="submit"
-                                    class="btn btn-reset btn--primary btn--primary-icon hero-slide__btn icon-arrow-right" data-da=".hero-slide__inner,768,heroLast">Подробнее</button>
+                                    class="btn btn-reset btn--primary btn--primary-icon hero-slide__btn icon-arrow-right"
+                                    data-da=".hero-slide__inner,768,heroLast">Подробнее</button>
                             </div>
                             <ul class="hero-slide__list list-reset">
                                 <li class="hero-slide__item">
@@ -507,6 +543,7 @@
         </div>
     </div>
 </section>
+
             <section class="service">
     <div class="container">
         <h2 class="service__title title-h2 tac">
