@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <!-- Useful meta tags -->
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index, follow">
+<meta name="google" content="notranslate">
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="Description...">
+<meta name="keywords" content="HTML, CSS, JavaScript, Shop">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#9B9B9B">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<!-- Favicons -->
+<link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+<link rel="icon" type="image/png" sizes="16x16" href="/">
+<link rel="icon" type="image/png" sizes="32x32" href="/">
+<link rel="icon" type="image/png" sizes="96x96" href="/">
+<link rel="icon" type="image/png" sizes="120x120" href="/">
+<link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon-180x180.png">
+<!-- <link rel="manifest" href="./images/manifest.json"> -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+<link rel="stylesheet" href="./css/main.min.css"/>
+    <title>Title</title>
+  </head>
+  <body>
+    <header class="header">
+
+  <div class="header__bg"></div>
+  <div class="container">
+    <div class="header_wrap">
+      <a href="/" class="header_logo">
+        <img class="desktop" src="./images/main_logo.png" alt="">
+        <img class="mob" src="./images/mob_logo.png" alt="">
+      </a>
+      <div class="header_right">
+        <nav class="header_menu">
+          <ul>
+            <li>
+              <a href="#">VSN Realty</a>
+            </li>
+            <li><a href="#">VSN Business</a></li>
+            <li><a href="#">Ipoteka Group</a>
+            </li>
+            <li><a href="#">О компании</a>
+            </li>
+            <li><a href="#">Контакты</a>
+            </li>
+          </ul>
+
+        </nav>
+        <div class="header__subs">
+          
+          <div class="header__subs_item">
+            <ul>
+              <li><a href="#">Новостройки Москвы</a></li>
+              <li><a href="#">Готовые Квартиры</a></li>
+              <li><a href="#">Загородная недвижимость</a></li>
+              <li><a href="#">Коммерческая недвижимость</a></li>
+              <li><a href="#">Ипотека</a></li>
+            </ul>
+          </div>
+          <div class="header__subs_item">
+            <ul>
+              <li><a href="#">Новостройки Москвы</a></li>
+              <li><a href="#">Готовые Квартиры</a></li>
+              <li><a href="#">Загородная недвижимость</a></li>
+              <li><a href="#">Коммерческая недвижимость</a></li>
+              <li><a href="#">Ипотека</a></li>
+            </ul>
+          </div>
+          <div class="header__subs_item">
+            <ul>
+              <li><a href="#">Новостройки Москвы</a></li>
+              <li><a href="#">Готовые Квартиры</a></li>
+              <li><a href="#">Загородная недвижимость</a></li>
+              <li><a href="#">Коммерческая недвижимость</a></li>
+              <li><a href="#">Ипотека</a></li>
+            </ul>
+          </div>
+          <div class="header__subs_item">
+            <ul>
+              <li><a href="#">Новостройки Москвы</a></li>
+              <li><a href="#">Готовые Квартиры</a></li>
+              <li><a href="#">Загородная недвижимость</a></li>
+              <li><a href="#">Коммерческая недвижимость</a></li>
+              <li><a href="#">Ипотека</a></li>
+            </ul>
+          </div>
+          <div class="header__subs_item">
+            <ul>
+              <li><a href="#">Новостройки Москвы</a></li>
+              <li><a href="#">Готовые Квартиры</a></li>
+              <li><a href="#">Загородная недвижимость</a></li>
+              <li><a href="#">Коммерческая недвижимость</a></li>
+              <li><a href="#">Ипотека</a></li>
+            </ul>
+          </div>
+          
+        </div>
+        <div class="header__widget">
+          <form method="post" class="header_search">
+            <!-- <img src="" alt="" class="header_search__icon"> -->
+            <button class="header_search__icon"></button>
+            <!-- <span class="header_search__text">Поиск</span> -->
+            <input type="text" placeholder="Поиск" class="header_search__text">
+          </form>
+          <div class="header_contacts">
+            <div class="header_contacts__phone">
+              <a href="tel:88001864436">8 800 186-44-36</a>
+              <div class="header_contacts__popup">Обратный звонок</div>
+            </div>
+            <div class="header__social">
+              <a href="https://web.whatsapp.com/" target="_blank" class="header__social_icon">
+                <img src="./images/icons/wh.svg" alt="">
+              </a>
+              <a href="https://tg.me/" target="_blank" class="header__social_icon">
+                <img src="./images/icons/tg.svg" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+      
+      <div class="header__toggler">
+
+        <div class="header__toggler_btn">
+          <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line x1="1" y1="1" x2="19" y2="1" stroke="white" stroke-width="2" stroke-linecap="round"/>
+            <line x1="1" y1="8" x2="19" y2="8" stroke="white" stroke-width="2" stroke-linecap="round"/>
+            <line x1="1" y1="15" x2="19" y2="15" stroke="white" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="header_mobmenu">
+      <div class="header_mobmenu__col">
+        <h3 class="header_mobmenu__title"><img src="./images/icons/hm_1.svg" alt="" class="header_mobmenu__title_pre" /> VSN Realty </h3>
+        <ul>
+          <li><a href="">Новостройки Москвы</a></li>
+          <li><a href="">Новостройки Подмосковья</a></li>
+          <li><a href="">Вторичная недвижимость</a></li>
+          <li><a href="">Коммерческая недвижимость</a></li>
+          <li><a href="">Ипотека</a></li>
+          <li><a href="">Сервисы</a></li>
+          <li><a href="">Каталог ЖК</a></li>
+        </ul>
+  
+        <a href="#" class="header_mobmenu_titlelink">
+          
+          <h3 class="header_mobmenu__title"><img src="./images/icons/hm_3.svg" alt="" class="header_mobmenu__title_pre">Ipoteka Group <img src="./images/icons/link_arr.svg" alt="" class="header_mobmenu__title_arr">  </h3> 
+        </a>
+      </div>
+      <div class="header_mobmenu__col">
+        <h3 class="header_mobmenu__title"><img src="./images/icons/hm_2.svg" alt="" class="header_mobmenu__title_pre"> VSN Business</h3>
+        <ul>
+          <li><a href="">Новостройки Москвы</a></li>
+          <li><a href="">Квартиры в построенных домах</a></li>
+          <li><a href="">Лофты и апартаменты</a></li>
+          <li><a href="">Москва-Сити </a></li>
+          <li><a href="">Пентхаусы Москвы  </a></li>
+          <li><a href="">Каталог ЖК</a></li>
+        </ul>
+      </div>
+      <div class="header_mobmenu__col">
+        <h3 class="header_mobmenu__title">Компания</h3>
+        <ul>
+          <li><a href="">Кейсы </a></li>
+          <li><a href="">Центр обучения</a></li>
+          <li><a href="">Партнеры</a></li>
+          <li><a href="">Награды</a></li>
+          <li><a href="">Корпоративная жизнь</a></li>
+          <li><a href="">Карьера в компании</a></li>
+          <li><a href="">Пресс центр</a></li>
+        </ul>
+      </div>
+      <div class="header_mobmenu__col">
+        <h3 class="header_mobmenu__title">Контакты</h3>
+        <div class="phone_wrap">
+          <a href="tel:+74951864436" class="header_mobmenu_phone">7 (495) 186-44-36 <img src="./images/icons/ph.svg" alt=""></a>
+        <span class="header_mobmenu_phone__under">Для жителей Москвы и Московской области</span>
+        </div>
+        <div class="phone_wrap">
+          <a href="tel:88008000000" class="header_mobmenu_phone">8 (800) 800-00-00 <img src="./images/icons/ph.svg" alt=""></a>
+        <span class="header_mobmenu_phone__under">Бесплатный звонок по России</span>
+        </div>
+        <div class="header_mobmenu_social">
+          <a href="#" class="header_mobmenu_social__item">
+            <img src="./images/icons/tg.svg" alt=""> <span>Telegram</span>
+          </a>
+          <a href="#" class="header_mobmenu_social__item">
+            <img src="./images/icons/wh.svg" alt=""> <span>Whatsapp</span>
+          </a>
+        </div>
+  
+        <span class="header_mobmenu_phone__under">Адрес главного офиса</span>
+        <div class="header_mobmenu_address">
+          Москва, Новодмитровская ул., д. 2, корп. 1, <br>
+          МФК «Савеловский Сити» (Жёлтая башня) <br>
+        </div>
+        <div class="header_mobmenu_address">
+          
+          Ежеденевно, 09:00 – 18:00
+        </div>
+  
+        <a href="mailto:vsnr@vsnr.ru" class="header_mobmenu_email">vsnr@vsnr.ru</a>
+  
+        <a href="#" class="header_mobmenu_office">Офисы продаж</a>
+  
+        <div class="header_mobmenu_social" style="    padding-bottom: 50px;
+        margin-bottom: 50px;
+        border-bottom: 1px solid #ccc;">
+          <a href="#" class="header_mobmenu_social__item big_mr">
+            <img src="./images/icons/vk.svg" alt="">
+          </a>
+          <a href="#" class="header_mobmenu_social__item big_mr">
+            <img src="./images/icons/tg.svg" alt="">
+          </a>
+          <a href="#" class="header_mobmenu_social__item big_mr">
+            <img src="./images/icons/yt.svg" alt="">
+          </a>
+        </div>
+
+        <form class="header_mobmenu__search">
+          <label for="">
+              <input type="text" class="header_mobmenu__search_input" placeholder="Найти недвижимость">
+           <div class="header_mobmenu__search_btn"></div>
+           <button class="header_mobmenu__search_submit"></button>
+          </label>
+          <div class="header_mobmenu__search_bottom">
+              <div class="header_mobmenu__search_variable active">Сданные</div>
+              <div class="header_mobmenu__search_variable">С отделкой</div>
+              <div class="header_mobmenu__search_variable">С терассой</div>
+              <div class="header_mobmenu__search_variable">В небоскрёбе</div>
+          </div>
+      </form>
+      </div>
+  </div>
+</header>
+
+
+    <main>
+      <section class="hero">
+
+
+    <a href="#numSlider" class="hero__bottom">
+        <img class="" src="./images/icons/arrow-down.svg" />
+    </a>
+    
+    <!-- ШИРМА АНИМАЦИИ -->
+    <div class="hero_promo">
+        <div class="hero_promo__item">
+            <div class="hero_promo__line"></div>
+            <div class="hero_promo__line"></div>
+            <div class="hero_promo__line"></div>
+        </div>
+        <div class="hero_promo__item">
+            <div class="hero_promo__line"></div>
+            <div class="hero_promo__line"></div>
+            <div class="hero_promo__line"></div>
+        </div>
+    </div>
+
+    <!-- ДИСКЛЕЙМЕР БЛОКА -->
+    <div class="hero_disclaimer">
+        <div class="hero_disclaimer_wrap">
+            <div class="hero_disclaimer__title">
+                <svg width="743" height="145" viewBox="0 0 743 145" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M39.32 7.8H23.624V51H16.136V7.8H0.44V0.599997H39.32V7.8ZM44.7751 16.224C48.4231 11.952 52.8391 9.816 58.0231 9.816C63.2071 9.816 67.6231 11.952 71.2711 16.224C74.9191 20.496 76.7431 25.368 76.7431 30.84C76.7431 36.312 74.9191 41.184 71.2711 45.456C67.6231 49.728 63.2071 51.864 58.0231 51.864C52.8391 51.864 48.4231 49.728 44.7751 45.456C41.1271 41.184 39.3031 36.312 39.3031 30.84C39.3031 25.368 41.1271 20.496 44.7751 16.224ZM49.8151 40.56C52.0711 43.488 54.8071 44.952 58.0231 44.952C61.2391 44.952 63.9511 43.488 66.1591 40.56C68.4151 37.584 69.5431 34.344 69.5431 30.84C69.5431 27.336 68.4151 24.12 66.1591 21.192C63.9511 18.216 61.2391 16.728 58.0231 16.728C54.8071 16.728 52.0711 18.216 49.8151 21.192C47.6071 24.12 46.5031 27.336 46.5031 30.84C46.5031 34.344 47.6071 37.584 49.8151 40.56ZM87.1578 10.68H119.99V51H112.79V17.592H94.3578V51H87.1578V10.68ZM154.513 31.056H131.185V24.432H154.513V31.056ZM171.063 29.328H163.287L173.151 0.599997H194.895V7.8H178.479L174.879 18.024C176.319 17.544 177.975 17.304 179.847 17.304C184.551 17.304 188.655 19.008 192.159 22.416C195.711 25.824 197.487 29.88 197.487 34.584C197.487 39.288 195.711 43.344 192.159 46.752C188.655 50.16 184.551 51.864 179.847 51.864C175.671 51.864 171.999 50.592 168.831 48.048C165.663 45.504 163.647 42.336 162.783 38.544H170.559C171.135 40.272 172.311 41.736 174.087 42.936C175.911 44.088 177.831 44.664 179.847 44.664C182.439 44.664 184.767 43.632 186.831 41.568C188.943 39.504 189.999 37.176 189.999 34.584C189.999 31.992 188.943 29.664 186.831 27.6C184.767 25.536 182.439 24.504 179.847 24.504C178.119 24.504 176.439 24.96 174.807 25.872C173.223 26.736 171.975 27.888 171.063 29.328ZM225.887 10.68H233.087V26.808H251.519V10.68H258.719V51H251.519V33.72H233.087V51H225.887V10.68ZM269.698 39.192C269.698 35.928 270.874 33.144 273.226 30.84C275.578 28.536 278.41 27.384 281.722 27.384H289.786C291.322 27.384 292.618 27.096 293.674 26.52C294.73 25.944 295.258 25.056 295.258 23.856C295.258 21.888 294.394 20.208 292.666 18.816C290.938 17.424 288.946 16.728 286.69 16.728C282.802 16.728 279.682 18.768 277.33 22.848H269.554C270.946 19.104 273.178 16.008 276.25 13.56C279.37 11.064 282.826 9.816 286.618 9.816C291.322 9.816 295.162 11.4 298.138 14.568C301.162 17.736 302.674 21.576 302.674 26.088V51H295.474V47.976C293.314 50.568 289.978 51.864 285.466 51.864C280.954 51.864 277.186 50.712 274.162 48.408C271.186 46.056 269.698 42.984 269.698 39.192ZM276.898 39.192C276.898 40.872 277.714 42.264 279.346 43.368C280.978 44.424 283.018 44.952 285.466 44.952C288.346 44.952 290.722 44.208 292.594 42.72C294.514 41.184 295.474 39.216 295.474 36.816V31.2C294.322 33.264 292.186 34.296 289.066 34.296H281.722C280.378 34.296 279.226 34.776 278.266 35.736C277.354 36.648 276.898 37.8 276.898 39.192ZM352.697 9.816C357.881 9.816 362.297 11.952 365.945 16.224C369.593 20.496 371.417 25.368 371.417 30.84C371.417 36.312 369.593 41.184 365.945 45.456C362.297 49.728 357.881 51.864 352.697 51.864C348.137 51.864 344.297 50.088 341.177 46.536V64.32H333.977V10.68H341.177V15.144C344.153 11.592 347.993 9.816 352.697 9.816ZM344.489 40.56C346.745 43.488 349.481 44.952 352.697 44.952C355.913 44.952 358.625 43.488 360.833 40.56C363.089 37.584 364.217 34.344 364.217 30.84C364.217 27.336 363.089 24.12 360.833 21.192C358.625 18.216 355.913 16.728 352.697 16.728C349.481 16.728 346.745 18.216 344.489 21.192C342.281 24.12 341.177 27.336 341.177 30.84C341.177 34.344 342.281 37.584 344.489 40.56ZM389.043 10.68V23.928H397.467C401.067 23.928 404.211 25.296 406.899 28.032C409.635 30.72 411.003 33.864 411.003 37.464C411.003 41.064 409.635 44.232 406.899 46.968C404.211 49.656 401.067 51 397.467 51H381.843V10.68H389.043ZM424.539 51H417.339V10.68H424.539V51ZM401.787 42.072C403.131 40.728 403.803 39.192 403.803 37.464C403.803 35.736 403.131 34.2 401.787 32.856C400.443 31.512 398.883 30.84 397.107 30.84H389.043V44.088H397.107C398.883 44.088 400.443 43.416 401.787 42.072ZM437.514 10.68H444.714V26.808H463.146V10.68H470.346V51H463.146V33.72H444.714V51H437.514V10.68ZM517.253 10.68L499.973 28.248L517.541 51H508.541L494.933 33.36L490.541 37.824V51H483.341V10.68H490.541V27.96L507.389 10.68H517.253ZM538.758 44.952C542.646 44.952 545.766 42.912 548.118 38.832H555.966C554.478 42.624 552.198 45.744 549.126 48.192C546.054 50.64 542.598 51.864 538.758 51.864C533.574 51.864 529.158 49.728 525.51 45.456C521.862 41.184 520.038 36.312 520.038 30.84C520.038 25.368 521.862 20.496 525.51 16.224C529.158 11.952 533.574 9.816 538.758 9.816C543.942 9.816 548.358 11.952 552.006 16.224C555.654 20.496 557.478 25.368 557.478 30.84V33.216H527.382C527.862 36.384 529.158 39.144 531.27 41.496C533.382 43.8 535.878 44.952 538.758 44.952ZM545.526 19.608C543.606 17.688 541.35 16.728 538.758 16.728C536.166 16.728 533.838 17.712 531.774 19.68C529.758 21.6 528.414 23.952 527.742 26.736H549.702C548.886 23.904 547.494 21.528 545.526 19.608ZM106.289 144H100.385L88.433 115.056V144H80.945V93.6H87.569L103.337 132.12L119.177 93.6H125.801V144H118.313V115.056L106.289 144ZM142.09 109.224C145.738 104.952 150.154 102.816 155.338 102.816C160.522 102.816 164.938 104.952 168.586 109.224C172.234 113.496 174.058 118.368 174.058 123.84C174.058 129.312 172.234 134.184 168.586 138.456C164.938 142.728 160.522 144.864 155.338 144.864C150.154 144.864 145.738 142.728 142.09 138.456C138.442 134.184 136.618 129.312 136.618 123.84C136.618 118.368 138.442 113.496 142.09 109.224ZM147.13 133.56C149.386 136.488 152.122 137.952 155.338 137.952C158.554 137.952 161.266 136.488 163.474 133.56C165.73 130.584 166.858 127.344 166.858 123.84C166.858 120.336 165.73 117.12 163.474 114.192C161.266 111.216 158.554 109.728 155.338 109.728C152.122 109.728 149.386 111.216 147.13 114.192C144.922 117.12 143.818 120.336 143.818 123.84C143.818 127.344 144.922 130.584 147.13 133.56ZM200.673 137.952C204.561 137.952 207.681 135.912 210.033 131.832H217.881C216.393 135.624 214.113 138.744 211.041 141.192C207.969 143.64 204.513 144.864 200.673 144.864C195.489 144.864 191.073 142.728 187.425 138.456C183.777 134.184 181.953 129.312 181.953 123.84C181.953 118.368 183.777 113.496 187.425 109.224C191.073 104.952 195.489 102.816 200.673 102.816C204.513 102.816 207.969 104.04 211.041 106.488C214.113 108.936 216.393 112.056 217.881 115.848H210.033C207.681 111.768 204.561 109.728 200.673 109.728C197.457 109.728 194.721 111.216 192.465 114.192C190.257 117.12 189.153 120.336 189.153 123.84C189.153 127.344 190.257 130.584 192.465 133.56C194.721 136.488 197.457 137.952 200.673 137.952ZM261.54 103.68L244.26 121.248L261.828 144H252.828L239.22 126.36L234.828 130.824V144H227.628V103.68H234.828V120.96L251.676 103.68H261.54ZM302.937 132.048C302.937 135.216 301.713 138 299.265 140.4C296.865 142.8 294.081 144 290.913 144H269.025V103.68H289.617C292.785 103.68 295.545 104.856 297.897 107.208C300.249 109.512 301.425 112.248 301.425 115.416C301.425 118.92 300.369 121.464 298.257 123.048C299.601 124.008 300.705 125.304 301.569 126.936C302.481 128.568 302.937 130.272 302.937 132.048ZM292.713 118.728C293.721 117.768 294.225 116.64 294.225 115.344C294.225 114.048 293.721 112.944 292.713 112.032C291.705 111.072 290.553 110.592 289.257 110.592H276.225V120.096H289.257C290.553 120.096 291.705 119.64 292.713 118.728ZM294.081 135.576C295.185 134.568 295.737 133.392 295.737 132.048C295.737 130.704 295.185 129.528 294.081 128.52C293.025 127.512 291.801 127.008 290.409 127.008H276.225V137.088H290.409C291.801 137.088 293.025 136.584 294.081 135.576ZM320.927 103.68V116.928H329.351C332.951 116.928 336.095 118.296 338.783 121.032C341.519 123.72 342.887 126.864 342.887 130.464C342.887 134.064 341.519 137.232 338.783 139.968C336.095 142.656 332.951 144 329.351 144H313.727V103.68H320.927ZM356.423 144H349.223V103.68H356.423V144ZM333.671 135.072C335.015 133.728 335.687 132.192 335.687 130.464C335.687 128.736 335.015 127.2 333.671 125.856C332.327 124.512 330.767 123.84 328.991 123.84H320.927V137.088H328.991C330.767 137.088 332.327 136.416 333.671 135.072ZM388.084 103.68H395.284V130.752L414.58 103.68H420.916V144H413.716V116.928L394.42 144H388.084V103.68ZM455.549 109.224C459.197 104.952 463.613 102.816 468.797 102.816C473.981 102.816 478.397 104.952 482.045 109.224C485.693 113.496 487.517 118.368 487.517 123.84C487.517 129.312 485.693 134.184 482.045 138.456C478.397 142.728 473.981 144.864 468.797 144.864C463.613 144.864 459.197 142.728 455.549 138.456C451.901 134.184 450.077 129.312 450.077 123.84C450.077 118.368 451.901 113.496 455.549 109.224ZM460.589 133.56C462.845 136.488 465.581 137.952 468.797 137.952C472.013 137.952 474.725 136.488 476.933 133.56C479.189 130.584 480.317 127.344 480.317 123.84C480.317 120.336 479.189 117.12 476.933 114.192C474.725 111.216 472.013 109.728 468.797 109.728C465.581 109.728 462.845 111.216 460.589 114.192C458.381 117.12 457.277 120.336 457.277 123.84C457.277 127.344 458.381 130.584 460.589 133.56ZM522.052 115.344C519.892 112.56 517.252 111.168 514.132 111.168C511.012 111.168 508.348 112.56 506.14 115.344C503.98 118.08 502.9 121.128 502.9 124.488C502.9 127.848 503.98 130.92 506.14 133.704C508.348 136.44 511.012 137.808 514.132 137.808C517.252 137.808 519.892 136.44 522.052 133.704C524.26 130.92 525.364 127.848 525.364 124.488C525.364 121.128 524.26 118.08 522.052 115.344ZM529.396 89.64V96.624C528.004 97.344 526.3 97.704 524.284 97.704H514.996C508.372 97.704 504.556 101.352 503.548 108.648C505.948 105.816 509.476 104.4 514.132 104.4C519.172 104.4 523.492 106.44 527.092 110.52C530.74 114.6 532.564 119.304 532.564 124.632C532.564 129.96 530.74 134.664 527.092 138.744C523.492 142.824 519.172 144.864 514.132 144.864C508.564 144.864 504.1 142.656 500.74 138.24C497.428 133.776 495.772 128.28 495.772 121.752C495.772 118.056 495.892 114.864 496.132 112.176C496.42 109.44 496.948 106.704 497.716 103.968C498.532 101.232 499.636 99 501.028 97.272C502.42 95.544 504.292 94.104 506.644 92.952C509.044 91.8 511.9 91.128 515.212 90.936H524.284C526.348 90.936 528.052 90.504 529.396 89.64ZM566.97 110.592H551.85V130.68C551.85 139.704 548.178 144.216 540.834 144.216C539.634 144.216 538.674 144.096 537.954 143.856V137.088C538.29 137.232 538.89 137.304 539.754 137.304C543.018 137.304 544.65 135.096 544.65 130.68V103.68H574.17V144H566.97V110.592ZM585.109 132.192C585.109 128.928 586.285 126.144 588.637 123.84C590.989 121.536 593.821 120.384 597.133 120.384H605.197C606.733 120.384 608.029 120.096 609.085 119.52C610.141 118.944 610.669 118.056 610.669 116.856C610.669 114.888 609.805 113.208 608.077 111.816C606.349 110.424 604.357 109.728 602.101 109.728C598.213 109.728 595.093 111.768 592.741 115.848H584.965C586.357 112.104 588.589 109.008 591.661 106.56C594.781 104.064 598.237 102.816 602.029 102.816C606.733 102.816 610.573 104.4 613.549 107.568C616.573 110.736 618.085 114.576 618.085 119.088V144H610.885V140.976C608.725 143.568 605.389 144.864 600.877 144.864C596.365 144.864 592.597 143.712 589.573 141.408C586.597 139.056 585.109 135.984 585.109 132.192ZM592.309 132.192C592.309 133.872 593.125 135.264 594.757 136.368C596.389 137.424 598.429 137.952 600.877 137.952C603.757 137.952 606.133 137.208 608.005 135.72C609.925 134.184 610.885 132.216 610.885 129.816V124.2C609.733 126.264 607.597 127.296 604.477 127.296H597.133C595.789 127.296 594.637 127.776 593.677 128.736C592.765 129.648 592.309 130.8 592.309 132.192ZM646.902 137.952C650.79 137.952 653.91 135.912 656.262 131.832H664.11C662.622 135.624 660.342 138.744 657.27 141.192C654.198 143.64 650.742 144.864 646.902 144.864C641.718 144.864 637.302 142.728 633.654 138.456C630.006 134.184 628.182 129.312 628.182 123.84C628.182 118.368 630.006 113.496 633.654 109.224C637.302 104.952 641.718 102.816 646.902 102.816C650.742 102.816 654.198 104.04 657.27 106.488C660.342 108.936 662.622 112.056 664.11 115.848H656.262C653.91 111.768 650.79 109.728 646.902 109.728C643.686 109.728 640.95 111.216 638.694 114.192C636.486 117.12 635.382 120.336 635.382 123.84C635.382 127.344 636.486 130.584 638.694 133.56C640.95 136.488 643.686 137.952 646.902 137.952ZM702.369 103.68V110.592H688.833V144H681.633V110.592H668.097V103.68H702.369ZM709.558 103.68H716.758V130.752L736.054 103.68H742.39V144H735.19V116.928L715.894 144H709.558V103.68Z" fill="white"/>
+                </svg>
+                    
+            </div>
+        </div>
+    </div>
+
+    <div class="hero_shadows">
+        <div class="hero_shadows__item"></div>
+        <div class="hero_shadows__item"></div>
+    </div>
+
+    <!-- КОНТЕНТЫЙ БЛОК -->
+    <div class="hero_content">
+        <div class="hero_content_wrap">
+
+            <div class="hero__item active" data-index="0">
+                <div class="hero__item_wrap">
+                    <video class="hero__item__bg" muted playsinline loop src="./images/video_1.mp4"></video>
+                    <!-- <img src="./images/hero_2.jpg" alt="" class="hero__item__bg" /> -->
+                    <div class="hero__item_title">
+                        VSN <br>
+                        Realty</div>
+                    </div>
+                    <div class="hero__item_before"></div>
+                </div>
+            <div class="hero__item hide" data-index="1">
+                <div class="hero__item_wrap">
+                    <img src="./images/bus.jpg" alt="" class="hero__item__bg" />
+                    <div class="hero__item_title">
+                        VSN <br>
+                        Buisness</div>
+                    </div>
+                    <div class="hero__item_before"></div>
+            </div>
+            <div class="hero__item hide" data-index="2">
+                <div class="hero__item_wrap">
+                    <img src="./images/ипотека.jpg" alt="" class="hero__item__bg" />
+                    <div class="hero__item_title">
+                        VSN <br>
+                        Ипотека</div>
+                    </div>
+                    <div class="hero__item_before"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero__conf">
+            <div class="hero__conf_pag">
+                <div class="current">01</div>
+                \
+                <div class="all">03</div>
+            </div>
+            <div class="hero__conf_nav">
+                <img src="./images/icons/slider_arr_sm_wh.svg" alt="" class="prev disabled">
+                <img src="./images/icons/slider_arr_sm_wh_2.svg" alt="" class="next">
+            </div>
+        </div>
+        </div>
+
+        <div class="hero_head">
+            <div class="container">
+
+
+                <div class="hero_head_wrap">
+                    
+                    <div class="hero__nav" data-da="main,1300,1">
+                        <a href="" class="hero__nav_item">Новостройки Москвы</a>
+                        <a href="" class="hero__nav_item">Готовые квартиры</a>
+                        <a href="" class="hero__nav_item">Загородная недвижимость</a>
+                        <a href="" class="hero__nav_item">Коммерческая недвижимость</a>
+                        <a href="" class="hero__nav_item">Ипотека</a>
+                    </div>
+
+
+
+                    <div class="hero__widget">
+                        <div class="hero__title">
+                            <h2 class="hero__title_item active">
+                                VSN <br>
+                                Realty
+                            </h2>
+                            
+                            <h2 class="hero__title_item ">
+                                VSN <br>
+                                Buisness
+                            </h2>
+                            
+                            <h2 class="hero__title_item">
+                                VSN <br>
+                                Ипотека
+                            </h2>
+                        </div>
+
+                        <form class="hero__search">
+                            <label for="">
+                                <input type="text" class="hero__search_input" placeholder="Найти недвижимость">
+                             <div class="hero__search_btn"></div>
+                             <button class="hero__search_submit"></button>
+                            </label>
+                            <div class="hero__search_bottom">
+                                <div class="hero__search_variable active">Сданные</div>
+                                <div class="hero__search_variable">С отделкой</div>
+                                <div class="hero__search_variable">С терассой</div>
+                                <div class="hero__search_variable">В небоскрёбе</div>
+                            </div>
+                        </form>
+
+                        <div class="hero__descr">
+                            В прошлом месяце мы продали 80 квартир <br>
+                            в новостройках Москвы, сэкономили
+                            200 млн рублей на ипотеке
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+
+</section>
+      <section class="numslider" id="numSlider">
+
+    <div class="container">
+        <h2 class="numslider__title title-2">
+            Цифры
+        </h2>
+        <div class="numslider_wrap">
+            <div class="numslider_slider swiper">
+                <div class="swiper-wrapper">
+                    <div class="numslider_slider__item swiper-slide">
+
+                        <img src="./images/slide_1.png" alt="" class="numslider_slider__img">
+                        <h3>10 лет <br>
+                            безупречной <br>
+                            работы</h3>
+
+                            <div class="descr">В прошлом месяце мы продали 80 квартир
+                                в новостройках Москвы, сэкономили
+                                200 млн рублей на ипотеке</div>
+                    </div>
+                    <div class="numslider_slider__item swiper-slide">
+                        <img src="./images/slide_2.png" alt="" class="numslider_slider__img">
+                        <h3>Топ-5 <br>
+                            на рынке <br>
+                            Москвы <br>
+                            и области</h3>
+
+                            <div class="descr">В прошлом месяце мы продали 80 квартир
+                                в новостройках Москвы, сэкономили
+                                200 млн рублей на ипотеке</div>
+                    </div>
+                    <div class="numslider_slider__item swiper-slide">
+                        <img src="./images/slide_1.png" alt="" class="numslider_slider__img">
+                        <h3>10 лет <br>
+                            безупречной <br>
+                            работы</h3>
+
+                            <div class="descr">В прошлом месяце мы продали 80 квартир
+                                в новостройках Москвы, сэкономили
+                                200 млн рублей на ипотеке</div>
+                    </div>
+
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+
+                <div class="swiper-progress loading">
+                    <div class="swiper-progress-bar">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+      <section class="projects">
+    <div class="container">
+        <h2 class="projects__title title-2">
+            Проекты
+        </h2>
+        <div class="projects__inner">
+            <div class="projects__control projects-control">
+                <div class="swiper projects-control-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide projects-control__item">
+                            <p class="projects-control__subtitle">
+                                Жилой комплекс
+                            </p>
+                            <h3 class="projects-control__title">
+                                Архитектор
+                            </h3>
+                            <p class="projects-control__descr">
+                                Получите годовой абонемент
+                                в СПА и фитнес на двоих в подарок!
+                            </p>
+                            <p class="projects-control__price">
+                                от 6,5 млн. ₽
+                            </p>
+                            <div class="projects-control__location">
+                                <span>ВАО</span>
+                                <span>м. Пеображенская площадь</span>
+                                <span>5 мин</span>
+                            </div>
+                            <a href="#"
+                                class="btn-reset btn-primary btn--arrow-right projects-control__btn">Подробнее</a>
+                        </div>
+                        <div class="swiper-slide projects-control__item">
+                            <p class="projects-control__subtitle">
+                                Жилой комплекс
+                            </p>
+                            <h3 class="projects-control__title">
+                                MOD
+                            </h3>
+                            <p class="projects-control__descr">
+                                Получите годовой абонемент
+                                в СПА и фитнес на двоих в подарок!
+                            </p>
+                            <p class="projects-control__price">
+                                от 6,5 млн. ₽
+                            </p>
+                            <div class="projects-control__location">
+                                <span>ВАО</span>
+                                <span>м. Пеображенская площадь</span>
+                                <span>5 мин</span>
+                            </div>
+                            <a href="#"
+                                class="btn-reset btn-primary btn--arrow-right projects-control__btn">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="projects__nav" data-da=".projects__footer,768,last">
+                        <div class="projects-nav-button-prev navigation-primary navigation-primary--prev"></div>
+                        <div class="projects-nav-button-next navigation-primary navigation-primary--next"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="projects__body projects-body">
+                <div class="swiper projects-body-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide projects-body__item">
+                            <img src="./images/projects_1.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide projects-body__item">
+                            <img src="./images/projects_1.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="projects__footer">
+                <div class="projects-pagination pagination-primary"></div>
+                <div class="swiper-progress project-progress loading">
+                    <div class="swiper-progress-bar">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+      <section class="directions">
+    <div class="container">
+        <h2 class="directions__title title-2">
+            Направления
+        </h2>
+        <ul class="directions__list">
+            <li class="directions__item directions-item directions-item--1">
+                <a href="#" class="directions-item__inner">
+                    <img src="./images/directions-item-1.jpg" alt="">
+                    <div class="directions-item__top">
+                        <div class="directions-item__left">
+                            <span class="directions-item__count"></span>
+                            <h4 class="directions-item__title">
+                                Новостройки
+                                Москвы и Подмосковья
+                            </h4>
+                        </div>
+                        <span class="directions-item__arrow"></span>
+                    </div>
+                </a>
+            </li>
+            <li class="directions__item directions-item directions-item--2">
+                <a href="#" class="directions-item__inner">
+                    <img src="./images/directions-item-2.jpg" alt="">
+                    <div class="directions-item__top">
+                        <div class="directions-item__left">
+                            <span class="directions-item__count"></span>
+                            <h4 class="directions-item__title">
+                                Вторичная
+                                недвижимость
+                            </h4>
+                        </div>
+                        <span class="directions-item__arrow"></span>
+                    </div>
+                </a>
+            </li>
+            <li class="directions__item directions-item directions-item--3">
+                <a href="#" class="directions-item__inner">
+                    <img src="./images/directions-item-3.jpg" alt="">
+                    <div class="directions-item__top">
+                        <div class="directions-item__left">
+                            <span class="directions-item__count"></span>
+                            <h4 class="directions-item__title">
+                                Коммерческая
+                                недвижимость
+                            </h4>
+                        </div>
+                        <span class="directions-item__arrow"></span>
+                    </div>
+                </a>
+            </li>
+            <li class="directions__item directions-item directions-item--4">
+                <a href="#" class="directions-item__inner">
+                    <img src="./images/directions-item-4.jpg" alt="">
+                    <div class="directions-item__top">
+                        <div class="directions-item__left">
+                            <span class="directions-item__count"></span>
+                            <h4 class="directions-item__title">
+                                Ипотека
+                            </h4>
+                        </div>
+                        <span class="directions-item__arrow"></span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
+      <section class="convenient-services">
+    <div class="container">
+        <h2 class="convenient-services__title title-2">
+            Удобные сервисы
+        </h2>
+        <p class="convenient-services__descr">
+            Оказываем полный цикл услуг 
+            и готовы максимально оперативно 
+            и профессионально решить любой вопрос клиента
+        </p>
+        <div class="convenient-services__inner">
+            <div class="convenient-services__left">
+                <img src="./images/convenient-services-1.png" alt="">
+            </div>
+            <div class="convenient-services__right">
+                <ul class="convenient-services__list list-links">
+                    <li class="list-links__item">
+                        <a href="#" class="list-links__link">
+                            <span class="list-links__count"></span>
+                            <span class="list-links__text">Ипотека онлайн</span>
+                            <span class="list-links__arrow"></span>
+                        </a>
+                    </li>
+                    <li class="list-links__item">
+                        <a href="#" class="list-links__link">
+                            <span class="list-links__count"></span>
+                            <span class="list-links__text">Private bank</span>
+                            <span class="list-links__arrow"></span>
+                        </a>
+                    </li>
+                    <li class="list-links__item">
+                        <a href="#" class="list-links__link">
+                            <span class="list-links__count"></span>
+                            <span class="list-links__text">Электронная регистрация</span>
+                            <span class="list-links__arrow"></span>
+                        </a>
+                    </li>
+                    <li class="list-links__item">
+                        <a href="#" class="list-links__link">
+                            <span class="list-links__count"></span>
+                            <span class="list-links__text">Страхование сделки</span>
+                            <span class="list-links__arrow"></span>
+                        </a>
+                    </li>
+                    <li class="list-links__item">
+                        <a href="#" class="list-links__link">
+                            <span class="list-links__count"></span>
+                            <span class="list-links__text">Ипотека онлайн</span>
+                            <span class="list-links__arrow"></span>
+                        </a>
+                    </li>
+                    <li class="list-links__item">
+                        <a href="#" class="list-links__link">
+                            <span class="list-links__count"></span>
+                            <span class="list-links__text">Private bank</span>
+                            <span class="list-links__arrow"></span>
+                        </a>
+                    </li>
+                    <li class="list-links__item">
+                        <a href="#" class="list-links__link">
+                            <span class="list-links__count"></span>
+                            <span class="list-links__text">Электронная регистрация</span>
+                            <span class="list-links__arrow"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+      <section class="press-center">
+    <div class="container">
+        <h2 class="press-center__title title-2">
+            Пресс–центр
+        </h2>
+        <ul class="press-center__breadcrumbs breadcrumbs">
+            <li class="breadcrumbs__item">
+                <a href="#">
+                    Новости
+                </a>
+            </li>
+            <li class="breadcrumbs__item">
+                <a href="#">
+                    Пресс-релизы
+                </a>
+            </li>
+            <li class="breadcrumbs__item">
+                <span>
+                    СМИ о нас
+                </span>
+            </li>
+        </ul>
+        <div class="swiper press-center-slider" data-mobile="false">
+            <div class="swiper-wrapper press-center__list">
+                <div class="swiper-slide press-center__item press-center-item press-center-item--1">
+                    <article class="press-center-item__inner">
+                        <img src="./images/press-center-1.jpg" alt="">
+                        <div class="press-center-item__wrapper">
+                            <h4 class="press-center-item__title">
+                                Скидки до 5% на квартиры в жилом квартале «Шагал»
+                            </h4>
+                            <div class="press-center-item__footer">
+                                <time class="press-center-item__time" datetime="2021-12-30">30.12.2021</time>
+                                <ul class="press-center-item__tags tags">
+                                    <li class="press-center-item__tag tags__item">
+                                        Скидки
+                                    </li>
+                                    <li class="press-center-item__tag tags__item">
+                                        Жилой квартал «Shagal» (Шагал)
+                                    </li>
+                                    <li class="press-center-item__tag tags__item">
+                                        Скидки
+                                    </li>
+                                    <li class="press-center-item__tag tags__item">
+                                        Жилой квартал «Shagal» (Шагал)
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="swiper-slide press-center__item press-center-item press-center-item--2">
+                    <article class="press-center-item__inner">
+                        <img src="./images/press-center-2.jpg" alt="">
+                        <div class="press-center-item__wrapper">
+                            <h4 class="press-center-item__title">
+                                Первая заливка бетона в Парковом квартале SELF!
+                            </h4>
+                            <div class="press-center-item__footer">
+                                <time class="press-center-item__time" datetime="2021-12-30">30.12.2021</time>
+                                <ul class="press-center-item__tags tags">
+                                    <li class="press-center-item__tag tags__item">
+                                        Скидки
+                                    </li>
+                                    <li class="press-center-item__tag tags__item">
+                                        Жилой квартал «Shagal» (Шагал)
+                                    </li>
+                                    <li class="press-center-item__tag tags__item">
+                                        Тест
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="swiper-slide press-center__item press-center-item press-center-item--3">
+                    <article class="press-center-item__inner">
+                        <img src="./images/press-center-3.jpg" alt="">
+                        <div class="press-center-item__wrapper">
+                            <h4 class="press-center-item__title">
+                                График работы офисов продаж во время новогодних праздников
+                            </h4>
+                            <div class="press-center-item__footer">
+                                <time class="press-center-item__time" datetime="2021-12-30">30.12.2021</time>
+                                <ul class="press-center-item__tags tags">
+                                    <li class="press-center-item__tag tags__item">
+                                        Скидки
+                                    </li>
+                                    <li class="press-center-item__tag tags__item">
+                                        Жилой квартал «Shagal» (Шагал)
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="swiper-slide press-center__item press-center-item press-center-item--4">
+                    <article class="press-center-item__inner">
+                        <img src="./images/press-center-4.jpg" alt="">
+                        <div class="press-center-item__wrapper">
+                            <h4 class="press-center-item__title">
+                                Выдача ключей в ЖК Spires!
+                            </h4>
+                            <div class="press-center-item__footer">
+                                <time class="press-center-item__time" datetime="2021-12-30">30.12.2021</time>
+                                <ul class="press-center-item__tags tags">
+                                    <li class="press-center-item__tag tags__item">
+                                        Скидки
+                                    </li>
+                                    <li class="press-center-item__tag tags__item">
+                                        Жилой квартал «Shagal» (Шагал)
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <a href="#" class="press-center__item press-center-item--more press-center-item press-center-item--5">
+                    Другие события
+                </a>
+            </div>
+        </div>
+        <div class="press-center__footer">
+            <div class="press-center-pagination pagination-primary"></div>
+            <div class="swiper-progress press-center-progress loading">
+                <div class="swiper-progress-bar">
+
+                </div>
+            </div>
+            <div class="press-center__nav">
+                <div class="press-center-button-prev navigation-primary navigation-primary--prev"></div>
+                <div class="press-center-button-next navigation-primary navigation-primary--next"></div>
+            </div>
+        </div>
+    </div>
+</section>
+      <section>
+        <!-- <div class="container">Main</div> -->
+      </section>
+    </main>
+
+    <footer class="footer">
+  <div class="container">
+    <div class="footer_wrap">
+      <div class="footer__col">
+        <h3 class="footer__title"><img src="./images/icons/realty_pre.svg" alt="" class="footer__title_pre" /> VSN Realty </h3>
+        <ul>
+          <li><a href="">Новостройки Москвы</a></li>
+          <li><a href="">Новостройки Подмосковья</a></li>
+          <li><a href="">Вторичная недвижимость</a></li>
+          <li><a href="">Коммерческая недвижимость</a></li>
+          <li><a href="">Ипотека</a></li>
+          <li><a href="">Сервисы</a></li>
+          <li><a href="">Каталог ЖК</a></li>
+        </ul>
+
+        <a href="#" class="footer_titlelink">
+          
+          <h3 class="footer__title"><img src="./images/icons/ipoteka_pre.svg" alt="" class="footer__title_pre">Ipoteka Group <img src="./images/icons/link_arr.svg" alt="" class="footer__title_arr">  </h3> 
+        </a>
+      </div>
+      <div class="footer__col">
+        <h3 class="footer__title"><img src="./images/icons/business_pre.svg" alt="" class="footer__title_pre"> VSN Business</h3>
+        <ul>
+          <li><a href="">Новостройки Москвы</a></li>
+          <li><a href="">Квартиры в построенных домах</a></li>
+          <li><a href="">Лофты и апартаменты</a></li>
+          <li><a href="">Москва-Сити </a></li>
+          <li><a href="">Пентхаусы Москвы  </a></li>
+          <li><a href="">Каталог ЖК</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h3 class="footer__title">Компания</h3>
+        <ul>
+          <li><a href="">Кейсы </a></li>
+          <li><a href="">Центр обучения</a></li>
+          <li><a href="">Партнеры</a></li>
+          <li><a href="">Награды</a></li>
+          <li><a href="">Корпоративная жизнь</a></li>
+          <li><a href="">Карьера в компании</a></li>
+          <li><a href="">Пресс центр</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h3 class="footer__title">Контакты</h3>
+        <a href="tel:+74951864436" class="footer_phone">7 (495) 186-44-36</a>
+        <span class="footer_phone__under">Для жителей Москвы и Московской области</span>
+        <a href="tel:88008000000" class="footer_phone">8 (800) 800-00-00</a>
+        <span class="footer_phone__under">Бесплатный звонок по России</span>
+        <div class="footer_social">
+          <a href="#" class="footer_social__item">
+            <img src="./images/icons/tg.svg" alt=""> <span>Telegram</span>
+          </a>
+          <a href="#" class="footer_social__item">
+            <img src="./images/icons/wh.svg" alt=""> <span>Whatsapp</span>
+          </a>
+        </div>
+
+        <span class="footer_phone__under">Адрес главного офиса</span>
+        <div class="footer_address">
+          Москва, Новодмитровская ул., д. 2, корп. 1, <br>
+          МФК «Савеловский Сити» (Жёлтая башня) <br>
+        </div>
+        <div class="footer_address">
+          
+          Ежеденевно, 09:00 – 18:00
+        </div>
+
+        <a href="mailto:vsnr@vsnr.ru" class="footer_email">vsnr@vsnr.ru</a>
+
+        <a href="#" class="footer_office">Офисы продаж</a>
+
+        <div class="footer_social">
+          <a href="#" class="footer_social__item">
+            <img src="./images/icons/vk.svg" alt="">
+          </a>
+          <a href="#" class="footer_social__item">
+            <img src="./images/icons/tg.svg" alt="">
+          </a>
+          <a href="#" class="footer_social__item">
+            <img src="./images/icons/yt.svg" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer_bottom">
+      <div class="footer_bottom__descr">
+        Опубликованная на данном сайте информация носит исключительно информационный характер и не является публичной офертой, определяемой положениями ст. 437 Гражданского кодекса Российской Федерации.
+      </div>
+
+      <div class="footer_bottom__wrap">
+        <div class="footer_bottom__privacy">
+          <div class="copyright">
+            © 2008 — 2021.VSN Realty. Все права защищены.
+          </div>
+          <a href="#" class="politic">
+            Политика конфиденциальности
+          </a>
+        </div>
+        <div class="footer_bottom__createdby">
+          Сделано в A M I O
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <script src="./js/main.min.js"></script>
+  </body>
+</html>
