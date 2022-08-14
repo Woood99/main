@@ -418,20 +418,21 @@
                 <div class="tabs__body">
                     <form class="filter container">
                         <div class="filter__inner">
-                            <button type="button" class="btn-reset filter__county filter-county">
+                            <button type="button" class="btn-reset filter__item filter__county filter-county">
                                 Округ
                                 <svg class="arrow-down">
                                     <use xlink:href="images/sprites/sprite-mono.svg#arrow-down"></use>
                                 </svg>
                             </button>
-                            <div class="filter__rooms filter-rooms">
+                            <div class="filter__item filter__rooms filter-rooms">
                                 <span class="filter__subtitle">Комнаты</span>
                                 <div class="filter-rooms__inner">
                                     <div class="checkbox">
                                         <input id="filter-rooms_studios" name="filter-rooms-studios"
                                             class="checkbox__input" type="checkbox" value="true" checked>
                                         <label for="filter-rooms_studios" class="checkbox__label">
-                                            <span class="checkbox__text">Студии</span>
+                                            <span class="checkbox__text checkbox__text-studios">Студии</span>
+                                            <span class="checkbox__text checkbox__text-studios--mobile">С</span>
                                         </label>
                                     </div>
                                     <div class="checkbox">
@@ -471,7 +472,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="filter__checkbox">
+                            <div class="filter__item filter__checkbox">
                                 <div class="checkbox-primary">
                                     <input id="filter_start-of-sales" name="Старт продаж"
                                         class="checkbox-primary__input" type="checkbox" value="true" checked>
@@ -480,7 +481,7 @@
                                     </label>
                                 </div>
                             </div>
-                            <div class="filter__range filter-range">
+                            <div class="filter__item filter__range filter-range">
                                 <span class="filter__subtitle">Площадь, м2</span>
                                 <div class="filter-range__nav">
                                     <span data-default-start>36.5</span>
@@ -488,7 +489,7 @@
                                 </div>
                                 <div class="filter-range__inner" data-min="36.5" data-max="40"></div>
                             </div>
-                            <div class="filter__range filter-range">
+                            <div class="filter__item filter__range filter-range">
                                 <span class="filter__subtitle">Цена, млн. ₽</span>
                                 <div class="filter-range__nav">
                                     <span data-default-start>8.4</span>
@@ -496,7 +497,7 @@
                                 </div>
                                 <div class="filter-range__inner" data-min="8.4" data-max="9.4"></div>
                             </div>
-                            <div class="filter__btns">
+                            <div class="filter__item filter__btns">
                                     <button type="submit" class="btn-reset btn-primary btn-primary--arrow btn--schist">
                                         Показать
                                         <svg>
@@ -509,7 +510,7 @@
                                     </svg>
                                 </button>
                             </div>
-                            <div class="filter__search search">
+                            <div class="filter__item filter__search search">
                                 <button type="button" class="btn-reset search__btn" aria-label="Кнопка поиска">
                                     <svg>
                                       <use xlink:href="images/sprites/sprite-mono.svg#search"></use>
@@ -517,7 +518,7 @@
                                 </button>
                                 <input type="search" name="Поиск" class="input-reset search__input" placeholder="Город, адрес, ЖК, шоссе или метро">
                             </div>
-                            <div class="filter__control filter-control">
+                            <div class="filter__item filter__control filter-control">
                                 <span class="filter-control__map active">НА КАРТЕ</span>
                                 <button type="button" class="btn-reset btn-switch active"></button>
                                 <span class="filter-control__tile">ПЛИТКА</span>
@@ -529,12 +530,12 @@
                             <ul class="objects-city__left-list simplebar-primary">
                                 <div class="objects-city__left-item card-primary">
                                     <div class="card-primary__left">
-                                        <div class="card-primary__img">
-                                            <picture><source srcset="./images/projects_1.webp" type="image/webp"><img src="./images/projects_1.jpg" alt=""></picture>
+                                        <a href="#" class="card-primary__img">
+                                            <picture><source srcset="./images/projects_1.webp" type="image/webp"><img src="./images/projects_1.jpg" alt="" width="200" height="130"></picture>
                                             <span class="card-primary__new-object new-object-tag">
                                                 Новый объект
                                             </span>
-                                        </div>
+                                        </a>
                                         <div class="card-primary__benefits">
                                             <span>5 мин пешком до метро</span>
                                             <span>Отделка White Box</span>
@@ -542,9 +543,9 @@
                                         </div>
                                     </div>
                                     <div class="card-primary__right">
-                                        <h3 class="card-primary__title">
+                                        <a href="#" class="card-primary__title">
                                             Жилой комплекс “Архитектор”
-                                        </h3>
+                                        </a>
                                         <span class="card-primary__geo">
                                             Москва, ЦАО, Дружинниковская ул., д. 15
                                         </span>
@@ -578,9 +579,9 @@
                                 </div>
                                 <div class="objects-city__left-item card-primary">
                                     <div class="card-primary__left">
-                                        <div class="card-primary__img">
-                                            <picture><source srcset="./images/projects_1.webp" type="image/webp"><img src="./images/projects_1.jpg" alt=""></picture>
-                                        </div>
+                                        <a href="#" class="card-primary__img">
+                                            <picture><source srcset="./images/projects_1.webp" type="image/webp"><img src="./images/projects_1.jpg" alt="" width="200" height="130"></picture>
+                                        </a>
                                         <div class="card-primary__benefits">
                                             <span>5 мин пешком до метро</span>
                                             <span>Отделка White Box</span>
@@ -588,9 +589,9 @@
                                         </div>
                                     </div>
                                     <div class="card-primary__right">
-                                        <h3 class="card-primary__title">
+                                        <a href="#" class="card-primary__title">
                                             Жилой комплекс “MOD”
-                                        </h3>
+                                        </a>
                                         <span class="card-primary__geo">
                                             Москва, ЦАО, Дружинниковская ул., д. 15
                                         </span>
@@ -624,12 +625,12 @@
                                 </div>
                                 <div class="objects-city__left-item card-primary">
                                     <div class="card-primary__left">
-                                        <div class="card-primary__img">
-                                            <picture><source srcset="./images/projects_1.webp" type="image/webp"><img src="./images/projects_1.jpg" alt=""></picture>
+                                        <a href="#" class="card-primary__img">
+                                            <picture><source srcset="./images/projects_1.webp" type="image/webp"><img src="./images/projects_1.jpg" alt="" width="200" height="130"></picture>
                                             <span class="card-primary__new-object new-object-tag">
                                                 Новый объект
                                             </span>
-                                        </div>
+                                        </a>
                                         <div class="card-primary__benefits">
                                             <span>5 мин пешком до метро</span>
                                             <span>Отделка White Box</span>
@@ -637,9 +638,9 @@
                                         </div>
                                     </div>
                                     <div class="card-primary__right">
-                                        <h3 class="card-primary__title">
+                                        <a href="#" class="card-primary__title">
                                             Жилой комплекс “Архитектор”
-                                        </h3>
+                                        </a>
                                         <span class="card-primary__geo">
                                             Москва, ЦАО, Дружинниковская ул., д. 15
                                         </span>
@@ -673,12 +674,12 @@
                                 </div>
                                 <div class="objects-city__left-item card-primary">
                                     <div class="card-primary__left">
-                                        <div class="card-primary__img">
-                                            <picture><source srcset="./images/projects_1.webp" type="image/webp"><img src="./images/projects_1.jpg" alt=""></picture>
+                                        <a href="#" class="card-primary__img">
+                                            <picture><source srcset="./images/projects_1.webp" type="image/webp"><img src="./images/projects_1.jpg" alt="" width="200" height="130"></picture>
                                             <span class="card-primary__new-object new-object-tag">
                                                 Новый объект
                                             </span>
-                                        </div>
+                                        </a>
                                         <div class="card-primary__benefits">
                                             <span>5 мин пешком до метро</span>
                                             <span>Отделка White Box</span>
@@ -686,9 +687,9 @@
                                         </div>
                                     </div>
                                     <div class="card-primary__right">
-                                        <h3 class="card-primary__title">
+                                        <a href="#" class="card-primary__title">
                                             Жилой комплекс “Архитектор”
-                                        </h3>
+                                        </a>
                                         <span class="card-primary__geo">
                                             Москва, ЦАО, Дружинниковская ул., д. 15
                                         </span>
@@ -722,12 +723,12 @@
                                 </div>
                                 <div class="objects-city__left-item card-primary">
                                     <div class="card-primary__left">
-                                        <div class="card-primary__img">
-                                            <picture><source srcset="./images/projects_1.webp" type="image/webp"><img src="./images/projects_1.jpg" alt=""></picture>
+                                        <a href="#" class="card-primary__img">
+                                            <picture><source srcset="./images/projects_1.webp" type="image/webp"><img src="./images/projects_1.jpg" alt="" width="200" height="130"></picture>
                                             <span class="card-primary__new-object new-object-tag">
                                                 Новый объект
                                             </span>
-                                        </div>
+                                        </>
                                         <div class="card-primary__benefits">
                                             <span>5 мин пешком до метро</span>
                                             <span>Отделка White Box</span>
@@ -735,9 +736,9 @@
                                         </div>
                                     </div>
                                     <div class="card-primary__right">
-                                        <h3 class="card-primary__title">
+                                        <a href="#" class="card-primary__title">
                                             Жилой комплекс “Архитектор”
-                                        </h3>
+                                        </a>
                                         <span class="card-primary__geo">
                                             Москва, ЦАО, Дружинниковская ул., д. 15
                                         </span>
@@ -778,7 +779,7 @@
                             <div class="cards-list__inner grid">
                                 <div class="cards-list__item card-secondary">
                                     <a href="#" class="card-secondary__img">
-                                        <picture><source srcset="./images/projects_1.webp" type="image/webp"><img src="./images/projects_1.jpg" alt=""></picture>
+                                        <picture><source srcset="./images/projects_1.webp" type="image/webp"><img src="./images/projects_1.jpg" alt="" width="340" height="220"></picture>
                                         <span class="card-secondary__new-object new-object-tag">
                                             Новый объект
                                         </span>
@@ -791,6 +792,9 @@
                                         <a href="#" class="card-secondary__title">
                                             Клубный дом «BOGEN HOUSE» (Боген Хаус)
                                         </a>
+                                        <a href="#" class="card-secondary__title card-secondary__title--mobile">
+                                            Клубный дом
+                                        </a>
                                         <span class="card-secondary__price">
                                             от 6,5 млн. ₽
                                         </span>
@@ -798,7 +802,7 @@
                                 </div>
                                 <div class="cards-list__item card-secondary">
                                     <a href="#" class="card-secondary__img">
-                                        <picture><source srcset="./images/projects_1.webp" type="image/webp"><img src="./images/projects_1.jpg" alt=""></picture>
+                                        <picture><source srcset="./images/projects_1.webp" type="image/webp"><img src="./images/projects_1.jpg" alt="" width="340" height="220"></picture>
                                     </a>
                                     <div class="card-secondary__body">
                                         <div class="card-secondary__location location-items">
@@ -809,6 +813,9 @@
                                         <a href="#" class="card-secondary__title">
                                             ЖК «Тессинский, 1»
                                         </a>
+                                        <a href="#" class="card-secondary__title card-secondary__title--mobile">
+                                            Тессинский
+                                        </a>
                                         <span class="card-secondary__price">
                                             от 6,5 млн. ₽
                                         </span>
@@ -816,7 +823,7 @@
                                 </div>
                                 <div class="cards-list__item card-secondary">
                                     <a href="#" class="card-secondary__img">
-                                        <picture><source srcset="./images/projects_1.webp" type="image/webp"><img src="./images/projects_1.jpg" alt=""></picture>
+                                        <picture><source srcset="./images/projects_1.webp" type="image/webp"><img src="./images/projects_1.jpg" alt="" width="340" height="220"></picture>
                                         <span class="card-secondary__new-object new-object-tag">
                                             Новый объект
                                         </span>
@@ -829,6 +836,9 @@
                                         <a href="#" class="card-secondary__title">
                                             ЖК «TITUL на Якиманке» (Титул)
                                         </a>
+                                        <a href="#" class="card-secondary__title card-secondary__title--mobile">
+                                            Титул
+                                        </a>
                                         <span class="card-secondary__price">
                                             от 6,5 млн. ₽
                                         </span>
@@ -836,7 +846,7 @@
                                 </div>
                                 <div class="cards-list__item card-secondary">
                                     <a href="#" class="card-secondary__img">
-                                        <picture><source srcset="./images/projects_1.webp" type="image/webp"><img src="./images/projects_1.jpg" alt=""></picture>
+                                        <picture><source srcset="./images/projects_1.webp" type="image/webp"><img src="./images/projects_1.jpg" alt="" width="340" height="220"></picture>
                                     </a>
                                     <div class="card-secondary__body">
                                         <div class="card-secondary__location location-items">
@@ -847,6 +857,9 @@
                                         <a href="#" class="card-secondary__title">
                                             ЖК «Discovery» (Дискавери)
                                         </a>
+                                        <a href="#" class="card-secondary__title card-secondary__title--mobile">
+                                            Discovery
+                                        </a>
                                         <span class="card-secondary__price">
                                             от 6,5 млн. ₽
                                         </span>
@@ -854,7 +867,7 @@
                                 </div>
                                 <div class="cards-list__item card-secondary">
                                     <a href="#" class="card-secondary__img">
-                                        <picture><source srcset="./images/projects_1.webp" type="image/webp"><img src="./images/projects_1.jpg" alt=""></picture>
+                                        <picture><source srcset="./images/projects_1.webp" type="image/webp"><img src="./images/projects_1.jpg" alt="" width="340" height="220"></picture>
                                         <span class="card-secondary__new-object new-object-tag">
                                             Новый объект
                                         </span>
@@ -867,6 +880,9 @@
                                         <a href="#" class="card-secondary__title">
                                             Клубный дом «BOGEN HOUSE» (Боген Хаус)
                                         </a>
+                                        <a href="#" class="card-secondary__title card-secondary__title--mobile">
+                                            Клубный дом
+                                        </a>
                                         <span class="card-secondary__price">
                                             от 6,5 млн. ₽
                                         </span>
@@ -874,7 +890,7 @@
                                 </div>
                                 <div class="cards-list__item card-secondary">
                                     <a href="#" class="card-secondary__img">
-                                        <picture><source srcset="./images/projects_1.webp" type="image/webp"><img src="./images/projects_1.jpg" alt=""></picture>
+                                        <picture><source srcset="./images/projects_1.webp" type="image/webp"><img src="./images/projects_1.jpg" alt="" width="340" height="220"></picture>
                                     </a>
                                     <div class="card-secondary__body">
                                         <div class="card-secondary__location location-items">
@@ -885,6 +901,9 @@
                                         <a href="#" class="card-secondary__title">
                                             ЖК «Тессинский, 1»
                                         </a>
+                                        <a href="#" class="card-secondary__title card-secondary__title--mobile">
+                                            Тессинский
+                                        </a>
                                         <span class="card-secondary__price">
                                             от 6,5 млн. ₽
                                         </span>
@@ -892,7 +911,7 @@
                                 </div>
                                 <div class="cards-list__item card-secondary">
                                     <a href="#" class="card-secondary__img">
-                                        <picture><source srcset="./images/projects_1.webp" type="image/webp"><img src="./images/projects_1.jpg" alt=""></picture>
+                                        <picture><source srcset="./images/projects_1.webp" type="image/webp"><img src="./images/projects_1.jpg" alt="" width="340" height="220"></picture>
                                         <span class="card-secondary__new-object new-object-tag">
                                             Новый объект
                                         </span>
@@ -905,6 +924,9 @@
                                         <a href="#" class="card-secondary__title">
                                             ЖК «TITUL на Якиманке» (Титул)
                                         </a>
+                                        <a href="#" class="card-secondary__title card-secondary__title--mobile">
+                                            Титул
+                                        </a>
                                         <span class="card-secondary__price">
                                             от 6,5 млн. ₽
                                         </span>
@@ -912,7 +934,7 @@
                                 </div>
                                 <div class="cards-list__item card-secondary">
                                     <a href="#" class="card-secondary__img">
-                                        <picture><source srcset="./images/projects_1.webp" type="image/webp"><img src="./images/projects_1.jpg" alt=""></picture>
+                                        <picture><source srcset="./images/projects_1.webp" type="image/webp"><img src="./images/projects_1.jpg" alt="" width="340" height="220"></picture>
                                     </a>
                                     <div class="card-secondary__body">
                                         <div class="card-secondary__location location-items">
@@ -923,6 +945,9 @@
                                         <a href="#" class="card-secondary__title">
                                             ЖК «Discovery» (Дискавери)
                                         </a>
+                                        <a href="#" class="card-secondary__title card-secondary__title--mobile">
+                                            Discovery
+                                        </a>
                                         <span class="card-secondary__price">
                                             от 6,5 млн. ₽
                                         </span>
@@ -930,7 +955,7 @@
                                 </div>
                                 <div class="cards-list__item card-secondary">
                                     <a href="#" class="card-secondary__img">
-                                        <picture><source srcset="./images/projects_1.webp" type="image/webp"><img src="./images/projects_1.jpg" alt=""></picture>
+                                        <picture><source srcset="./images/projects_1.webp" type="image/webp"><img src="./images/projects_1.jpg" alt="" width="340" height="220"></picture>
                                         <span class="card-secondary__new-object new-object-tag">
                                             Новый объект
                                         </span>
@@ -943,6 +968,9 @@
                                         <a href="#" class="card-secondary__title">
                                             Клубный дом «BOGEN HOUSE» (Боген Хаус)
                                         </a>
+                                        <a href="#" class="card-secondary__title card-secondary__title--mobile">
+                                            Клубный дом
+                                        </a>
                                         <span class="card-secondary__price">
                                             от 6,5 млн. ₽
                                         </span>
@@ -950,7 +978,7 @@
                                 </div>
                                 <div class="cards-list__item card-secondary">
                                     <a href="#" class="card-secondary__img">
-                                        <picture><source srcset="./images/projects_1.webp" type="image/webp"><img src="./images/projects_1.jpg" alt=""></picture>
+                                        <picture><source srcset="./images/projects_1.webp" type="image/webp"><img src="./images/projects_1.jpg" alt="" width="340" height="220"></picture>
                                     </a>
                                     <div class="card-secondary__body">
                                         <div class="card-secondary__location location-items">
@@ -961,6 +989,9 @@
                                         <a href="#" class="card-secondary__title">
                                             ЖК «Тессинский, 1»
                                         </a>
+                                        <a href="#" class="card-secondary__title card-secondary__title--mobile">
+                                            Тессинский
+                                        </a>
                                         <span class="card-secondary__price">
                                             от 6,5 млн. ₽
                                         </span>
@@ -968,7 +999,7 @@
                                 </div>
                                 <div class="cards-list__item card-secondary">
                                     <a href="#" class="card-secondary__img">
-                                        <picture><source srcset="./images/projects_1.webp" type="image/webp"><img src="./images/projects_1.jpg" alt=""></picture>
+                                        <picture><source srcset="./images/projects_1.webp" type="image/webp"><img src="./images/projects_1.jpg" alt="" width="340" height="220"></picture>
                                         <span class="card-secondary__new-object new-object-tag">
                                             Новый объект
                                         </span>
@@ -981,6 +1012,9 @@
                                         <a href="#" class="card-secondary__title">
                                             ЖК «TITUL на Якиманке» (Титул)
                                         </a>
+                                        <a href="#" class="card-secondary__title card-secondary__title--mobile">
+                                            Титул
+                                        </a>
                                         <span class="card-secondary__price">
                                             от 6,5 млн. ₽
                                         </span>
@@ -988,7 +1022,7 @@
                                 </div>
                                 <div class="cards-list__item card-secondary">
                                     <a href="#" class="card-secondary__img">
-                                        <picture><source srcset="./images/projects_1.webp" type="image/webp"><img src="./images/projects_1.jpg" alt=""></picture>
+                                        <picture><source srcset="./images/projects_1.webp" type="image/webp"><img src="./images/projects_1.jpg" alt="" width="340" height="220"></picture>
                                     </a>
                                     <div class="card-secondary__body">
                                         <div class="card-secondary__location location-items">
@@ -999,119 +1033,8 @@
                                         <a href="#" class="card-secondary__title">
                                             ЖК «Discovery» (Дискавери)
                                         </a>
-                                        <span class="card-secondary__price">
-                                            от 6,5 млн. ₽
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="cards-list__item card-secondary">
-                                    <a href="#" class="card-secondary__img">
-                                        <picture><source srcset="./images/projects_1.webp" type="image/webp"><img src="./images/projects_1.jpg" alt=""></picture>
-                                        <span class="card-secondary__new-object new-object-tag">
-                                            Новый объект
-                                        </span>
-                                    </a>
-                                    <div class="card-secondary__body">
-                                        <div class="card-secondary__location location-items">
-                                            <span class="location-item location-item--circle location-item--circle-yellow">м. Третьяковская</span>
-                                            <span class="location-item location-item--time">5 мин</span>
-                                        </div>
-                                        <a href="#" class="card-secondary__title">
-                                            Клубный дом «BOGEN HOUSE» (Боген Хаус)
-                                        </a>
-                                        <span class="card-secondary__price">
-                                            от 6,5 млн. ₽
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="cards-list__item card-secondary">
-                                    <a href="#" class="card-secondary__img">
-                                        <picture><source srcset="./images/projects_1.webp" type="image/webp"><img src="./images/projects_1.jpg" alt=""></picture>
-                                    </a>
-                                    <div class="card-secondary__body">
-                                        <div class="card-secondary__location location-items">
-                                            <span class="location-item location-item--circle location-item--circle-orange">м. Китай город</span>
-                                            <span class="location-item location-item--circle location-item--circle-green">м. Чкаловская</span>
-                                            <span class="location-item location-item--time">13 мин</span>
-                                        </div>
-                                        <a href="#" class="card-secondary__title">
-                                            ЖК «Тессинский, 1»
-                                        </a>
-                                        <span class="card-secondary__price">
-                                            от 6,5 млн. ₽
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="cards-list__item card-secondary">
-                                    <a href="#" class="card-secondary__img">
-                                        <picture><source srcset="./images/projects_1.webp" type="image/webp"><img src="./images/projects_1.jpg" alt=""></picture>
-                                        <span class="card-secondary__new-object new-object-tag">
-                                            Новый объект
-                                        </span>
-                                    </a>
-                                    <div class="card-secondary__body">
-                                        <div class="card-secondary__location location-items">
-                                            <span class="location-item location-item--circle location-item--circle-gray">м. Полянка</span>
-                                            <span class="location-item location-item--time">5 мин</span>
-                                        </div>
-                                        <a href="#" class="card-secondary__title">
-                                            ЖК «TITUL на Якиманке» (Титул)
-                                        </a>
-                                        <span class="card-secondary__price">
-                                            от 6,5 млн. ₽
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="cards-list__item card-secondary">
-                                    <a href="#" class="card-secondary__img">
-                                        <picture><source srcset="./images/projects_1.webp" type="image/webp"><img src="./images/projects_1.jpg" alt=""></picture>
-                                    </a>
-                                    <div class="card-secondary__body">
-                                        <div class="card-secondary__location location-items">
-                                            <span class="location-item location-item--circle location-item--circle-darkgreen">м. Ховрино</span>
-                                            <span class="location-item location-item--circle location-item--circle-darkgreen">м. Беломорская</span>
-                                            <span class="location-item location-item--time">5 мин</span>
-                                        </div>
-                                        <a href="#" class="card-secondary__title">
-                                            ЖК «Discovery» (Дискавери)
-                                        </a>
-                                        <span class="card-secondary__price">
-                                            от 6,5 млн. ₽
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="cards-list__item card-secondary">
-                                    <a href="#" class="card-secondary__img">
-                                        <picture><source srcset="./images/projects_1.webp" type="image/webp"><img src="./images/projects_1.jpg" alt=""></picture>
-                                        <span class="card-secondary__new-object new-object-tag">
-                                            Новый объект
-                                        </span>
-                                    </a>
-                                    <div class="card-secondary__body">
-                                        <div class="card-secondary__location location-items">
-                                            <span class="location-item location-item--circle location-item--circle-gray">м. Полянка</span>
-                                            <span class="location-item location-item--time">5 мин</span>
-                                        </div>
-                                        <a href="#" class="card-secondary__title">
-                                            ЖК «TITUL на Якиманке» (Титул)
-                                        </a>
-                                        <span class="card-secondary__price">
-                                            от 6,5 млн. ₽
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="cards-list__item card-secondary">
-                                    <a href="#" class="card-secondary__img">
-                                        <picture><source srcset="./images/projects_1.webp" type="image/webp"><img src="./images/projects_1.jpg" alt=""></picture>
-                                    </a>
-                                    <div class="card-secondary__body">
-                                        <div class="card-secondary__location location-items">
-                                            <span class="location-item location-item--circle location-item--circle-darkgreen">м. Ховрино</span>
-                                            <span class="location-item location-item--circle location-item--circle-darkgreen">м. Беломорская</span>
-                                            <span class="location-item location-item--time">5 мин</span>
-                                        </div>
-                                        <a href="#" class="card-secondary__title">
-                                            ЖК «Discovery» (Дискавери)
+                                        <a href="#" class="card-secondary__title card-secondary__title--mobile">
+                                            Discovery
                                         </a>
                                         <span class="card-secondary__price">
                                             от 6,5 млн. ₽
@@ -1156,7 +1079,7 @@
                     </div>
                 </div>
                 <div class="tabs__body">
-                   2 content
+                 
                 </div>
                 <div class="tabs__body">
                     3 content
