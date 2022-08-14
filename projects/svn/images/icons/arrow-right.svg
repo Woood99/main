@@ -1,8 +1,1 @@
-<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g id="arrow-right">
-<g id="arrow-down">
-<path id="Path 2" d="M3.5 14.0001L24.5 14.0001" stroke="black" stroke-width="2" stroke-linecap="round"/>
-<path id="Path 3" d="M17.5 21L24.5 14L17.5 7" stroke="black" stroke-width="2" stroke-linecap="round"/>
-</g>
-</g>
-</svg>
+<svg width="28" height="28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.5 14h21m-7 7l7-7-7-7" stroke="#000" stroke-width="2" stroke-linecap="round"/></svg>
