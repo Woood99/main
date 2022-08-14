@@ -2,8 +2,8 @@
 <html lang="ru-RU">
   <head>
     <!-- Useful meta tags -->
-<meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="index, follow">
 <meta name="google" content="notranslate">
@@ -21,14 +21,13 @@
 <link rel="icon" type="image/png" sizes="120x120" href="/">
 <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon-180x180.png">
 <!-- <link rel="manifest" href="./images/manifest.json"> -->
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-
-<link rel="stylesheet" href="./css/main.min.css"/>
+<script src="https://api-maps.yandex.ru/2.1/?apikey=06c9f708-a971-458e-b11e-2971df9daab0&lang=ru_RU"
+    type="text/javascript">
+</script>
+<link rel="stylesheet" href="./css/main.min.css" />
     <title>Title</title>
   </head>
   <body>
@@ -467,52 +466,64 @@
             <div class="projects__control projects-control">
                 <div class="swiper projects-control-slider">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide projects-control__item">
-                            <p class="projects-control__subtitle">
-                                Жилой комплекс
-                            </p>
-                            <h3 class="projects-control__title">
-                                Архитектор
-                            </h3>
-                            <p class="projects-control__descr">
-                                Получите годовой абонемент
-                                в СПА и фитнес на двоих в подарок!
-                            </p>
-                            <p class="projects-control__price">
-                                от 6,5 млн. ₽
-                            </p>
-                            <div class="projects-control__location">
-                                <span>ВАО</span>
-                                <span>м. Пеображенская площадь</span>
-                                <span>5 мин</span>
+                        <div class="info-block swiper-slide">
+                            <div class="info-block__inner">
+                                <p class="info-block__subtitle">
+                                    Жилой комплекс
+                                </p>
+                                <h3 class="info-block__title">
+                                    Архитектор
+                                </h3>
+                                <p class="info-block__descr">
+                                    Получите годовой абонемент
+                                    в СПА и фитнес на двоих в подарок!
+                                </p>
+                                <p class="info-block__price">
+                                    от 6,5 млн. ₽
+                                </p>
+                                <div class="info-block__location ">
+                                    <span>ВАО</span>
+                                    <span>м. Пеображенская площадь</span>
+                                    <span>5 мин</span>
+                                </div>
+                                <a href="#" class="btn-reset btn-primary btn-primary--arrow info-block__btn">
+                                    Подробнее
+                                    <svg>
+                                        <use xlink:href="images/sprites/sprite-mono.svg#arrow-down"></use>
+                                    </svg>
+                                </a>
                             </div>
-                            <a href="#"
-                                class="btn-reset btn-primary btn--arrow-right projects-control__btn">Подробнее</a>
                         </div>
-                        <div class="swiper-slide projects-control__item">
-                            <p class="projects-control__subtitle">
-                                Жилой комплекс
-                            </p>
-                            <h3 class="projects-control__title">
-                                MOD
-                            </h3>
-                            <p class="projects-control__descr">
-                                Получите годовой абонемент
-                                в СПА и фитнес на двоих в подарок!
-                            </p>
-                            <p class="projects-control__price">
-                                от 6,5 млн. ₽
-                            </p>
-                            <div class="projects-control__location">
-                                <span>ВАО</span>
-                                <span>м. Пеображенская площадь</span>
-                                <span>5 мин</span>
+                        <div class="info-block swiper-slide">
+                            <div class="info-block__inner">
+                                <p class="info-block__subtitle">
+                                    Жилой комплекс
+                                </p>
+                                <h3 class="info-block__title">
+                                    MOD
+                                </h3>
+                                <p class="info-block__descr">
+                                    Получите годовой абонемент
+                                    в СПА и фитнес на двоих в подарок!
+                                </p>
+                                <p class="info-block__price">
+                                    от 6,5 млн. ₽
+                                </p>
+                                <div class="info-block__location ">
+                                    <span>ВАО</span>
+                                    <span>м. Пеображенская площадь</span>
+                                    <span>5 мин</span>
+                                </div>
+                                <a href="#" class="btn-reset btn-primary btn-primary--arrow info-block__btn">
+                                    Подробнее
+                                    <svg>
+                                        <use xlink:href="images/sprites/sprite-mono.svg#arrow-down"></use>
+                                    </svg>
+                                </a>
                             </div>
-                            <a href="#"
-                                class="btn-reset btn-primary btn--arrow-right projects-control__btn">Подробнее</a>
                         </div>
                     </div>
-                    <div class="projects__nav" data-da=".projects__footer,768,last">
+                    <div class="projects__nav" data-da=".projects__footer,1024,last">
                         <div class="projects-nav-button-prev navigation-primary navigation-primary--prev"></div>
                         <div class="projects-nav-button-next navigation-primary navigation-primary--next"></div>
                     </div>

@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <!-- Useful meta tags -->
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index, follow">
+<meta name="google" content="notranslate">
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="Description...">
+<meta name="keywords" content="HTML, CSS, JavaScript, Shop">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#9B9B9B">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<!-- Favicons -->
+<link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+<link rel="icon" type="image/png" sizes="16x16" href="/">
+<link rel="icon" type="image/png" sizes="32x32" href="/">
+<link rel="icon" type="image/png" sizes="96x96" href="/">
+<link rel="icon" type="image/png" sizes="120x120" href="/">
+<link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon-180x180.png">
+<!-- <link rel="manifest" href="./images/manifest.json"> -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="https://api-maps.yandex.ru/2.1/?apikey=06c9f708-a971-458e-b11e-2971df9daab0&lang=ru_RU"
+    type="text/javascript">
+</script>
+<link rel="stylesheet" href="./css/main.min.css" />
+    <title>Title</title>
+  </head>
+  <body>
+    <header class="header">
+
+  <div class="header__bg"></div>
+  <div class="container">
+    <div class="header_wrap">
+      <a href="/" class="header_logo">
+        <img class="desktop" src="./images/main_logo.png" alt="">
+        <img class="mob" src="./images/mob_logo.png" alt="">
+      </a>
+      <div class="header_right">
+        <nav class="header_menu">
+          <ul>
+            <li>
+              <a href="#">VSN Realty</a>
+            </li>
+            <li><a href="#">VSN Business</a></li>
+            <li><a href="#">Ipoteka Group</a>
+            </li>
+            <li><a href="#">О компании</a>
+            </li>
+            <li><a href="#">Контакты</a>
+            </li>
+          </ul>
+
+        </nav>
+        <div class="header__subs">
+          
+          <div class="header__subs_item">
+            <ul>
+              <li><a href="#">Новостройки Москвы</a></li>
+              <li><a href="#">Готовые Квартиры</a></li>
+              <li><a href="#">Загородная недвижимость</a></li>
+              <li><a href="#">Коммерческая недвижимость</a></li>
+              <li><a href="#">Ипотека</a></li>
+            </ul>
+          </div>
+          <div class="header__subs_item">
+            <ul>
+              <li><a href="#">Новостройки Москвы</a></li>
+              <li><a href="#">Готовые Квартиры</a></li>
+              <li><a href="#">Загородная недвижимость</a></li>
+              <li><a href="#">Коммерческая недвижимость</a></li>
+              <li><a href="#">Ипотека</a></li>
+            </ul>
+          </div>
+          <div class="header__subs_item">
+            <ul>
+              <li><a href="#">Новостройки Москвы</a></li>
+              <li><a href="#">Готовые Квартиры</a></li>
+              <li><a href="#">Загородная недвижимость</a></li>
+              <li><a href="#">Коммерческая недвижимость</a></li>
+              <li><a href="#">Ипотека</a></li>
+            </ul>
+          </div>
+          <div class="header__subs_item">
+            <ul>
+              <li><a href="#">Новостройки Москвы</a></li>
+              <li><a href="#">Готовые Квартиры</a></li>
+              <li><a href="#">Загородная недвижимость</a></li>
+              <li><a href="#">Коммерческая недвижимость</a></li>
+              <li><a href="#">Ипотека</a></li>
+            </ul>
+          </div>
+          <div class="header__subs_item">
+            <ul>
+              <li><a href="#">Новостройки Москвы</a></li>
+              <li><a href="#">Готовые Квартиры</a></li>
+              <li><a href="#">Загородная недвижимость</a></li>
+              <li><a href="#">Коммерческая недвижимость</a></li>
+              <li><a href="#">Ипотека</a></li>
+            </ul>
+          </div>
+          
+        </div>
+        <div class="header__widget">
+          <form method="post" class="header_search">
+            <!-- <img src="" alt="" class="header_search__icon"> -->
+            <button class="header_search__icon"></button>
+            <!-- <span class="header_search__text">Поиск</span> -->
+            <input type="text" placeholder="Поиск" class="header_search__text">
+          </form>
+          <div class="header_contacts">
+            <div class="header_contacts__phone">
+              <a href="tel:88001864436">8 800 186-44-36</a>
+              <div class="header_contacts__popup">Обратный звонок</div>
+            </div>
+            <div class="header__social">
+              <a href="https://web.whatsapp.com/" target="_blank" class="header__social_icon">
+                <img src="./images/icons/wh.svg" alt="">
+              </a>
+              <a href="https://tg.me/" target="_blank" class="header__social_icon">
+                <img src="./images/icons/tg.svg" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+      
+      <div class="header__toggler">
+
+        <div class="header__toggler_btn">
+          <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line x1="1" y1="1" x2="19" y2="1" stroke="white" stroke-width="2" stroke-linecap="round"/>
+            <line x1="1" y1="8" x2="19" y2="8" stroke="white" stroke-width="2" stroke-linecap="round"/>
+            <line x1="1" y1="15" x2="19" y2="15" stroke="white" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="header_mobmenu">
+      <div class="header_mobmenu__col">
+        <h3 class="header_mobmenu__title"><img src="./images/icons/hm_1.svg" alt="" class="header_mobmenu__title_pre" /> VSN Realty </h3>
+        <ul>
+          <li><a href="">Новостройки Москвы</a></li>
+          <li><a href="">Новостройки Подмосковья</a></li>
+          <li><a href="">Вторичная недвижимость</a></li>
+          <li><a href="">Коммерческая недвижимость</a></li>
+          <li><a href="">Ипотека</a></li>
+          <li><a href="">Сервисы</a></li>
+          <li><a href="">Каталог ЖК</a></li>
+        </ul>
+  
+        <a href="#" class="header_mobmenu_titlelink">
+          
+          <h3 class="header_mobmenu__title"><img src="./images/icons/hm_3.svg" alt="" class="header_mobmenu__title_pre">Ipoteka Group <img src="./images/icons/link_arr.svg" alt="" class="header_mobmenu__title_arr">  </h3> 
+        </a>
+      </div>
+      <div class="header_mobmenu__col">
+        <h3 class="header_mobmenu__title"><img src="./images/icons/hm_2.svg" alt="" class="header_mobmenu__title_pre"> VSN Business</h3>
+        <ul>
+          <li><a href="">Новостройки Москвы</a></li>
+          <li><a href="">Квартиры в построенных домах</a></li>
+          <li><a href="">Лофты и апартаменты</a></li>
+          <li><a href="">Москва-Сити </a></li>
+          <li><a href="">Пентхаусы Москвы  </a></li>
+          <li><a href="">Каталог ЖК</a></li>
+        </ul>
+      </div>
+      <div class="header_mobmenu__col">
+        <h3 class="header_mobmenu__title">Компания</h3>
+        <ul>
+          <li><a href="">Кейсы </a></li>
+          <li><a href="">Центр обучения</a></li>
+          <li><a href="">Партнеры</a></li>
+          <li><a href="">Награды</a></li>
+          <li><a href="">Корпоративная жизнь</a></li>
+          <li><a href="">Карьера в компании</a></li>
+          <li><a href="">Пресс центр</a></li>
+        </ul>
+      </div>
+      <div class="header_mobmenu__col">
+        <h3 class="header_mobmenu__title">Контакты</h3>
+        <div class="phone_wrap">
+          <a href="tel:+74951864436" class="header_mobmenu_phone">7 (495) 186-44-36 <img src="./images/icons/ph.svg" alt=""></a>
+        <span class="header_mobmenu_phone__under">Для жителей Москвы и Московской области</span>
+        </div>
+        <div class="phone_wrap">
+          <a href="tel:88008000000" class="header_mobmenu_phone">8 (800) 800-00-00 <img src="./images/icons/ph.svg" alt=""></a>
+        <span class="header_mobmenu_phone__under">Бесплатный звонок по России</span>
+        </div>
+        <div class="header_mobmenu_social">
+          <a href="#" class="header_mobmenu_social__item">
+            <img src="./images/icons/tg.svg" alt=""> <span>Telegram</span>
+          </a>
+          <a href="#" class="header_mobmenu_social__item">
+            <img src="./images/icons/wh.svg" alt=""> <span>Whatsapp</span>
+          </a>
+        </div>
+  
+        <span class="header_mobmenu_phone__under">Адрес главного офиса</span>
+        <div class="header_mobmenu_address">
+          Москва, Новодмитровская ул., д. 2, корп. 1, <br>
+          МФК «Савеловский Сити» (Жёлтая башня) <br>
+        </div>
+        <div class="header_mobmenu_address">
+          
+          Ежеденевно, 09:00 – 18:00
+        </div>
+  
+        <a href="mailto:vsnr@vsnr.ru" class="header_mobmenu_email">vsnr@vsnr.ru</a>
+  
+        <a href="#" class="header_mobmenu_office">Офисы продаж</a>
+  
+        <div class="header_mobmenu_social" style="    padding-bottom: 50px;
+        margin-bottom: 50px;
+        border-bottom: 1px solid #ccc;">
+          <a href="#" class="header_mobmenu_social__item big_mr">
+            <img src="./images/icons/vk.svg" alt="">
+          </a>
+          <a href="#" class="header_mobmenu_social__item big_mr">
+            <img src="./images/icons/tg.svg" alt="">
+          </a>
+          <a href="#" class="header_mobmenu_social__item big_mr">
+            <img src="./images/icons/yt.svg" alt="">
+          </a>
+        </div>
+
+        <form class="header_mobmenu__search">
+          <label for="">
+              <input type="text" class="header_mobmenu__search_input" placeholder="Найти недвижимость">
+           <div class="header_mobmenu__search_btn"></div>
+           <button class="header_mobmenu__search_submit"></button>
+          </label>
+          <div class="header_mobmenu__search_bottom">
+              <div class="header_mobmenu__search_variable active">Сданные</div>
+              <div class="header_mobmenu__search_variable">С отделкой</div>
+              <div class="header_mobmenu__search_variable">С терассой</div>
+              <div class="header_mobmenu__search_variable">В небоскрёбе</div>
+          </div>
+      </form>
+      </div>
+  </div>
+</header>
+
+
+    <main>
+      <section class="contacts-us">
+    <div class="container">
+        <h2 class="contacts-us__title title-2">
+            Свяжитесь с нами
+        </h2>
+        <div class="contacts-us__inner grid">
+            <h3 class="contacts-us__subtitle">
+                Оставьте заявку и наш специалист свяжется с вами в ближайшее время
+            </h3>
+            <div class="contacts-us__left">
+                <img src="./images/woman.jpg" alt="Елизавета">
+                <span class="contacts-us__name regular_20">Елизавета</span>
+                <span class="contacts-us__pos regular_14">Ведущий менеджер</span>
+            </div>
+            <form action="#" class="contacts-us__form">
+                <label class="contacts-us__label">
+                    <input type="text" name="Имя" class="input-reset input-primary contacts-us__input"
+                        placeholder="Имя">
+                </label>
+                <label class="contacts-us__label">
+                    <input type="tel" name="Телефон" class="input-reset input-primary contacts-us__input"
+                        placeholder="Телефон">
+                </label>
+                <label class="contacts-us__label">
+                    <input type="email" name="Почта" class="input-reset input-primary contacts-us__input"
+                        placeholder="Почта">
+                </label>
+                <label class="contacts-us__label contacts-us__textarea">
+                    <textarea class="input-reset input-primary textarea-primary contacts-us__input" placeholder="Сообщение"></textarea>
+                </label>
+                <button type="submit" class="btn-reset btn-secondary btn-secondary--arrow contacts-us__btn">
+                    Отправить
+                    <svg>
+                        <use xlink:href="images/sprites/sprite-mono.svg#arrow-down"></use>
+                    </svg>
+                </button>
+                <span class="contacts-us__agreement form-agreement">
+                    Согласен на обработку персональных данных
+                    и рекламно-информационные рассылки
+                </span>
+            </form>
+        </div>
+    </div>
+</section>
+
+      <section>
+        <!-- <div class="container">Main</div> -->
+      </section>
+    </main>
+
+    <footer class="footer">
+  <div class="container">
+    <div class="footer_wrap">
+      <div class="footer__col">
+        <h3 class="footer__title"><img src="./images/icons/realty_pre.svg" alt="" class="footer__title_pre" /> VSN Realty </h3>
+        <ul>
+          <li><a href="">Новостройки Москвы</a></li>
+          <li><a href="">Новостройки Подмосковья</a></li>
+          <li><a href="">Вторичная недвижимость</a></li>
+          <li><a href="">Коммерческая недвижимость</a></li>
+          <li><a href="">Ипотека</a></li>
+          <li><a href="">Сервисы</a></li>
+          <li><a href="">Каталог ЖК</a></li>
+        </ul>
+
+        <a href="#" class="footer_titlelink">
+          
+          <h3 class="footer__title"><img src="./images/icons/ipoteka_pre.svg" alt="" class="footer__title_pre">Ipoteka Group <img src="./images/icons/link_arr.svg" alt="" class="footer__title_arr">  </h3> 
+        </a>
+      </div>
+      <div class="footer__col">
+        <h3 class="footer__title"><img src="./images/icons/business_pre.svg" alt="" class="footer__title_pre"> VSN Business</h3>
+        <ul>
+          <li><a href="">Новостройки Москвы</a></li>
+          <li><a href="">Квартиры в построенных домах</a></li>
+          <li><a href="">Лофты и апартаменты</a></li>
+          <li><a href="">Москва-Сити </a></li>
+          <li><a href="">Пентхаусы Москвы  </a></li>
+          <li><a href="">Каталог ЖК</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h3 class="footer__title">Компания</h3>
+        <ul>
+          <li><a href="">Кейсы </a></li>
+          <li><a href="">Центр обучения</a></li>
+          <li><a href="">Партнеры</a></li>
+          <li><a href="">Награды</a></li>
+          <li><a href="">Корпоративная жизнь</a></li>
+          <li><a href="">Карьера в компании</a></li>
+          <li><a href="">Пресс центр</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h3 class="footer__title">Контакты</h3>
+        <a href="tel:+74951864436" class="footer_phone">7 (495) 186-44-36</a>
+        <span class="footer_phone__under">Для жителей Москвы и Московской области</span>
+        <a href="tel:88008000000" class="footer_phone">8 (800) 800-00-00</a>
+        <span class="footer_phone__under">Бесплатный звонок по России</span>
+        <div class="footer_social">
+          <a href="#" class="footer_social__item">
+            <img src="./images/icons/tg.svg" alt=""> <span>Telegram</span>
+          </a>
+          <a href="#" class="footer_social__item">
+            <img src="./images/icons/wh.svg" alt=""> <span>Whatsapp</span>
+          </a>
+        </div>
+
+        <span class="footer_phone__under">Адрес главного офиса</span>
+        <div class="footer_address">
+          Москва, Новодмитровская ул., д. 2, корп. 1, <br>
+          МФК «Савеловский Сити» (Жёлтая башня) <br>
+        </div>
+        <div class="footer_address">
+          
+          Ежеденевно, 09:00 – 18:00
+        </div>
+
+        <a href="mailto:vsnr@vsnr.ru" class="footer_email">vsnr@vsnr.ru</a>
+
+        <a href="#" class="footer_office">Офисы продаж</a>
+
+        <div class="footer_social">
+          <a href="#" class="footer_social__item">
+            <img src="./images/icons/vk.svg" alt="">
+          </a>
+          <a href="#" class="footer_social__item">
+            <img src="./images/icons/tg.svg" alt="">
+          </a>
+          <a href="#" class="footer_social__item">
+            <img src="./images/icons/yt.svg" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer_bottom">
+      <div class="footer_bottom__descr">
+        Опубликованная на данном сайте информация носит исключительно информационный характер и не является публичной офертой, определяемой положениями ст. 437 Гражданского кодекса Российской Федерации.
+      </div>
+
+      <div class="footer_bottom__wrap">
+        <div class="footer_bottom__privacy">
+          <div class="copyright">
+            © 2008 — 2021.VSN Realty. Все права защищены.
+          </div>
+          <a href="#" class="politic">
+            Политика конфиденциальности
+          </a>
+        </div>
+        <div class="footer_bottom__createdby">
+          Сделано в A M I O
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <script src="./js/main.min.js"></script>
+  </body>
+</html>

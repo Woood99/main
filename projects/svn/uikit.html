@@ -3,8 +3,8 @@
 
 <head>
     <!-- Useful meta tags -->
-<meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="index, follow">
 <meta name="google" content="notranslate">
@@ -22,155 +22,447 @@
 <link rel="icon" type="image/png" sizes="120x120" href="/">
 <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon-180x180.png">
 <!-- <link rel="manifest" href="./images/manifest.json"> -->
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-
-<link rel="stylesheet" href="./css/main.min.css"/>
+<script src="https://api-maps.yandex.ru/2.1/?apikey=06c9f708-a971-458e-b11e-2971df9daab0&lang=ru_RU"
+    type="text/javascript">
+</script>
+<link rel="stylesheet" href="./css/main.min.css" />
     <title>Title</title>
 </head>
 
 <body>
     <style>
-        body{
+        body {
             background-color: rgb(122, 121, 121);
         }
     </style>
     <main>
-<div class="container">
+        <div class="container">
 
-        <h2 class="title-2">Заголовок h2</h2>
+            <h2 class="title-2">Заголовок h2</h2>
+            <h2 class="regular_80">fz80</h2>
+            <h2 class="regular_64">fz64</h2>
+            <h2 class="regular_36">fz36</h2>
+            <h2 class="regular_20">fz20</h2>
+            <h2 class="regular_14">fz14</h2>
+            <hr>
 
-        <hr>
-
-        <ul class="breadcrumbs">
-            <li class="breadcrumbs__item">
-                <a href="#">
-                    Новости
-                </a>
-            </li>
-            <li class="breadcrumbs__item">
-                <a href="#">
-                    Пресс-релизы
-                </a>
-            </li>
-            <li class="breadcrumbs__item">
-                <span>
-                    СМИ о нас
-                </span>
-            </li>
-        </ul>
-
-        <hr>
-        <button type="button" class="btn-reset btn-primary">Кнопка primary</button>
-        <button type="button" class="btn-reset btn-secondary">Кнопка secondary</button>
-        <button type="button" class="btn-reset btn-primary btn-arrow-right--black">Кнопка + стрелка</button>
-        <button type="button" class="btn-reset btn-secondary btn-arrow-right--white">Кнопка + стрелка</button>
-
-        <hr>
-        <ul class="list-links">
-            <li class="list-links__item">
-                <a href="#" class="list-links__link">
-                    <span class="list-links__count">01</span>
-                    <span class="list-links__text">Ипотека онлайн</span>
-                    <span class="list-links__arrow"></span>
-                </a>
-            </li>
-            <li class="list-links__item">
-                <a href="#" class="list-links__link">
-                    <span class="list-links__count">02</span>
-                    <span class="list-links__text">Private bank</span>
-                    <span class="list-links__arrow"></span>
-                </a>
-            </li>
-        </ul>
-
-        <hr>
-
-        <ul class="tags">
-            <li class="tags__item">
-                Скидки
-            </li>
-            <li class="tags__item">
-                Жилой квартал «Shagal» (Шагал)
-            </li>
-            <li class="tags__item">
-                Жилой квартал «Shagal» (Шагал)
-            </li>
-        </ul>
-
-        <hr>
-        <div class="swiper partners-slider">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs__item">
                     <a href="#">
-                        <img src="./images/sber.svg" alt="СберБанк">
+                        Новости
                     </a>
-                </div>
-                <div class="swiper-slide">
+                </li>
+                <li class="breadcrumbs__item">
                     <a href="#">
-                        <img src="./images/wtb.png" alt="ВТБ">
+                        Пресс-релизы
                     </a>
-                </div>
-                <div class="swiper-slide">
-                    <a href="#">
-                        <img src="./images/raif-bank.svg" alt="Raiffeisen BANK">
+                </li>
+                <li class="breadcrumbs__item">
+                    <span>
+                        СМИ о нас
+                    </span>
+                </li>
+            </ul>
+
+            <hr>
+            <button type="button" class="btn-reset btn-primary">Кнопка primary</button>
+            <button type="button" class="btn-reset btn-secondary">Кнопка secondary</button>
+            <button type="button" class="btn-reset btn-primary btn-primary--arrow">
+                Кнопка + стрелка
+                <svg>
+                    <use xlink:href="images/sprites/sprite-mono.svg#arrow-down"></use>
+                </svg>
+            </button>
+            <button type="button" class="btn-reset btn-secondary btn-secondary--arrow">
+                Кнопка + стрелка
+                <svg>
+                    <use xlink:href="images/sprites/sprite-mono.svg#arrow-down"></use>
+                </svg>
+            </button>
+            <hr>
+
+            <span class="form-agreement">
+                Согласен на обработку персональных данных
+                и рекламно-информационные рассылки
+            </span>
+
+            <hr>
+            <input type="text" name="Имя" class="input-reset input-primary" placeholder="Имя">
+
+            <hr>
+
+            <ul class="list-links">
+                <li class="list-links__item">
+                    <a href="#" class="list-links__link">
+                        <span class="list-links__count">01</span>
+                        <span class="list-links__text">Ипотека онлайн</span>
+                        <span class="list-links__arrow"></span>
                     </a>
-                </div>
-                <div class="swiper-slide">
-                    <a href="#">
-                        <img src="./images/sber.svg" alt="СберБанк">
+                </li>
+                <li class="list-links__item">
+                    <a href="#" class="list-links__link">
+                        <span class="list-links__count">02</span>
+                        <span class="list-links__text">Private bank</span>
+                        <span class="list-links__arrow"></span>
                     </a>
-                </div>
-                <div class="swiper-slide">
-                    <a href="#">
-                        <img src="./images/wtb.png" alt="ВТБ">
-                    </a>
-                </div>
-                <div class="swiper-slide">
-                    <a href="#">
-                        <img src="./images/raif-bank.svg" alt="Raiffeisen BANK">
-                    </a>
-                </div>
-                <div class="swiper-slide">
-                    <a href="#">
-                        <img src="./images/sber.svg" alt="СберБанк">
-                    </a>
+                </li>
+            </ul>
+
+            <hr>
+
+            <ul class="tags">
+                <li class="tags__item">
+                    Скидки
+                </li>
+                <li class="tags__item">
+                    Жилой квартал «Shagal» (Шагал)
+                </li>
+                <li class="tags__item">
+                    Жилой квартал «Shagal» (Шагал)
+                </li>
+            </ul>
+
+            <hr>
+            <div class="swiper partners-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="./images/sber.svg" alt="СберБанк">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="./images/wtb.png" alt="ВТБ">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="./images/raif-bank.svg" alt="Raiffeisen BANK">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="./images/sber.svg" alt="СберБанк">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="./images/wtb.png" alt="ВТБ">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="./images/raif-bank.svg" alt="Raiffeisen BANK">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="./images/sber.svg" alt="СберБанк">
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <hr>
+            <hr>
 
-        <div class="info-block">
-            <div class="info-block__inner">
-                <p class="info-block__subtitle">
-                    Жилой комплекс
-                </p>
-                <h3 class="info-block__title">
-                    MOD
-                </h3>
-                <p class="info-block__descr">
-                    Получите годовой абонемент
-                    в СПА и фитнес на двоих в подарок!
-                </p>
-                <p class="info-block__price">
-                    от 6,5 млн. ₽
-                </p>
-                <div class="info-block__location ">
-                    <span>ВАО</span>
+            <div class="info-block">
+                <div class="info-block__inner">
+                    <p class="info-block__subtitle">
+                        Жилой комплекс
+                    </p>
+                    <h3 class="info-block__title">
+                        MOD
+                    </h3>
+                    <p class="info-block__descr">
+                        Получите годовой абонемент
+                        в СПА и фитнес на двоих в подарок!
+                    </p>
+                    <p class="info-block__price">
+                        от 6,5 млн. ₽
+                    </p>
+                    <div class="info-block__location ">
+                        <span>ВАО</span>
+                        <span>м. Пеображенская площадь</span>
+                        <span>5 мин</span>
+                    </div>
+                    <a href="#" class="btn-reset btn-primary btn-arrow-right--black info-block__btn">Подробнее</a>
+                </div>
+            </div>
+
+
+            <hr>
+            <form class="filter">
+                <div class="filter__inner">
+                    <button type="button" class="btn-reset filter__county filter-county">
+                        Округ
+                        <svg class="arrow-down">
+                            <use xlink:href="images/sprites/sprite-mono.svg#arrow-down"></use>
+                        </svg>
+                    </button>
+
+                    <div class="filter__rooms filter-rooms">
+                        <span class="filter__subtitle">Комнаты</span>
+                        <div class="filter-rooms__inner">
+                            <div class="checkbox">
+                                <input id="filter-rooms_studios" name="filter-rooms-studios"
+                                    class="checkbox__input" type="checkbox" value="true" checked>
+                                <label for="filter-rooms_studios" class="checkbox__label">
+                                    <span class="checkbox__text">Студии</span>
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <input id="filter-rooms_1" name="filter-rooms-1" class="checkbox__input"
+                                    type="checkbox" value="true" checked>
+                                <label for="filter-rooms_1" class="checkbox__label">
+                                    <span class="checkbox__text">1</span>
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <input id="filter-rooms_2" name="filter-rooms-2" class="checkbox__input"
+                                    type="checkbox" value="true" checked>
+                                <label for="filter-rooms_2" class="checkbox__label">
+                                    <span class="checkbox__text">2</span>
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <input id="filter-rooms_3" name="filter-rooms-3" class="checkbox__input"
+                                    type="checkbox" value="true">
+                                <label for="filter-rooms_3" class="checkbox__label">
+                                    <span class="checkbox__text">3</span>
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <input id="filter-rooms_4" name="filter-rooms-4" class="checkbox__input"
+                                    type="checkbox" value="true">
+                                <label for="filter-rooms_4" class="checkbox__label">
+                                    <span class="checkbox__text">4+</span>
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <input id="filter-rooms_5" name="filter-rooms-penthouses"
+                                    class="checkbox__input" type="checkbox" value="true">
+                                <label for="filter-rooms_5" class="checkbox__label">
+                                    <span class="checkbox__text">Пентхаусы</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter__checkbox">
+                        <div class="checkbox-primary">
+                            <input id="filter_start-of-sales" name="Старт продаж"
+                                class="checkbox-primary__input" type="checkbox" value="true" checked>
+                            <label for="filter_start-of-sales" class="checkbox-primary__label">
+                                <span class="checkbox-primary__text">Только новые объекты</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="filter__range filter-range">
+                        <span class="filter__subtitle">Площадь, м2</span>
+                        <div class="filter-range__nav">
+                            <span data-default-start>36.5</span>
+                            <span data-default-end>37</span>
+                        </div>
+                        <div class="filter-range__inner" data-min="36.5" data-max="40"></div>
+                    </div>
+                    <div class="filter__range filter-range">
+                        <span class="filter__subtitle">Цена, млн. ₽</span>
+                        <div class="filter-range__nav">
+                            <span data-default-start>8.4</span>
+                            <span data-default-end>8.7</span>
+                        </div>
+                        <div class="filter-range__inner" data-min="8.4" data-max="9.4"></div>
+                    </div>
+                    <div class="filter__btns">
+                            <button type="submit" class="btn-reset btn-primary btn-primary--arrow btn--schist">
+                                Показать
+                                <svg>
+                                    <use xlink:href="images/sprites/sprite-mono.svg#arrow-down"></use>
+                                </svg>
+                            </button>
+                        <button type="reset" class="btn btn-reset filter__reset" aria-label="Сбросить фильтр">
+                            <svg>
+                                <use xlink:href="images/sprites/sprite-mono.svg#refresh"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="filter__search search">
+                        <button type="button" class="btn-reset search__btn" aria-label="Кнопка поиска">
+                            <svg>
+                              <use xlink:href="images/sprites/sprite-mono.svg#search"></use>
+                            </svg>
+                        </button>
+                        <input type="search" name="Поиск" class="input-reset search__input" placeholder="Город, адрес, ЖК, шоссе или метро">
+                    </div>
+                    <div class="filter__control filter-control">
+                        <span class="filter-control__map active">НА КАРТЕ</span>
+                        <button type="button" class="btn-reset btn-switch active"></button>
+                        <span class="filter-control__tile">ПЛИТКА</span>
+                    </div>
+                </div>
+            </form>
+
+            <hr>
+
+            <span class="new-object-tag">
+                Новый объект
+            </span>
+
+            <hr>
+
+            <svg class="arrow-down">
+                <use xlink:href="images/sprites/sprite-mono.svg#arrow-down"></use>
+            </svg>
+
+            <hr>
+
+
+            <div class="balloon-number">
+
+            </div>
+            <div class="balloon-img"></div>
+
+
+            <hr>
+
+            <div class="balloon-content">
+                <div class="balloon-content__location">
                     <span>м. Пеображенская площадь</span>
                     <span>5 мин</span>
                 </div>
-                <a href="#" class="btn-reset btn-primary btn-arrow-right--black info-block__btn">Подробнее</a>
+                <h3 class="balloon-content__title">
+                    MOD
+                </h3>
+                <p class="balloon-content__price">
+                    от 6,5 млн. ₽
+                </p>
+                <span class="balloon-content__apartments">
+                    2534 квартир
+                </span>
+                <button type="button" class="btn-reset btn-primary btn-primary--arrow balloon-content__btn">
+                    Подробнее
+                    <svg>
+                        <use xlink:href="images/sprites/sprite-mono.svg#arrow-down"></use>
+                    </svg>
+                </button>
             </div>
+
+            <hr>
+
+
+
+            <div class="pag-footer">
+                <div class="pag-footer__pagination">
+                    <span>12</span>
+                    \
+                    <span>72</span>
+                </div>
+                <button type="button" class="btn-reset btn-secondary btn-secondary--arrow pag-footer__more">
+                    Показать ещё
+                    <svg>
+                        <use xlink:href="images/sprites/sprite-mono.svg#arrow-down"></use>
+                    </svg>
+                </button>
+                <ul class="pag-footer__numbers">
+                    <li class="pag-footer__number">
+                        <button type="button" class="btn-reset pag-footer__number-btn active">1</button>
+                    </li>
+                    <li class="pag-footer__number">
+                        <button type="button" class="btn-reset pag-footer__number-btn">2</button>
+                    </li>
+                    <li class="pag-footer__number">
+                        <button type="button" class="btn-reset pag-footer__number-btn">3</button>
+                    </li>
+                    <li class="pag-footer__number">
+                        <button type="button" class="btn-reset pag-footer__number-btn">4</button>
+                    </li>
+                    <li class="pag-footer__number">
+                        <button type="button" class="btn-reset pag-footer__number-btn">5</button>
+                    </li>
+                    <li class="pag-footer__number">
+                        <button type="button" class="btn-reset pag-footer__number-btn">6</button>
+                    </li>
+                </ul>
+            </div>
+
+            <hr>
+
+            <div class="card-primary">
+                <div class="card-primary__left">
+                    <div class="card-primary__img">
+                        <img src="./images/projects_1.jpg" alt="">
+                        <span class="card-primary__new-object new-object-tag">
+                            Новый объект
+                        </span>
+                    </div>
+                    <div class="card-primary__benefits">
+                        <span>5 мин пешком до метро</span>
+                        <span>Отделка White Box</span>
+                        <span>Исторический район</span>
+                    </div>
+                </div>
+                <div class="card-primary__right">
+                    <h3 class="card-primary__title">
+                        Жилой комплекс “Архитектор”
+                    </h3>
+                    <span class="card-primary__geo">
+                        Москва, ЦАО, Дружинниковская ул., д. 15
+                    </span>
+                    <div class="card-primary__location">
+                        <span>м. Пеображенская площадь</span>
+                        <span>м. Красносельская</span>
+                        <span>5 мин до м. Красносельская</span>
+                    </div>
+                    <p class="card-primary__descr">
+                        SKY VIEW – комплекс апартаментов премиум-класса в самом сердце Пресненского
+                        района. Исторический район с богатым культурным наследием создает идеальные
+                        условия для роскошной жизни.
+                    </p>
+                    <div class="card-primary__footer">
+                        <span class="card-primary__price">от 6,5 млн. ₽</span>
+                        <div class="card-primary__info">
+                            <span>Ввод в эксплуатацию</span>
+                            <span>2 квартал 2024</span>
+                        </div>
+                        <div class="card-primary__info">
+                            <span>Комнатность</span>
+                            <div>
+                                <span>2</span>
+                                <span>3</span>
+                                <span>4</span>
+                                <span>5+</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="card-secondary">
+                <a href="#" class="card-secondary__img">
+                    <img src="./images/projects_1.jpg" alt="">
+                    <span class="card-secondary__new-object new-object-tag">
+                        Новый объект
+                    </span>
+                </a>
+                <div class="card-secondary__body">
+                    <div class="card-secondary__location location-items">
+                        <span class="location-item location-item--circle location-item--circle-yellow">м. Третьяковская</span>
+                        <span class="location-item location-item--time">5 мин</span>
+                    </div>
+                    <a href="#" class="card-secondary__title">
+                        Клубный дом «BOGEN HOUSE» (Боген Хаус)
+                    </a>
+                    <span class="card-secondary__price">
+                        от 6,5 млн. ₽
+                    </span>
+                </div>
+            </div>
+        
         </div>
-
-
-    </div>
 
     </main>
     <script src="./js/main.min.js"></script>
