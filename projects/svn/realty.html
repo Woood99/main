@@ -32,13 +32,13 @@
   </head>
   <body>
     <header class="header">
-
   <div class="header__bg"></div>
   <div class="container">
     <div class="header_wrap">
       <a href="/" class="header_logo">
         <picture><source srcset="./images/main_logo.webp" type="image/webp"><img class="desktop" src="./images/main_logo.png" alt=""></picture>
         <picture><source srcset="./images/mob_logo.webp" type="image/webp"><img class="mob" src="./images/mob_logo.png" alt=""></picture>
+        <img class="header_logo__scroll" src="./images/icons/logo-group-scroll.svg" alt="">
       </a>
       <div class="header_right">
         <nav class="header_menu">
@@ -57,7 +57,7 @@
 
         </nav>
         <div class="header__subs">
-          
+
           <div class="header__subs_item">
             <ul>
               <li><a href="#">Новостройки Москвы</a></li>
@@ -103,7 +103,7 @@
               <li><a href="#">Ипотека</a></li>
             </ul>
           </div>
-          
+
         </div>
         <div class="header__widget">
           <form method="post" class="header_search">
@@ -112,9 +112,20 @@
             <!-- <span class="header_search__text">Поиск</span> -->
             <input type="text" placeholder="Поиск" class="header_search__text">
           </form>
+          <div class="header__city">
+            <svg>
+              <use xlink:href="images/sprites/sprite-mono.svg#switch-city"></use>
+            </svg>
+            Москва
+          </div>
           <div class="header_contacts">
             <div class="header_contacts__phone">
-              <a href="tel:88001864436">8 800 186-44-36</a>
+              <a href="tel:88001864436">
+                <svg>
+                  <use xlink:href="images/sprites/sprite-mono.svg#circle-arrow-up"></use>
+                </svg>
+                8 800 186-44-36
+              </a>
               <div class="header_contacts__popup">Обратный звонок</div>
             </div>
             <div class="header__social">
@@ -130,126 +141,131 @@
 
 
       </div>
-      
+
       <div class="header__toggler">
 
         <div class="header__toggler_btn">
           <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <line x1="1" y1="1" x2="19" y2="1" stroke="white" stroke-width="2" stroke-linecap="round"/>
-            <line x1="1" y1="8" x2="19" y2="8" stroke="white" stroke-width="2" stroke-linecap="round"/>
-            <line x1="1" y1="15" x2="19" y2="15" stroke="white" stroke-width="2" stroke-linecap="round"/>
+            <line x1="1" y1="1" x2="19" y2="1" stroke="white" stroke-width="2" stroke-linecap="round" />
+            <line x1="1" y1="8" x2="19" y2="8" stroke="white" stroke-width="2" stroke-linecap="round" />
+            <line x1="1" y1="15" x2="19" y2="15" stroke="white" stroke-width="2" stroke-linecap="round" />
           </svg>
         </div>
       </div>
     </div>
   </div>
 
-  
+
   <div class="header_mobmenu">
-      <div class="header_mobmenu__col">
-        <h3 class="header_mobmenu__title"><img src="./images/icons/hm_1.svg" alt="" class="header_mobmenu__title_pre" /> VSN Realty </h3>
-        <ul>
-          <li><a href="">Новостройки Москвы</a></li>
-          <li><a href="">Новостройки Подмосковья</a></li>
-          <li><a href="">Вторичная недвижимость</a></li>
-          <li><a href="">Коммерческая недвижимость</a></li>
-          <li><a href="">Ипотека</a></li>
-          <li><a href="">Сервисы</a></li>
-          <li><a href="">Каталог ЖК</a></li>
-        </ul>
-  
-        <a href="#" class="header_mobmenu_titlelink">
-          
-          <h3 class="header_mobmenu__title"><img src="./images/icons/hm_3.svg" alt="" class="header_mobmenu__title_pre">Ipoteka Group <img src="./images/icons/link_arr.svg" alt="" class="header_mobmenu__title_arr">  </h3> 
+    <div class="header_mobmenu__col">
+      <h3 class="header_mobmenu__title"><img src="./images/icons/hm_1.svg" alt="" class="header_mobmenu__title_pre" />
+        VSN Realty </h3>
+      <ul>
+        <li><a href="">Новостройки Москвы</a></li>
+        <li><a href="">Новостройки Подмосковья</a></li>
+        <li><a href="">Вторичная недвижимость</a></li>
+        <li><a href="">Коммерческая недвижимость</a></li>
+        <li><a href="">Ипотека</a></li>
+        <li><a href="">Сервисы</a></li>
+        <li><a href="">Каталог ЖК</a></li>
+      </ul>
+
+      <a href="#" class="header_mobmenu_titlelink">
+
+        <h3 class="header_mobmenu__title"><img src="./images/icons/hm_3.svg" alt=""
+            class="header_mobmenu__title_pre">Ipoteka Group <img src="./images/icons/link_arr.svg" alt=""
+            class="header_mobmenu__title_arr"> </h3>
+      </a>
+    </div>
+    <div class="header_mobmenu__col">
+      <h3 class="header_mobmenu__title"><img src="./images/icons/hm_2.svg" alt="" class="header_mobmenu__title_pre"> VSN
+        Business</h3>
+      <ul>
+        <li><a href="">Новостройки Москвы</a></li>
+        <li><a href="">Квартиры в построенных домах</a></li>
+        <li><a href="">Лофты и апартаменты</a></li>
+        <li><a href="">Москва-Сити </a></li>
+        <li><a href="">Пентхаусы Москвы </a></li>
+        <li><a href="">Каталог ЖК</a></li>
+      </ul>
+    </div>
+    <div class="header_mobmenu__col">
+      <h3 class="header_mobmenu__title">Компания</h3>
+      <ul>
+        <li><a href="">Кейсы </a></li>
+        <li><a href="">Центр обучения</a></li>
+        <li><a href="">Партнеры</a></li>
+        <li><a href="">Награды</a></li>
+        <li><a href="">Корпоративная жизнь</a></li>
+        <li><a href="">Карьера в компании</a></li>
+        <li><a href="">Пресс центр</a></li>
+      </ul>
+    </div>
+    <div class="header_mobmenu__col">
+      <h3 class="header_mobmenu__title">Контакты</h3>
+      <div class="phone_wrap">
+        <a href="tel:+74951864436" class="header_mobmenu_phone">7 (495) 186-44-36 <img src="./images/icons/ph.svg"
+            alt=""></a>
+        <span class="header_mobmenu_phone__under">Для жителей Москвы и Московской области</span>
+      </div>
+      <div class="phone_wrap">
+        <a href="tel:88008000000" class="header_mobmenu_phone">8 (800) 800-00-00 <img src="./images/icons/ph.svg"
+            alt=""></a>
+        <span class="header_mobmenu_phone__under">Бесплатный звонок по России</span>
+      </div>
+      <div class="header_mobmenu_social">
+        <a href="#" class="header_mobmenu_social__item">
+          <img src="./images/icons/tg.svg" alt=""> <span>Telegram</span>
+        </a>
+        <a href="#" class="header_mobmenu_social__item">
+          <img src="./images/icons/wh.svg" alt=""> <span>Whatsapp</span>
         </a>
       </div>
-      <div class="header_mobmenu__col">
-        <h3 class="header_mobmenu__title"><img src="./images/icons/hm_2.svg" alt="" class="header_mobmenu__title_pre"> VSN Business</h3>
-        <ul>
-          <li><a href="">Новостройки Москвы</a></li>
-          <li><a href="">Квартиры в построенных домах</a></li>
-          <li><a href="">Лофты и апартаменты</a></li>
-          <li><a href="">Москва-Сити </a></li>
-          <li><a href="">Пентхаусы Москвы  </a></li>
-          <li><a href="">Каталог ЖК</a></li>
-        </ul>
-      </div>
-      <div class="header_mobmenu__col">
-        <h3 class="header_mobmenu__title">Компания</h3>
-        <ul>
-          <li><a href="">Кейсы </a></li>
-          <li><a href="">Центр обучения</a></li>
-          <li><a href="">Партнеры</a></li>
-          <li><a href="">Награды</a></li>
-          <li><a href="">Корпоративная жизнь</a></li>
-          <li><a href="">Карьера в компании</a></li>
-          <li><a href="">Пресс центр</a></li>
-        </ul>
-      </div>
-      <div class="header_mobmenu__col">
-        <h3 class="header_mobmenu__title">Контакты</h3>
-        <div class="phone_wrap">
-          <a href="tel:+74951864436" class="header_mobmenu_phone">7 (495) 186-44-36 <img src="./images/icons/ph.svg" alt=""></a>
-        <span class="header_mobmenu_phone__under">Для жителей Москвы и Московской области</span>
-        </div>
-        <div class="phone_wrap">
-          <a href="tel:88008000000" class="header_mobmenu_phone">8 (800) 800-00-00 <img src="./images/icons/ph.svg" alt=""></a>
-        <span class="header_mobmenu_phone__under">Бесплатный звонок по России</span>
-        </div>
-        <div class="header_mobmenu_social">
-          <a href="#" class="header_mobmenu_social__item">
-            <img src="./images/icons/tg.svg" alt=""> <span>Telegram</span>
-          </a>
-          <a href="#" class="header_mobmenu_social__item">
-            <img src="./images/icons/wh.svg" alt=""> <span>Whatsapp</span>
-          </a>
-        </div>
-  
-        <span class="header_mobmenu_phone__under">Адрес главного офиса</span>
-        <div class="header_mobmenu_address">
-          Москва, Новодмитровская ул., д. 2, корп. 1, <br>
-          МФК «Савеловский Сити» (Жёлтая башня) <br>
-        </div>
-        <div class="header_mobmenu_address">
-          
-          Ежеденевно, 09:00 – 18:00
-        </div>
-  
-        <a href="mailto:vsnr@vsnr.ru" class="header_mobmenu_email">vsnr@vsnr.ru</a>
-  
-        <a href="#" class="header_mobmenu_office">Офисы продаж</a>
-  
-        <div class="header_mobmenu_social" style="    padding-bottom: 50px;
-        margin-bottom: 50px;
-        border-bottom: 1px solid #ccc;">
-          <a href="#" class="header_mobmenu_social__item big_mr">
-            <img src="./images/icons/vk.svg" alt="">
-          </a>
-          <a href="#" class="header_mobmenu_social__item big_mr">
-            <img src="./images/icons/tg.svg" alt="">
-          </a>
-          <a href="#" class="header_mobmenu_social__item big_mr">
-            <img src="./images/icons/yt.svg" alt="">
-          </a>
-        </div>
 
-        <form class="header_mobmenu__search">
-          <label for="">
-              <input type="text" class="header_mobmenu__search_input" placeholder="Найти недвижимость">
-           <div class="header_mobmenu__search_btn"></div>
-           <button class="header_mobmenu__search_submit"></button>
-          </label>
-          <div class="header_mobmenu__search_bottom">
-              <div class="header_mobmenu__search_variable active">Сданные</div>
-              <div class="header_mobmenu__search_variable">С отделкой</div>
-              <div class="header_mobmenu__search_variable">С терассой</div>
-              <div class="header_mobmenu__search_variable">В небоскрёбе</div>
-          </div>
-      </form>
+      <span class="header_mobmenu_phone__under">Адрес главного офиса</span>
+      <div class="header_mobmenu_address">
+        Москва, Новодмитровская ул., д. 2, корп. 1, <br>
+        МФК «Савеловский Сити» (Жёлтая башня) <br>
       </div>
+      <div class="header_mobmenu_address">
+
+        Ежеденевно, 09:00 – 18:00
+      </div>
+
+      <a href="mailto:vsnr@vsnr.ru" class="header_mobmenu_email">vsnr@vsnr.ru</a>
+
+      <a href="#" class="header_mobmenu_office">Офисы продаж</a>
+
+      <div class="header_mobmenu_social" style="    padding-bottom: 50px;
+          margin-bottom: 50px;
+          border-bottom: 1px solid #ccc;">
+        <a href="#" class="header_mobmenu_social__item big_mr">
+          <img src="./images/icons/vk.svg" alt="">
+        </a>
+        <a href="#" class="header_mobmenu_social__item big_mr">
+          <img src="./images/icons/tg.svg" alt="">
+        </a>
+        <a href="#" class="header_mobmenu_social__item big_mr">
+          <img src="./images/icons/yt.svg" alt="">
+        </a>
+      </div>
+
+      <form class="header_mobmenu__search">
+        <label for="">
+          <input type="text" class="header_mobmenu__search_input" placeholder="Найти недвижимость">
+          <div class="header_mobmenu__search_btn"></div>
+          <button class="header_mobmenu__search_submit"></button>
+        </label>
+        <div class="header_mobmenu__search_bottom">
+          <div class="header_mobmenu__search_variable active">Сданные</div>
+          <div class="header_mobmenu__search_variable">С отделкой</div>
+          <div class="header_mobmenu__search_variable">С терассой</div>
+          <div class="header_mobmenu__search_variable">В небоскрёбе</div>
+        </div>
+      </form>
+    </div>
   </div>
 </header>
-
 
     <main>
       <section class="hero hero-realty">
@@ -3162,13 +3178,18 @@
             Удобные сервисы
         </h2>
         <p class="convenient-services__descr">
-            Оказываем полный цикл услуг 
-            и готовы максимально оперативно 
+            Оказываем полный цикл услуг <br>
+            и готовы максимально оперативно <br>
             и профессионально решить любой вопрос клиента
         </p>
         <div class="convenient-services__inner">
             <div class="convenient-services__left">
                 <picture><source srcset="./images/convenient-services-1.webp" type="image/webp"><img src="./images/convenient-services-1.png" alt=""></picture>
+                <svg class="convenient-services__left--decor" width="359" height="430" viewBox="0 0 359 430" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M90.193 402V404H91.2505L91.8458 403.126L90.193 402ZM303.027 89.6242H305.027V83.1368L301.374 88.498L303.027 89.6242ZM303.027 402H301.027V404H303.027V402ZM342.624 402V404H344.624V402H342.624ZM342.624 17.0298H344.624V15.0298H342.624V17.0298ZM307.426 17.0298V15.0298H306.369L305.773 15.9036L307.426 17.0298ZM94.5927 329.406H92.5927V335.893L96.2455 330.532L94.5927 329.406ZM94.5927 17.0298H96.5927V15.0298H94.5927V17.0298ZM54.9957 17.0298V15.0298H52.9957V17.0298H54.9957ZM54.9957 402H52.9957V404H54.9957V402ZM91.8458 403.126L304.679 90.7503L301.374 88.498L88.5402 400.874L91.8458 403.126ZM301.027 89.6242V402H305.027V89.6242H301.027ZM303.027 404H342.624V400H303.027V404ZM344.624 402V17.0298H340.624V402H344.624ZM342.624 15.0298H307.426V19.0298H342.624V15.0298ZM305.773 15.9036L92.9399 328.279L96.2455 330.532L309.079 18.1559L305.773 15.9036ZM96.5927 329.406V17.0298H92.5927V329.406H96.5927ZM94.5927 15.0298H54.9957V19.0298H94.5927V15.0298ZM52.9957 17.0298V402H56.9957V17.0298H52.9957ZM54.9957 404H90.193V400H54.9957V404Z"
+                        fill="black" />
+                </svg>
             </div>
             <div class="convenient-services__right">
                 <ul class="convenient-services__list list-links">
@@ -3312,11 +3333,13 @@
             <div class="swiper-wrapper press-center__list">
                 <div class="swiper-slide press-center__item press-center-item press-center-item--1">
                     <article class="press-center-item__inner">
-                        <picture><source srcset="./images/press-center-1.webp" type="image/webp"><img src="./images/press-center-1.jpg" alt=""></picture>
+                        <a href="#">
+                            <picture><source srcset="./images/press-center-1.webp" type="image/webp"><img src="./images/press-center-1.jpg" alt=""></picture>
+                        </a>
                         <div class="press-center-item__wrapper">
-                            <h4 class="press-center-item__title">
+                            <a href="#" class="press-center-item__title">
                                 Скидки до 5% на квартиры в жилом квартале «Шагал»
-                            </h4>
+                            </a>
                             <div class="press-center-item__footer">
                                 <time class="press-center-item__time" datetime="2021-12-30">30.12.2021</time>
                                 <ul class="press-center-item__tags tags">
@@ -3339,11 +3362,13 @@
                 </div>
                 <div class="swiper-slide press-center__item press-center-item press-center-item--2">
                     <article class="press-center-item__inner">
-                        <picture><source srcset="./images/press-center-2.webp" type="image/webp"><img src="./images/press-center-2.jpg" alt=""></picture>
+                        <a href="#">
+                            <picture><source srcset="./images/press-center-2.webp" type="image/webp"><img src="./images/press-center-2.jpg" alt=""></picture>
+                        </a>
                         <div class="press-center-item__wrapper">
-                            <h4 class="press-center-item__title">
+                            <a href="#" class="press-center-item__title">
                                 Первая заливка бетона в Парковом квартале SELF!
-                            </h4>
+                            </a>
                             <div class="press-center-item__footer">
                                 <time class="press-center-item__time" datetime="2021-12-30">30.12.2021</time>
                                 <ul class="press-center-item__tags tags">
@@ -3363,11 +3388,13 @@
                 </div>
                 <div class="swiper-slide press-center__item press-center-item press-center-item--3">
                     <article class="press-center-item__inner">
+                       <a href="#">
                         <picture><source srcset="./images/press-center-3.webp" type="image/webp"><img src="./images/press-center-3.jpg" alt=""></picture>
+                       </a>
                         <div class="press-center-item__wrapper">
-                            <h4 class="press-center-item__title">
+                            <a href="#" class="press-center-item__title">
                                 График работы офисов продаж во время новогодних праздников
-                            </h4>
+                            </a>
                             <div class="press-center-item__footer">
                                 <time class="press-center-item__time" datetime="2021-12-30">30.12.2021</time>
                                 <ul class="press-center-item__tags tags">
@@ -3384,11 +3411,13 @@
                 </div>
                 <div class="swiper-slide press-center__item press-center-item press-center-item--4">
                     <article class="press-center-item__inner">
+                       <a href="#">
                         <picture><source srcset="./images/press-center-4.webp" type="image/webp"><img src="./images/press-center-4.jpg" alt=""></picture>
+                       </a>
                         <div class="press-center-item__wrapper">
-                            <h4 class="press-center-item__title">
+                            <a href="#" class="press-center-item__title">
                                 Выдача ключей в ЖК Spires!
-                            </h4>
+                            </a>
                             <div class="press-center-item__footer">
                                 <time class="press-center-item__time" datetime="2021-12-30">30.12.2021</time>
                                 <ul class="press-center-item__tags tags">

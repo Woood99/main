@@ -39,6 +39,7 @@
             <a href="/" class="header_logo">
                 <img class="desktop" src="./images/main_logo--black.svg" alt="">
                 <picture><source srcset="./images/mob_logo.webp" type="image/webp"><img class="mob" src="./images/mob_logo.png" alt=""></picture>
+                <img class="header_logo__scroll" src="./images/icons/logo-group-scroll.svg" alt="">
             </a>
             <div class="header_right">
                 <nav class="header_menu">
@@ -112,9 +113,20 @@
                         <!-- <span class="header_search__text">Поиск</span> -->
                         <input type="text" placeholder="Поиск" class="header_search__text">
                     </form>
+                    <div class="header__city">
+                        <svg>
+                            <use xlink:href="images/sprites/sprite-mono.svg#switch-city"></use>
+                        </svg>
+                        Москва
+                    </div>
                     <div class="header_contacts">
                         <div class="header_contacts__phone">
-                            <a href="tel:88001864436">8 800 186-44-36</a>
+                            <a href="tel:88001864436">
+                                <svg>
+                                    <use xlink:href="images/sprites/sprite-mono.svg#circle-arrow-up"></use>
+                                </svg>
+                                8 800 186-44-3
+                            </a>
                             <div class="header_contacts__popup">Обратный звонок</div>
                         </div>
                         <div class="header__social social">
@@ -465,7 +477,8 @@
                         placeholder="Почта">
                 </label>
                 <label class="contacts-us__label contacts-us__textarea">
-                    <textarea class="input-reset input-primary textarea-primary contacts-us__input" placeholder="Сообщение"></textarea>
+                    <textarea class="input-reset input-primary textarea-primary contacts-us__input"
+                        placeholder="Сообщение"></textarea>
                 </label>
                 <button type="submit" class="btn-reset btn-secondary btn-secondary--arrow contacts-us__btn">
                     Отправить
