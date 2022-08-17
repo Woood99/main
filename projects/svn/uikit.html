@@ -203,10 +203,12 @@
                     <p class="info-block__price">
                         от 6,5 млн. ₽
                     </p>
-                    <div class="info-block__location ">
-                        <span>ВАО</span>
-                        <span>м. Пеображенская площадь</span>
-                        <span>5 мин</span>
+                    <div class="info-block__location location-items">
+                        <span class="location-item location-item--geo">ВАО</span>
+                        <span class="location-item location-item--circle location-item--circle-red">
+                            м. Пеображенская площадь
+                        </span>
+                        <span class="location-item location-item--time">5 мин</span>
                     </div>
                     <a href="#" class="btn-reset btn-primary btn-arrow-right--black info-block__btn">Подробнее</a>
                 </div>
@@ -435,16 +437,43 @@
                 </ul>
             </div>
 
+
             <hr>
 
-            <div class="card-primary">
+            <div class="location-items">
+                <span class="location-item location-item--circle location-item--circle-yellow">
+                    м. Третьяковская
+                </span>
+                <span class="location-item location-item--circle location-item--circle-red">
+                    м. Третьяковская
+                </span>
+                <span class="location-item location-item--circle location-item--circle-orange">
+                    м. Третьяковская
+                </span>
+                <span class="location-item location-item--circle location-item--circle-green">
+                    м. Третьяковская
+                </span>
+                <span class="location-item location-item--circle location-item--circle-gray">
+                    м. Третьяковская
+                </span>
+                <span class="location-item location-item--circle location-item--circle-darkgreen">
+                    м. Третьяковская
+                </span>
+                <span class="location-item location-item--time">5 мин</span>
+                <span class="location-item location-item--car">50 мин. от Москвы</span>
+                <span class="location-item location-item--geo">ВАО</span>
+            </div>
+
+            <hr>
+
+            <div class="objects-city__left-item card-primary">
                 <div class="card-primary__left">
-                    <div class="card-primary__img">
-                        <picture><source srcset="./images/projects_1.webp" type="image/webp"><img src="./images/projects_1.jpg" alt=""></picture>
+                    <a href="#" class="card-primary__img">
+                        <picture><source srcset="./images/projects_1.webp" type="image/webp"><img src="./images/projects_1.jpg" alt="" width="200" height="130"></picture>
                         <span class="card-primary__new-object new-object-tag">
                             Новый объект
                         </span>
-                    </div>
+                    </a>
                     <div class="card-primary__benefits">
                         <span>5 мин пешком до метро</span>
                         <span>Отделка White Box</span>
@@ -452,16 +481,16 @@
                     </div>
                 </div>
                 <div class="card-primary__right">
-                    <h3 class="card-primary__title">
+                    <a href="#" class="card-primary__title">
                         Жилой комплекс “Архитектор”
-                    </h3>
+                    </a>
                     <span class="card-primary__geo">
                         Москва, ЦАО, Дружинниковская ул., д. 15
                     </span>
-                    <div class="card-primary__location">
-                        <span>м. Пеображенская площадь</span>
-                        <span>м. Красносельская</span>
-                        <span>5 мин до м. Красносельская</span>
+                    <div class="card-primary__location location-items">
+                        <span class="location-item location-item--circle location-item--circle-red">м. Пеображенская площадь</span>
+                        <span class="location-item location-item--circle location-item--circle-red">м. Красносельская</span>
+                        <span class="location-item location-item--time">5 мин до м. Красносельская</span>
                     </div>
                     <p class="card-primary__descr">
                         SKY VIEW – комплекс апартаментов премиум-класса в самом сердце Пресненского
@@ -470,17 +499,19 @@
                     </p>
                     <div class="card-primary__footer">
                         <span class="card-primary__price">от 6,5 млн. ₽</span>
-                        <div class="card-primary__info">
-                            <span>Ввод в эксплуатацию</span>
-                            <span>2 квартал 2024</span>
-                        </div>
-                        <div class="card-primary__info">
-                            <span>Комнатность</span>
-                            <div>
-                                <span>2</span>
-                                <span>3</span>
-                                <span>4</span>
-                                <span>5+</span>
+                        <div class="card-primary__information">
+                            <div class="card-primary__info">
+                                <span>Ввод в эксплуатацию</span>
+                                <span>2 квартал 2024</span>
+                            </div>
+                            <div class="card-primary__info">
+                                <span>Комнатность</span>
+                                <div>
+                                    <span>2</span>
+                                    <span>3</span>
+                                    <span>4</span>
+                                    <span>5+</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -498,8 +529,9 @@
                 </a>
                 <div class="card-secondary__body">
                     <div class="card-secondary__location location-items">
-                        <span class="location-item location-item--circle location-item--circle-yellow">м.
-                            Третьяковская</span>
+                        <span class="location-item location-item--circle location-item--circle-yellow">
+                            м. Третьяковская
+                        </span>
                         <span class="location-item location-item--time">5 мин</span>
                     </div>
                     <a href="#" class="card-secondary__title">
@@ -513,7 +545,7 @@
 
 
 
-            <div class="apartments-card">
+            <!-- <div class="apartments-card">
                 <div class="apartments-card__inner">
                     <div class="apartments-card__left">
                         <h3 class="apartments-card__title">
@@ -552,7 +584,9 @@
                         
                     </div>
                 </div>
-            </div>
+            </div> -->
+
+
 
 
 
