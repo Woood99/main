@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="ru-RU">
-  <head>
-    <!-- Useful meta tags -->
+
+<head>
+  <!-- Useful meta tags -->
 <meta charset="UTF-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -28,10 +29,11 @@
     type="text/javascript">
 </script>
 <link rel="stylesheet" href="./css/main.min.css" />
-    <title>Title</title>
-  </head>
-  <body>
-    <header class="header not-animate header-contacts header-black">
+  <title>Title</title>
+</head>
+
+<body>
+  <header class="header not-animate header-apartments-card header-black">
 
     <div class="header__bg"></div>
     <div class="container">
@@ -271,222 +273,233 @@
     </div>
 </header>
 
-    <main>
-      <section class="hero-contacts">
+  <main>
+    <div class="apartments-card">
     <div class="container">
-        <div class="hero-contacts__inner">
-            <div class="hero-contacts__info">
-                <h2 class="hero-contacts__title regular_80">
-                    Контакты
-                </h2>
-                <address class="hero-contacts__address">
-                    <span class="hero-contacts__subtitle">
-                        Адрес главного офиса
-                    </span>
-                    <span>
-                        Москва, Новодмитровская ул., д. 2, корп. 1
-                        МФК «Савеловский Сити» (Жёлтая башня)
-                    </span>
-                </address>
-                <div class="hero-contacts__time">
-                    <span class="hero-contacts__subtitle">
-                        Режим работы офиса
-                    </span>
-                    <span>
-                        Ежедневно, 9:00 – 18:00
-                    </span>
-                </div>
-                <div class="hero-contacts__email">
-                    <span class="hero-contacts__subtitle">
-                        E-mail
-                    </span>
-                    <a href="mailto:vsnr@vsnr.ru">
-                        vsnr@vsnr.ru
-                    </a>
-                </div>
-                <div class="hero-contacts__call">
-                    <div class="hero-contacts__phone">
-                        <span class="hero-contacts__subtitle">
-                            Для жителей Москвы и Московской области
-                        </span>
-                        <a href="tel:74951864436">
-                            7 (495) 186-44-36
-                            <svg>
-                                <use xlink:href="images/sprites/sprite-mono.svg#phone"></use>
-                            </svg>
+        <div class="apartments-card__inner">
+            <div class="apartments-card__left">
+                <h3 class="apartments-card__title">
+                    1-комнатная квартира 97 м²
+                </h3>
+                <div class="swiper apartments-card__slider">
+                    <div class="swiper-wrapper" id="gallery-primary">
+                        <a class="swiper-slide apartments-card__slide" href="./images/apartments-card-1.jpg">
+                            <picture><source srcset="./images/apartments-card-1.webp" type="image/webp"><img src="./images/apartments-card-1.jpg" alt="1-комнатная квартира 97 м²"></picture>
                         </a>
-                    </div>
-                    <div class="hero-contacts__phone">
-                        <span class="hero-contacts__subtitle">
-                            Бесплатный звонок по России
-                        </span>
-                        <a href="tel:88008000000">
-                            8 (800) 800-00-00
-                            <svg>
-                                <use xlink:href="images/sprites/sprite-mono.svg#phone"></use>
-                            </svg>
+                        <a class="swiper-slide apartments-card__slide" href="./images/apartments-card-1.jpg">
+                            <picture><source srcset="./images/apartments-card-1.webp" type="image/webp"><img src="./images/apartments-card-1.jpg" alt="1-комнатная квартира 97 м²"></picture>
+                        </a>
+                        <a class="swiper-slide apartments-card__slide" href="./images/apartments-card-1.jpg">
+                            <picture><source srcset="./images/apartments-card-1.webp" type="image/webp"><img src="./images/apartments-card-1.jpg" alt="1-комнатная квартира 97 м²"></picture>
                         </a>
                     </div>
                 </div>
-                <div class="hero-contacts__social social">
-                    <a href="#">
-                        <svg>
-                            <use xlink:href="images/sprites/sprite-mono.svg#whatsapp"></use>
-                        </svg>
-                        Whatsapp
-                    </a>
-                    <a href="#">
-                        <svg>
-                            <use xlink:href="images/sprites/sprite-mono.svg#telegram"></use>
-                        </svg>
-                        Telegram
-                    </a>
+                <div class="apartments-card__control">
+                    <div class="apartments-card__pagination pagination-primary"></div>
+                    <div class="apartments-card__navigation">
+                        <div class="apartments-card-nav-button-prev navigation-primary navigation-primary--prev"></div>
+                        <div class="apartments-card-nav-button-next navigation-primary navigation-primary--next"></div>
+                    </div>
                 </div>
-                <button type="button" class="btn-reset btn-primary btn-primary--arrow hero-contacts__btn">
-                    Как добраться
-                    <svg>
-                        <use xlink:href="images/sprites/sprite-mono.svg#arrow-down"></use>
-                    </svg>
-                </button>
             </div>
-            <div class="hero-contacts__img">
-                <picture><source srcset="./images/hero-contacts.webp" type="image/webp"><img src="./images/hero-contacts.png" alt=""></picture>
-            </div>
-        </div>
-    </div>
-</section>
-      <section class="sales-offices">
-    <div class="sales-offices__container">
-        <h2 class="sales-offices__title">
-            Офисы продаж
-        </h2>
-        <div class="sales-offices__btns">
-            <button type="button"
-                class="sales-offices__btn sales-offices__btn--maps btn-reset tabs-btn active">Карта</button>
-            <button type="button" class="sales-offices__btn sales-offices__btn--list btn-reset tabs-btn">Список</button>
-        </div>
-        <div class="sales-offices__inner">
-            <div class="sales-offices__maps maps-primary map-delete-all-control map-gray active"></div>
-            <div class="sales-offices__bar sales-offices-bar simplebar-primary">
-                <ul class="sales-offices-bar__list">
-                    <li class="sales-offices-bar__item balloon-two-content">
-                        <h4 class="balloon-two-content__title">
-                            Офис продаж «Self»
-                        </h4>
-                        <address class="balloon-two-content__address">
-                            Москва, Ильменский проезд, д. 14
-                        </address>
-                        <span class="balloon-two-content__time">
-                            Ежедневно, 8:00 – 21:00
-                        </span>
-                        <a href="tel:74951864436" class="balloon-two-content__tel">
-                            7 (495) 186-44-36
-                        </a>
-                        <button type="button" class="btn-reset balloon-two-content__btn">Проложить маршрут</button>
+            <div class="apartments-card__content">
+                <ul class="apartments-card__price">
+                    <li>
+                        <p>Стоимость</p>
+                        <p>
+                            14 233 597
+                            <span>₽</span>
+                        </p>
                     </li>
-                    <li class="sales-offices-bar__item balloon-two-content">
-                        <h4 class="balloon-two-content__title">
-                            Офис продаж «Self»
-                        </h4>
-                        <address class="balloon-two-content__address">
-                            Москва, Ильменский проезд, д. 14
-                        </address>
-                        <span class="balloon-two-content__time">
-                            Ежедневно, 8:00 – 21:00
-                        </span>
-                        <a href="tel:74951864436" class="balloon-two-content__tel">
-                            7 (495) 186-44-36
-                        </a>
-                        <button type="button" class="btn-reset balloon-two-content__btn">Проложить маршрут</button>
-                    </li>
-                    <li class="sales-offices-bar__item balloon-two-content">
-                        <h4 class="balloon-two-content__title">
-                            Офис продаж «Self»
-                        </h4>
-                        <address class="balloon-two-content__address">
-                            Москва, Ильменский проезд, д. 14
-                        </address>
-                        <span class="balloon-two-content__time">
-                            Ежедневно, 8:00 – 21:00
-                        </span>
-                        <a href="tel:74951864436" class="balloon-two-content__tel">
-                            7 (495) 186-44-36
-                        </a>
-                        <button type="button" class="btn-reset balloon-two-content__btn">Проложить маршрут</button>
-                    </li>
-                    <li class="sales-offices-bar__item balloon-two-content">
-                        <h4 class="balloon-two-content__title">
-                            Офис продаж «Self»
-                        </h4>
-                        <address class="balloon-two-content__address">
-                            Москва, Ильменский проезд, д. 14
-                        </address>
-                        <span class="balloon-two-content__time">
-                            Ежедневно, 8:00 – 21:00
-                        </span>
-                        <a href="tel:74951864436" class="balloon-two-content__tel">
-                            7 (495) 186-44-36
-                        </a>
-                        <button type="button" class="btn-reset balloon-two-content__btn">Проложить маршрут</button>
-                    </li>
-                    <li class="sales-offices-bar__item balloon-two-content">
-                        <h4 class="balloon-two-content__title">
-                            Офис продаж «Self»
-                        </h4>
-                        <address class="balloon-two-content__address">
-                            Москва, Ильменский проезд, д. 14
-                        </address>
-                        <span class="balloon-two-content__time">
-                            Ежедневно, 8:00 – 21:00
-                        </span>
-                        <a href="tel:74951864436" class="balloon-two-content__tel">
-                            7 (495) 186-44-36
-                        </a>
-                        <button type="button" class="btn-reset balloon-two-content__btn">Проложить маршрут</button>
+                    <li>
+                        <p>
+                            Цена м2
+                        </p>
+                        <p>
+                            233 597
+                            <span>₽/м²</span>
+                        </p>
                     </li>
                 </ul>
+                <div class="apartments-card__btns">
+                    <button type="button"
+                        class="apartments-card__btn btn-reset btn-primary btn--schist btn-primary--arrow">
+                        Забронировать
+                        <svg>
+                            <use xlink:href="images/sprites/sprite-mono.svg#arrow-down"></use>
+                        </svg>
+                    </button>
+                    <button type="button" class="apartments-card__btn btn-reset btn-third btn-third--arrow">
+                        Консультация
+                        <svg>
+                            <use xlink:href="images/sprites/sprite-mono.svg#arrow-down"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="apartments-card__info--tablet">
+                    <li>
+                        <span>Этаж</span>
+                        <span>10</span>
+                    </li>
+                    <li>
+                        <span>Комнат</span>
+                        <span>1</span>
+                    </li>
+                    <li>
+                        <span>Площадь</span>
+                        <span>97 м²</span>
+                    </li>
+                </div>
+                <div class="apartments-card__info">
+                    <ul>
+                        <li class="apartments-card__info--frame">
+                            <span>Корпус</span>
+                            <span>Рубенс</span>
+                        </li>
+                        <li class="apartments-card__info--floor">
+                            <span>Этаж</span>
+                            <span>10</span>
+                        </li>
+                        <li class="apartments-card__info--section">
+                            <span>Секция</span>
+                            <span>1</span>
+                        </li>
+                        <li class="apartments-card__info--room">
+                            <span>Условный номер</span>
+                            <span>№321</span>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="apartments-card__info--square">
+                            <span>Площадь</span>
+                            <span>97 м²</span>
+                        </li>
+                        <li class="apartments-card__info--rooms">
+                            <span>Комнат</span>
+                            <span>1</span>
+                        </li>
+                        <li class="apartments-card__info--peculiar">
+                            <span>Особенности</span>
+                            <span>
+                                отделка чистовая,
+                                особенность особенная
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="apartments-card__beside card-small">
+                    <a href="#" class="card-small__inner">
+                        <div class="card-small__img">
+                            <picture><source srcset="./images/card-small.webp" type="image/webp"><img src="./images/card-small.jpg" alt="Жилой комплекс «Селигер Сити»"></picture>
+                        </div>
+                        <div class="card-small__content">
+                            <h3 class="card-small__title">
+                                Жилой комплекс «Селигер Сити»
+                            </h3>
+                            <p class="card-small__address">
+                                Москва, САО, Ильменский проезд, дом 14,
+                            </p>
+                            <div class="card-small__location location-items">
+                                <span class="location-item location-item--geo">САО</span>
+                                <span class="location-item location-item--circle location-item--circle-red">
+                                    м. Селигерская
+                                </span>
+                                <span class="location-item location-item--time">5 мин</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
-</section>
-      <section class="contacts-us">
+</div>
+    <section class="about-apartment">
     <div class="container">
-        <h2 class="contacts-us__title title-2">
-            Свяжитесь с нами
+        <h2 class="about-apartment__title">
+            О квартире
         </h2>
-        <div class="contacts-us__inner grid">
-            <h3 class="contacts-us__subtitle">
-                Оставьте заявку и наш специалист свяжется с вами в ближайшее время
+        <div class="about-apartment__inner">
+            <p class="about-apartment__text">
+                Продаётся великолепный двухуровневый пентхаус с 2 террасами общей площадью 159.33 м2 на 6 этаже корпуса
+                «Порода» элитного ЖК «Большая Дмитровка IX». Предлагаемым планировочным решением на 1-м уровне
+                предусмотрены большая прихожая, просторная гостиная площадью 47.8 м2, совмещённая с кухней, 2 спальни
+                23.2 м2 и 24.4 м2, гардеробная, 3 санузла и терраса площадью 26.2 м2. 2-й уровень занимает просторная
+                терраса площадью 63 м2, которая подойдёт и для посиделок с друзьями, и для тихих семейных вечеров. С
+                террасы открываются великолепные виды на исторический центр столицы и Кремль.
+            </p>
+            <p class="about-apartment__text about-apartment__text--great">
+                Высота потолков составляет 3 м. Современные окна
+                с повышенной шумоизоляцией позволяют отдыхать
+                от городского шума, не покидая центра столицы.
+            </p>
+            <p class="about-apartment__text">
+                Современные здания выполнены по проекту известного архитектурного бюро «Цимайло, Ляшенко и партнёры».
+                Особняк «Порода» оформлен камнем цвета бутылочного стекла. Стойки в парадных лобби современных особняков
+                будут выполнены из натурального камня. Лифты выполнены по индивидуальному проекту. В каждом особняке
+                предусмотрено 3 варианта отделки квартир. Для особняков «Свет» и «Порода» предлагаются 3 вида оформления
+                в современном стиле.
+            </p>
+            <p class="about-apartment__text">
+                В комплексе реализована концепция «закрытый двор без машин». Все автомобили будут размещены в
+                3-уровневом подземном паркинге на 207 машино- и 15 мото-мест. Здесь расположится автомойка и станция для
+                зарядки электромобилей. Для спорткаров предусмотрен отдельный лифт.
+            </p>
+            <p class="about-apartment__text">
+                Во дворе будет выполнено освещение и озеленение по специальному дизайн-проекту. В зимнее время
+                предусмотрен электрический подогрев уличных крылец и лестниц входных групп. Закрытая территория
+                находится под круглосуточной охраной и видеонаблюдением. Система контроля доступа на входах и въездах не
+                позволит посторонним проникнуть в комплекс. Предусмотрена система радиофикации и оповещения о
+                чрезвычайных ситуациях. Кроме того, для хранения ценных вещей жильцы смогут пользоваться депозитарием.
+            </p>
+            <p class="about-apartment__text">
+                Для любителей спорта распахнёт свои двери фитнес-клуб с видом на живописный сад. Дети смогут посещать
+                развивающий центр. В пешей доступности находится вся инфраструктура центра Москвы: магазины, кафе,
+                рестораны, салоны красоты. Неподалёку находятся Мэрия Москвы, Большой и Малый театры, Театр
+                Станиславского, Александровский сад, Кремль, Исторический музей и другие достопримечательности столицы.
+            </p>
+            <p class="about-apartment__text">
+                ЖК «Большая Дмитровка IX» находится в 7-10 минутах пешком от станций метро «Охотный ряд», «Пушкинская»,
+                «Театральная», «Площадь Революции», расстояние до Кремля - меньше километра. До Бульварного кольца -
+                всего 500 м, до Садового - 1.5 км.
+            </p>
+        </div>
+    </div>
+</section>
+    <section class="stayed-questions">
+    <div class="container">
+        <h2 class="stayed-questions__title title-2">
+            Остались вопросы?
+        </h2>
+        <div class="stayed-questions__inner grid">
+            <h3 class="stayed-questions__subtitle">
+                Оставьте заявку и наш специалист с вами  в ближайшее время
+                для подробной консультаци
             </h3>
-            <div class="contacts-us__left">
-                <picture><source srcset="./images/woman.webp" type="image/webp"><img src="./images/woman.jpg" alt="Елизавета" width="230" height="230"></picture>
-                <span class="contacts-us__name regular_20">Елизавета</span>
-                <span class="contacts-us__pos regular_14">Ведущий менеджер</span>
+            <div class="stayed-questions__left">
+                <picture><source srcset="./images/woman-2.webp" type="image/webp"><img src="./images/woman-2.jpg" alt="Елизавета" width="230" height="230"></picture>
+                <span class="stayed-questions__name regular_20">Елизавета</span>
+                <span class="stayed-questions__pos regular_14">Менеджер отдела продаж</span>
             </div>
-            <form action="#" class="contacts-us__form">
-                <label class="contacts-us__label">
-                    <input type="text" name="Имя" class="input-reset input-primary contacts-us__input"
+            <form action="#" class="stayed-questions__form">
+                <label class="stayed-questions__label">
+                    <input type="text" name="Имя" class="input-reset input-primary stayed-questions__input"
                         placeholder="Имя">
                 </label>
-                <label class="contacts-us__label">
-                    <input type="tel" name="Телефон" class="input-reset input-primary contacts-us__input"
+                <label class="stayed-questions__label">
+                    <input type="tel" name="Телефон" class="input-reset input-primary stayed-questions__input"
                         placeholder="Телефон">
                 </label>
-                <label class="contacts-us__label">
-                    <input type="email" name="Почта" class="input-reset input-primary contacts-us__input"
+                <label class="stayed-questions__label">
+                    <input type="email" name="Почта" class="input-reset input-primary stayed-questions__input"
                         placeholder="Почта">
                 </label>
-                <label class="contacts-us__label contacts-us__textarea">
-                    <textarea class="input-reset input-primary textarea-primary contacts-us__input"
-                        placeholder="Сообщение"></textarea>
-                </label>
-                <button type="submit" class="btn-reset btn-secondary btn-secondary--arrow contacts-us__btn">
+                <button type="submit" class="btn-reset btn-secondary btn-secondary--arrow stayed-questions__btn">
                     Отправить
                     <svg>
                         <use xlink:href="images/sprites/sprite-mono.svg#arrow-down"></use>
                     </svg>
                 </button>
-                <span class="contacts-us__agreement form-agreement">
+                <span class="stayed-questions__agreement form-agreement">
                     Согласен на обработку персональных данных
                     и рекламно-информационные рассылки
                 </span>
@@ -494,12 +507,9 @@
         </div>
     </div>
 </section>
-      <section>
-        <!-- <div class="container">Main</div> -->
-      </section>
-    </main>
+  </main>
 
-    <footer class="footer">
+  <footer class="footer">
   <div class="container">
     <div class="footer_wrap">
       <div class="footer__col">
@@ -607,6 +617,7 @@
   </div>
 </footer>
 
-    <script src="./js/main.min.js"></script>
-  </body>
+  <script src="./js/main.min.js"></script>
+</body>
+
 </html>
